@@ -1,9 +1,9 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  
-  <style lang="postcss">
-    :global(html) {
-      background-color: theme(colors.gray.100);
-    }
-  </style>
+<article class="container">
+	<div class="bg-black w-screen h-screen">dasdasdasdasdasdas</div>
+</article>
+
+<style lang="postcss">
+	:global(html) {
+		background-color: theme(colors.gray.100);
+	}
+</style>
