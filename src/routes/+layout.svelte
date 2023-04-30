@@ -13,7 +13,7 @@
 		<h2>Tossakan</h2>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto">
-		<h2><a href="/about-us" class="m-33">FAQ and Contact</a></h2>
+		<h2><a href="/job" class="m-33">FAQ and Contact</a></h2>
 		<h2>
 			<a href="/about-us" class="m-3">
 				<svg
