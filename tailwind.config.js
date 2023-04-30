@@ -22,7 +22,7 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'AboutUs-1': "url('/static/img1.jpeg')",
+        'AboutUs-1': "url('/img1.jpeg')",
       }
     },
   },

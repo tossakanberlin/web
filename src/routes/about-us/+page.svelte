@@ -1,14 +1,16 @@
 <div class="flex flex-col justify-between items-center bg-white text-green py-10">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 		<div class="flex flex-col justify-between items-center h-full">
-			<div
-				class="flex flex-col justify-center font-serif text-8xl text-center md:text-start md:ml-10"
-			>
-				<h2>IT DOESN'T</h2>
-				<h2>GET MORE</h2>
-				<h2>AUTHENTIC</h2>
-				<h2>THAN THIS</h2>
-			</div>
+				
+				<div class="relative font-serif md:ml-10">
+					<img class="absolute max-h-full w-full object-cover top-0 left-0 z-[0]" src='/img1.jpeg' alt="a" />
+					<div class="z-[1] text-8xl text-center md:text-start">
+						<h2>IT DOESN'T</h2>
+						<h2>GET MORE</h2>
+						<h2>AUTHENTIC</h2>
+						<h2>THAN THIS</h2>
+					</div>
+				</div>
 		</div>
 		<div class="grid md:col-span-2 gap-4 mx-6">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
