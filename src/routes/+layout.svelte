@@ -2,7 +2,7 @@
 	import '../app.css';
 </script>
 
-<nav class="my-5 mx-1 flex flex-row justify-between">
+<nav class="my-5 mx-1 flex flex-row justify-between font-serif">
 	<ul class="flex flex-row justify-start">
 		<li><a href="/" class=" text-2xl m-3">Home</a></li>
 		<li><a href="/about-us" class=" text-2xl m-3">About us</a></li>
@@ -19,11 +19,11 @@
 </nav>
 
 <slot />
-<footer class="space-y-4">
+<footer class="space-y-4 font-serif">
 	<div class="m-5">
 		<p class="text-5xl">OUR LOCATIONS</p>
 	</div>
-	<div class="flex flex-row justify-between">
+	<div class="flex flex-row justify-between text-center color">
 		<div class="">
 			<div class="m-5">
 				<ul>
@@ -84,10 +84,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="m-5">
+	<!-- <div class="m-5">
 		<p class=" text-2xl">
 			Copyright &copy; 2021 All Rights Reserved by
 			<a href="#">TOSSAKAN BERLIN</a>.
 		</p>
-	</div>
+	</div> -->
 </footer>
