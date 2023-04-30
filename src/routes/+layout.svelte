@@ -2,18 +2,20 @@
 	import '../app.css';
 </script>
 
-<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-2xl text-white">
-	<ul class="flex-1 justify-start mr-auto md:flex hidden">
-		<li><a href="/" class="m-3">Home</a></li>
-		<li><a href="/about-us" class="m-3">About us</a></li>
-		<li><a href="/about-us" class="m-3">Tossakan</a></li>
-		<li><a href="/about-us" class="m-3">Maiyarab</a></li>
+<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-2xl text-white ">
+	<ul class="flex-1 justify-start mr-auto md:flex hidden ">
+		<li>
+			<a href="/" class="m-3 bg-growing-underline">Home</a>
+		</li>
+		<li><a href="/about-us" class="m-3 bg-growing-underline">About us</a></li>
+		<li><a href="/about-us" class="m-3 bg-growing-underline">Tossakan</a></li>
+		<li><a href="/about-us" class="m-3 bg-growing-underline">Maiyarab</a></li>
 	</ul>
 	<div class="">
 		<h2>Tossakan</h2>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto">
-		<h2><a href="/about-us" class="m-33">FAQ and Contact</a></h2>
+		<h2><a href="/about-us" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
 		<h2>
 			<a href="/about-us" class="m-3">
 				<svg
@@ -47,20 +49,20 @@
 			<div class="flex flex-col justify-between items-center md:items-start gap-4">
 				<div>
 					<ul class="text-center">
-						<li><a href="/">TOSSAKAN</a></li>
-						<li><a href="/">SCHLIEMANNSTR.16</a></li>
-						<li><a href="/">10437 BERLIN</a></li>
+						<li>TOSSAKAN</li>
+						<li>SCHLIEMANNSTR.16</li>
+						<li>10437 BERLIN</li>
 					</ul>
 				</div>
 				<div>
 					<ul class="text-center">
-						<li><a href="/">TEL:030-81477638</a></li>
-						<li><a href="/">OPEN DAILY:12-22</a></li>
+						<li>TEL:030-81477638</li>
+						<li>OPEN DAILY:12-22</li>
 					</ul>
 				</div>
 				<div>
 					<ul class="text-center">
-						<li><a href="/">@TOSSAKANBERLIN</a></li>
+						<li>@TOSSAKANBERLIN</li>
 					</ul>
 				</div>
 			</div>
@@ -68,20 +70,20 @@
 			<div class="flex flex-col justify-between items-center">
 				<div>
 					<ul class="text-center">
-						<li><a href="/">MAIYARAP</a></li>
-						<li><a href="/">ORANIENSTR.200</a></li>
-						<li><a href="/">10999 BERLIN</a></li>
+						<li>MAIYARAP</li>
+						<li>ORANIENSTR.200</li>
+						<li>10999 BERLIN</li>
 					</ul>
 				</div>
 				<div>
 					<ul class="text-center">
-						<li><a href="/">TEL:030-12345678</a></li>
-						<li><a href="/">OPEN DAILY: 12-22</a></li>
+						<li>TEL:030-12345678</li>
+						<li>OPEN DAILY: 12-22</li>
 					</ul>
 				</div>
 				<div>
 					<ul class="text-center">
-						<li><a href="/">@MAIYARAPBERLIN</a></li>
+						<li>@MAIYARAPBERLIN</li>
 					</ul>
 				</div>
 			</div>
@@ -90,14 +92,14 @@
 				<div class="flex flex-col justify-between h-full">
 					<div>
 						<ul class="text-center">
-							<li><a href="/">TUKTUK</a></li>
-							<li><a href="/">FOLLOW US ON INSTRAGRAM</a></li>
-							<li><a href="/">FOR UPCOMING EVENTS</a></li>
+							<li>TUKTUK</li>
+							<li>FOLLOW US ON INSTRAGRAM</li>
+							<li>FOR UPCOMING EVENTS</li>
 						</ul>
 					</div>
 					<div>
 						<ul class="text-center">
-							<li><a href="/">@TUKTUKBYTOSSAKAN</a></li>
+							<li>@TUKTUKBYTOSSAKAN</li>
 						</ul>
 					</div>
 				</div>
