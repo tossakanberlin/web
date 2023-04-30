@@ -90,8 +90,8 @@
     <div class="">xxx</div>
 		<div class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start">
       <div class="flex flex-row justify-center md:justify-start text-center md:text-start md:items-end font-serif gap-4">
-        <h2 class="text-9xl">TUK TUK</h2>
-        <h2 class="text-5xl self-center	">OUR POP UP EVENT</h2>
+        <h2 class="text-7xl md:text-9xl">TUK TUK</h2>
+        <h2 class="text-3xl md:text-5xl self-center	">OUR POP UP EVENT</h2>
       </div>
       <div class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]">
         <p>Every once in a while, we all crave for that different something.</p>
