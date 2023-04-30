@@ -2,20 +2,20 @@
 	import '../app.css';
 </script>
 
-<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-4xl text-white">
+<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-2xl text-white">
 	<ul class="flex-1 justify-start mr-auto md:flex hidden">
-		<li><a href="/" class="m-6">Home</a></li>
-		<li><a href="/about-us" class="m-6">About us</a></li>
-		<li><a href="/about-us" class="m-6">Tossakan</a></li>
-		<li><a href="/about-us" class="m-6">Maiyarab</a></li>
+		<li><a href="/" class="m-3">Home</a></li>
+		<li><a href="/about-us" class="m-3">About us</a></li>
+		<li><a href="/about-us" class="m-3">Tossakan</a></li>
+		<li><a href="/about-us" class="m-3">Maiyarab</a></li>
 	</ul>
 	<div class="">
 		<h2>Tossakan</h2>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto">
-		<h2><a href="/about-us" class="m-6">FAQ and Contact</a></h2>
+		<h2><a href="/about-us" class="m-33">FAQ and Contact</a></h2>
 		<h2>
-			<a href="/about-us" class="m-6">
+			<a href="/about-us" class="m-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"

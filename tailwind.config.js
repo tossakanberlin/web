@@ -20,7 +20,11 @@ export default {
       sans: ['motor'],
       serif: ['Bebas Neue']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'AboutUs-1': "url('/static/img1.jpeg')",
+      }
+    },
   },
   plugins: [],
 }
