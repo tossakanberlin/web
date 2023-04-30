@@ -1,16 +1,17 @@
-<div class="flex flex-col justify-between items-center bg-white text-green py-10">
+<div class="flex flex-col justify-between items-center bg-white text-green py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-		<div class="flex flex-col justify-between items-center h-full">
-				
-				<div class="relative font-serif md:ml-10">
-					<img class="absolute max-h-full w-full object-cover top-0 left-0 z-[0]" src='/img1.jpeg' alt="a" />
-					<div class="z-[1] text-8xl text-center md:text-start">
-						<h2>IT DOESN'T</h2>
-						<h2>GET MORE</h2>
-						<h2>AUTHENTIC</h2>
-						<h2>THAN THIS</h2>
-					</div>
-				</div>
+		<div class="  p-4 flex flex-col justify-center relative h-full">
+			<img
+				class=" absolute max-h-full w-full object-cover top-0 left-3 opacity-40"
+				src="/img1.jpeg"
+				alt="a"
+			/>
+			<div class=" font-bold px-2 space-y-10 text-7xl text-center md:text-start z-10 h-full">
+				<h2>IT DOESN'T</h2>
+				<h2>GET MORE</h2>
+				<h2>AUTHENTIC</h2>
+				<h2>THAN THIS</h2>
+			</div>
 		</div>
 		<div class="grid md:col-span-2 gap-4 mx-6">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
@@ -75,37 +76,56 @@
 
 <div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-    <div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
-      <h2 class="font-serif text-[2.5rem] mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
-      <div class="grid font-sans text-xl gap-4">
-        <p>Everybody has their go-to comfort food. For us, definately our noodle soups: Gieuw Tieuw.</p>
-        <p>Ticking all the key values: nutritional, cultural and medical, Thai Noodle Soups, packed with herbs and spices, are the most hearty soups.</p>
-        <p>At our newly opened MAIYARAP, our unique thai noodle bar, you´ll fall in love with Gieuw Tieuw.</p>
-        <p>Here we offer the best of the best, perfectly paired with our signature dumplings and unique cocktails.</p>
-      </div>
-    </div>
-  </div>
+		<div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
+			<h2 class="font-serif text-[2.5rem] mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
+			<div class="grid font-sans text-xl gap-4">
+				<p>
+					Everybody has their go-to comfort food. For us, definately our noodle soups: Gieuw Tieuw.
+				</p>
+				<p>
+					Ticking all the key values: nutritional, cultural and medical, Thai Noodle Soups, packed
+					with herbs and spices, are the most hearty soups.
+				</p>
+				<p>
+					At our newly opened MAIYARAP, our unique thai noodle bar, you´ll fall in love with Gieuw
+					Tieuw.
+				</p>
+				<p>
+					Here we offer the best of the best, perfectly paired with our signature dumplings and
+					unique cocktails.
+				</p>
+			</div>
+		</div>
+		<div><img src="/Tossakan_logo.png" /></div>
+	</div>
 </div>
 
 <div class="flex flex-col justify-between items-center bg-pink text-white py-10">
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-    <div class="">xxx</div>
-		<div class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start">
-      <div class="flex flex-row justify-center md:justify-start text-center md:text-start md:items-end font-serif gap-4">
-        <h2 class="text-7xl md:text-9xl">TUK TUK</h2>
-        <h2 class="text-3xl md:text-5xl self-center	">OUR POP UP EVENT</h2>
-      </div>
-      <div class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]">
-        <p>Every once in a while, we all crave for that different something.</p>
-        <p>Something different, something new, but THAI?</p>
-        <p>Follow us on Instagram @tuktukbytossakan for upcoming pop up events.</p>
-        <p>Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion fingerfoods, we got you covered.</p>
-      </div>
-    </div>
-    
-  </div>
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+		<div class=""><img src="" /></div>
+		<div
+			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
+		>
+			<div
+				class="flex flex-row justify-center md:justify-start text-center md:text-start md:items-end font-serif gap-4"
+			>
+				<h2 class="text-7xl md:text-9xl">TUK TUK</h2>
+				<h2 class="text-3xl md:text-5xl self-center">OUR POP UP EVENT</h2>
+			</div>
+			<div
+				class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]"
+			>
+				<p>Every once in a while, we all crave for that different something.</p>
+				<p>Something different, something new, but THAI?</p>
+				<p>Follow us on Instagram @tuktukbytossakan for upcoming pop up events.</p>
+				<p>
+					Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion
+					fingerfoods, we got you covered.
+				</p>
+			</div>
+		</div>
+	</div>
 </div>
-
 
 <style lang="postcss">
 	:global(html) {

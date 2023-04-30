@@ -7,11 +7,12 @@
 
 @layer utilities {
     .bg-growing-underline {
-        @apply relative no-underline hover:text-white before:content-[""] before:absolute before:block before:w-full before:h-0.5 before:bg-white before:transition-transform before:duration-[0.3s] before:ease-[ease] before:scale-x-0 before:left-0 before:bottom-0 hover:before:scale-x-100;
+        @apply relative no-underline hover:text-slate-200 before:content-[""] before:absolute before:block before:w-full before:h-0.5 before:bg-slate-200 before:transition-transform before:duration-[0.3s] before:ease-[ease] before:scale-x-0 before:left-0 before:bottom-0 hover:before:scale-x-100 transition-all ;
     }
+
     .zoom {
-        @apply bg-[black] transition-transform duration-[0.2s] w-[200px] h-[200px] mx-auto my-0 p-[50px] hover:scale-[1.2];
+        @apply transition-transform duration-[0.2s] mx-auto my-0 p-[50px] hover:scale-[1.2];
         /* Animation */
-      }
+    }
 
 }

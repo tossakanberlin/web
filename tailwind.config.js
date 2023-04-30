@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
+
+
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
@@ -15,6 +18,7 @@ export default {
       'blue': '#6e44ff',
       'green': '#00c69d',
       'black': '#000000',
+      slate: colors.slate
     },
     fontFamily: {
       sans: ['motor'],
