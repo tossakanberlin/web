@@ -68,7 +68,9 @@
 						src="/tossakan_logo.png"
 						alt="tossakan"
 					/>
-					<div class="flex flex-col bg-orange h-min text-8xl px-8 py-5 gap-8 md:text-start text-center">
+					<div
+						class="flex flex-col bg-orange h-min text-8xl px-8 py-5 gap-8 md:text-start text-center"
+					>
 						<h2>THE FEARLESS</h2>
 						<h2>THE FIERCEST</h2>
 					</div>
@@ -127,15 +129,21 @@
 				</p>
 			</div>
 		</div>
-		<div class="relative">
-			<img src="maiyarap_logo.png" class="absolute max-h-full w-full object-contain top-0 left-0" alt="maiyarap"/>
+		<div class="md:relative m-10">
+			<img
+				src="maiyarap_logo.png"
+				class="md:absolute max-h-full w-full object-contain top-0 left-0"
+				alt="maiyarap"
+			/>
 		</div>
 	</div>
 </div>
 
 <div class="flex flex-col justify-between items-center bg-pink text-white py-20">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
-		<div class="flex justify-center"><img src="tuktuk_logo.png" class="object-contain top-0 left-0" alt="tuktukbytossakan"/></div>
+		<div class="flex justify-center mb-10">
+			<img src="tuktuk_logo.png" class="object-contain top-0 left-0" alt="tuktukbytossakan" />
+		</div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
 		>
