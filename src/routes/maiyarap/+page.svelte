@@ -21,7 +21,7 @@
 				</div>
 				<div>
 					<h2 class="text-5xl">THAI NOODLE BAR</h2>
-					<div class="flex flex-row gap-5">
+					<div class="flex flex-col md:flex-row gap-5">
 						<h2 class="font-sans text-5xl">thai noodle soup aka</h2>
 						<h2 class="font-sans text-5xl bg-orange">gieuw tieuw</h2>
 					</div>
@@ -34,7 +34,7 @@
 					<h2>KITCHEN CLOSE</h2>
 					<h2>21:00</h2>
 				</div>
-				<div class="flex flex-row">
+				<div class="flex md:flex-row flex-col">
 					<h2 class="text-3xl font-sans">*no reservations, just walk ins 😊</h2>
 					<button
 							type="submit"
