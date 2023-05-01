@@ -9,12 +9,16 @@
 				class="   flex-col z-10 rounded-full h-[300px] w-[300px] aspect-square bg-pink flex justify-center items-center px-4 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<img
-					src="/Tossakan_logo.png"
-					class=" w-[350px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					src="/tossakan_logo.png"
+					class=" w-[300px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 				/>
-				<h2 class="text-3xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500">Tossakan<br />P-Berg</h2>
+				<h2
+					class="text-2xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+				>
+					Tossakan<br />P-Berg
+				</h2>
 			</div>
-			<img src="/img1.jpeg" class="  absolute z-[-1] " />
+			<img src="/img1.jpeg" class=" absolute z-[-1] object-contain " />
 		</div>
 
 		<div class="relative flex items-center justify-center group ">
@@ -22,10 +26,14 @@
 				class=" flex-col z-10 rounded-full h-[300px] w-[300px] aspect-square bg-pink flex justify-center items-center px-4 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<img
-					src="/Maiyarap_logo.png"
-					class=" w-[400px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					src="/maiyarap_logo.png"
+					class=" w-[300px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 				/>
-				<h2 class="text-3xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500">Maiyarap<br />x-Berg</h2>
+				<h2
+					class="text-2xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+				>
+					Maiyarap<br />x-Berg
+				</h2>
 			</div>
 			<img src="/img_2.jpg" class="absolute  z-[-1]  " />
 		</div>
