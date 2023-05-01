@@ -108,7 +108,7 @@
 </div>
 
 <div class="flex flex-col justify-between items-center bg-blue text-white py-10">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
 		<div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
 			<h2 class="font-serif text-[2.5rem] mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
 			<div class="grid font-sans text-xl gap-4">
@@ -129,7 +129,7 @@
 				</p>
 			</div>
 		</div>
-		<div class="md:relative m-10">
+		<div class="md:relative">
 			<img
 				src="maiyarap_logo.png"
 				class="md:absolute max-h-full w-full object-contain top-0 left-0"
