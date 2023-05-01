@@ -2,8 +2,8 @@
 	import '../app.css';
 </script>
 
-<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-2xl text-white ">
-	<ul class="flex-1 justify-start mr-auto md:flex hidden ">
+<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 ">
+	<ul class="flex-1 justify-start mr-auto md:flex hidden items-center">
 		<li>
 			<a href="/" class="m-3 bg-growing-underline">Home</a>
 		</li>
@@ -11,13 +11,13 @@
 		<li><a href="/tossakan" class="m-3 bg-growing-underline">Tossakan</a></li>
 		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarab</a></li>
 	</ul>
-	<div class="">
-		<h2>Tossakan</h2>
+	<div class="max-h-[100px] max-w-[120px]">
+		<a href='/'><img src='/tosxmai_logo.png' class="w-full h-full object-contain"></a>
 	</div>
-	<div class="flex-1 flex justify-end ml-auto">
+	<div class="flex-1 flex justify-end ml-auto items-center ">
 		<h2><a href="/faq" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
 		<h2>
-			<a href="/about-us" class="m-3">
+			<a href="https://www.instagram.com/tossakanberlin/" target="_blank" class="m-3">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
@@ -40,7 +40,7 @@
 
 <slot />
 
-<footer class="bg-blue py-5 font-serif text-white">
+<footer class="bg-blue py-5 font-serif text-white md:text-xl md:px-2">
 	<div class="mx-6 space-y-5">
 		<div class="text-center md:text-left">
 			<p class="text-5xl italic">OUR LOCATIONS</p>

@@ -1,41 +1,41 @@
 <article class="w-screen h-fit relative font-serif">
 	<div class=" absolute top-0 m-2 w-full text-center z-10">
-		<h1 class="text-5xl text-white uppercase">Neo-ThaiCuisine</h1>
+		<h1 class="text-7xl text-white uppercase my-5">Neo-Thai Cuisine</h1>
 	</div>
-	<div class="grid grid-cols-2 ">
-		<div class="  relative flex items-center justify-center group  ">
+	<div class="grid grid-cols-1 md:grid-cols-2">
+		<div class="  relative flex items-center justify-center group    ">
 			
 			<div
-				class="   flex-col z-10 rounded-full h-[300px] w-[300px] aspect-square bg-pink flex justify-center items-center px-4 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
+				class="   absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-8 md:px-6 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<img
 					src="/tossakan_logo.png"
-					class=" w-[300px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					class=" lg:w-[500px] w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500  "
 				/>
 				<h2
-					class="text-2xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					class="lg:text-5xl lg:m-5 text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-3 "
 				>
 					Tossakan<br />P-Berg
 				</h2>
 			</div>
-			<img src="/img1.jpeg" class=" absolute z-[-1] object-contain " />
+			<img src="/vertical_left.jpeg" class="  z-[-1] object-contain w-full" />
 		</div>
 
 		<div class="relative flex items-center justify-center group ">
 			<div
-				class=" flex-col z-10 rounded-full h-[300px] w-[300px] aspect-square bg-pink flex justify-center items-center px-4 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
+				class="  absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-8 md:px-6 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<img
 					src="/maiyarap_logo.png"
-					class=" w-[300px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					class=" lg:w-[500px]  w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 				/>
 				<h2
-					class="text-2xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					class="lg:text-5xl lg:m-5 text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-3 "
 				>
 					Maiyarap<br />x-Berg
 				</h2>
 			</div>
-			<img src="/img_2.jpg" class="absolute  z-[-1]  " />
+			<img src="/vertical_right.jpeg" class="  z-[-1] object-contain w-full " />
 		</div>
 	</div>
 </article>
