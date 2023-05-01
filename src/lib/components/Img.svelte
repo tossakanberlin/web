@@ -10,7 +10,7 @@
 	export let prioritize: boolean | undefined = false;
 	export let important: boolean | undefined = false;
 	export let quality: number = 73;
-	export let clip: boolean = true;
+	export let clip: boolean = false;
 	let klass: string | undefined = undefined;
 	export { klass as class };
 
