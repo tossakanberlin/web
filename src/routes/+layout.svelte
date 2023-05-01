@@ -8,8 +8,8 @@
 			<a href="/" class="m-3 bg-growing-underline">Home</a>
 		</li>
 		<li><a href="/about-us" class="m-3 bg-growing-underline">About us</a></li>
-		<li><a href="/about-us" class="m-3 bg-growing-underline">Tossakan</a></li>
-		<li><a href="/about-us" class="m-3 bg-growing-underline">Maiyarab</a></li>
+		<li><a href="/tossakan" class="m-3 bg-growing-underline">Tossakan</a></li>
+		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarab</a></li>
 	</ul>
 	<div class="">
 		<h2>Tossakan</h2>

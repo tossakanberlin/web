@@ -8,10 +8,14 @@
 				class=" flex-col z-10 rounded-full aspect-square bg-pink flex justify-center items-center px-4 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<img
-					src="/Tossakan_logo.png"
+					src="/tossakan_logo.png"
 					class=" w-[300px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 				/>
-				<h2 class="text-3xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500">Tossakan<br />P-Berg</h2>
+				<h2
+					class="text-3xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+				>
+					Tossakan<br />P-Berg
+				</h2>
 			</div>
 			<img src="/Horizontal_left.jpg" class="absolute top-0 left-0 z-[-1]" />
 		</div>
@@ -21,10 +25,14 @@
 				class=" flex-col z-10 rounded-full aspect-square bg-pink flex justify-center items-center px-4 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<img
-					src="/Tossakan_logo.png"
+					src="/tossakan_logo.png"
 					class=" w-[300px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 				/>
-				<h2 class="text-3xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500">Maiyarap<br />x-Berg</h2>
+				<h2
+					class="text-3xl text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+				>
+					Maiyarap<br />x-Berg
+				</h2>
 			</div>
 			<img src="/Horizontal_right.jpg" class="absolute top-0 left-0 z-[-1]" />
 		</div>

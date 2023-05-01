@@ -4,7 +4,7 @@
 			<img
 				src="tossakan_logo.png"
 				class="md:absolute max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
+				alt="tossakan"
 			/>
 		</div>
 		<div
@@ -55,7 +55,7 @@
 <div class="flex flex-col justify-center items-center bg-white py-10">
 	<div class="flex m-10">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-			<div class="text-blue flex flex-col gap-10">
+			<div class="text-blue flex flex-col gap-[5rem]">
 				<div>
 					<div class="font-serif text-5xl">
 						<h2>TABLE RESERVATION 🍷</h2>
@@ -88,7 +88,7 @@
 			</div>
 
 			<div class="flex flex-col gap-10">
-				<div class="text-orange flex flex-col gap-10">
+				<div class="text-orange flex flex-col mt-[5rem] md:mt-0">
 					<div>
 						<div class="font-serif text-5xl">
 							<h2>Special Events & Private Parties</h2>
@@ -104,16 +104,18 @@
 						</ul>
 					</div>
 				</div>
-
-        <div class="flex flex-1 overflow-hidden">
-          <img src="tossakan_prev_1.jpeg" class="object-cover h-[75%] w-full" alt="tossakan_drinks" />
+        <div class="max-h-[360px] w-full">
+          <img src="tossakan_prev_1.jpeg" class="object-cover max-h-full w-full" alt="tossakan_drinks" />
         </div>
-        
-
+				
 			</div>
-      <div class="md:col-span-2">
-        <img src="tossakan_prev_2.jpeg" class=" max-h-full w-full object-cover top-0 left-0 z-1 h-[50%]" alt="tossakan_foods" />
-      </div>
+			<div class="max-h-[540px] w-full col-span-full mt-10">
+				<img
+					src="tossakan_prev_2.jpeg"
+					class=" max-h-full w-full object-cover"
+					alt="tossakan_foods"
+				/>
+			</div>
 		</div>
 	</div>
 </div>
