@@ -1,21 +1,25 @@
 <div class="flex flex-col justify-between items-center bg-white text-green py-10 mx-6">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-		<div class="  p-4 flex flex-col justify-center relative h-full">
-			<img
-				class=" absolute max-h-full w-full object-cover top-0 left-3 opacity-40"
-				src="/img1.jpeg"
-				alt="a"
-			/>
-			<div class=" font-bold px-2 space-y-10 text-7xl text-center md:text-start z-10 h-full">
-				<h2>IT DOESN'T</h2>
-				<h2>GET MORE</h2>
-				<h2>AUTHENTIC</h2>
-				<h2>THAN THIS</h2>
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-start mx-6">
+		<div class="flex flex-col justify-center items-center h-full">
+			<div class="flex z-10 h-full text-7xl">
+				<div
+					class="relative flex flex-col text-center md:text-start items-center z-10 h-full justify-center px-5 py-8 gap-5"
+				>
+					<img
+						class="absolute max-h-full w-full object-cover top-auto left-0 opacity-40 z-[-1]"
+						src="/img1.jpeg"
+						alt="a"
+					/>
+					<h2>IT DOESN'T</h2>
+					<h2>GET MORE</h2>
+					<h2>AUTHENTIC</h2>
+					<h2>THAN THIS</h2>
+				</div>
 			</div>
 		</div>
-		<div class="grid md:col-span-2 gap-4 mx-6">
+		<div class="grid md:col-span-2 gap-4 mx-6 md:text-start text-center">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
-			<p class="font-sans text-xl">
+			<p class="font-sans text-2xl">
 				It all started with Chef Tanadon Santanaviboon, aka Don, 2nd generation Thai-German,
 				following his father´s footsteps to become a cook. Though starting as a fine dining cook,
 				Don realized his true passion lied in his ultimate comfort food, Thai Cuisine. He decided it
@@ -33,8 +37,10 @@
 				Cuisine, our appreciation to our culture.
 			</p>
 		</div>
-		<div class="md:col-span-3 font-serif text-5xl mx-6">
-			<div class="flex flex-1">
+		<div
+			class="md:col-span-3 font-serif text-4xl md:text-5xl mx-6 place-self-center md:place-self-start"
+		>
+			<div class="flex">
 				<h2 class="px-2 py-2 bg-pink text-white">We keep things real : the spice the heat</h2>
 			</div>
 		</div>
@@ -52,11 +58,36 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-center bg-green text-white py-10">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-		<div class="md:col-span-2">xxx</div>
+<div class="flex flex-col justify-between items-start bg-green text-white py-10">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-[10rem] items-start mx-6">
+		<div class="relative md:col-span-2 flex h-full">
+			<div class="flex flex-row justify-between md:col-span-2 font-serif">
+				<div class="md:absolute md:top-0 md:left-[45%] flex flex-col gap-5">
+					<img
+						class="md:absolute visible md:invisible max-h-full w-full object-cover top-0 left-0"
+						src="/tossakan_logo.png"
+						alt="tossakan"
+					/>
+					<div class="flex flex-col bg-orange h-min text-8xl px-8 py-5 gap-8 md:text-start text-center">
+						<h2>THE FEARLESS</h2>
+						<h2>THE FIERCEST</h2>
+					</div>
+					<div class="text-2xl font-sans px-5 md:text-start text-center">
+						<p>
+							Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
+							Thai culture.
+						</p>
+					</div>
+				</div>
+				<img
+					class="absolute invisible md:visible max-h-full w-full object-contain top-0 -left-1/4 z-10"
+					src="/tossakan_logo_half.png"
+					alt="tossakan_half"
+				/>
+			</div>
+		</div>
 		<div class="flex flex-col justify-between md:justify-start">
-			<ul class="text-left text-5xl font-serif mb-10">
+			<ul class="text-center md:text-left text-5xl font-serif mb-10">
 				<li>THE DEMON KING</li>
 				<li>THE RULER OF RAKASAS</li>
 				<li>THE IMMORTAL GIANT</li>
@@ -96,13 +127,15 @@
 				</p>
 			</div>
 		</div>
-		<div><img src="/Tossakan_logo.png" /></div>
+		<div class="relative">
+			<img src="maiyarap_logo.png" class="absolute max-h-full w-full object-contain top-0 left-0" alt="maiyarap"/>
+		</div>
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-center bg-pink text-white py-10">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-		<div class=""><img src="" /></div>
+<div class="flex flex-col justify-between items-center bg-pink text-white py-20">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
+		<div class="flex justify-center"><img src="tuktuk_logo.png" class="object-contain top-0 left-0" alt="tuktukbytossakan"/></div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
 		>
