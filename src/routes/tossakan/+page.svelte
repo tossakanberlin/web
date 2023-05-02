@@ -1,9 +1,9 @@
 <div class="flex flex-col justify-between items-center bg-green_light text-pink py-10">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-		<div class="md:relative m-10">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
+		<div class="md:relative max-h-[360px] w-full">
 			<img
 				src="tossakan_logo.png"
-				class="md:absolute max-h-full w-full object-contain top-0 left-0"
+				class="md:absolute max-h-full w-full object-contain top-1/4 left-0"
 				alt="tossakan"
 			/>
 		</div>
@@ -12,7 +12,7 @@
 		>
 			<div class="grid text-xl gap-10">
 				<div
-					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10"
+					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10 "
 				>
 					<div class="flex flex-col">
 						<h2 class="text-8xl">TOSSAKAN</h2>
@@ -21,12 +21,12 @@
 					<div class="flex flex-col justify-center items-center">
 						<button
 							type="submit"
-							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
 							>MENU
 						</button>
 						<button
 							type="submit"
-							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
 							>BOOK A TABLE
 						</button>
 					</div>
@@ -50,10 +50,10 @@
 					<div class="flex flex-col">
 						<h2 class="text-3xl">TEL: +49 30 81477638</h2>
 					</div>
-					<div class="flex flex-col">
+					<div class="flex flex-col mt-10 md:mt-0">
 						<button
 							type="submit"
-							class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+							class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
 							>CONTACT US
 						</button>
 					</div>

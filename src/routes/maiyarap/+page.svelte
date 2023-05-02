@@ -1,9 +1,9 @@
 <div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-		<div class="visible md:invisible md:absolute m-10">
+		<div class="visible md:invisible md:absolute max-h-[360px] w-full">
 			<img
 				src="maiyarap_logo.png"
-				class="md:absolute visible md:invisible max-h-full w-full object-cover top-0 left-0"
+				class="md:absolute visible md:invisible max-h-full w-full object-contain top-0 left-0"
 				alt="maiyarap"
 			/>
 		</div>
@@ -46,7 +46,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="invisible md:visible md:relative m-10">
+		<div class="invisible md:visible md:relative max-h-[360px] w-full">
 			<img
 				src="maiyarap_logo.png"
 				class="md:absolute max-h-full w-full object-contain top-0 left-0"

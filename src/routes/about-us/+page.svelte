@@ -1,6 +1,6 @@
 <div class="flex flex-col justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
-		<div class="flex flex-col justify-center items-end h-full text-8xl px-5 pb-8 text-blue_light">
+		<div class="flex flex-col justify-center items-center md:items-end h-full text-8xl px-5 pb-8 text-blue_light">
 			<h2>IT DOESN'T</h2>
 			<h2>GET MORE</h2>
 			<h2>AUTHENTIC</h2>
@@ -53,7 +53,7 @@
 			<div class="flex flex-row justify-between md:col-span-2 font-serif">
 				<div class="md:absolute md:top-0 md:left-[45%] flex flex-col gap-5">
 					<img
-						class="md:absolute visible md:invisible max-h-full w-full object-cover top-0 left-0"
+						class="md:absolute visible md:invisible max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
 						src="/tossakan_logo.png"
 						alt="tossakan"
 					/>
@@ -118,10 +118,10 @@
 				</p>
 			</div>
 		</div>
-		<div class="md:relative">
+		<div class="md:relative flex justify-between">
 			<img
 				src="maiyarap_logo.png"
-				class="md:absolute max-h-full w-full object-contain top-0 left-0"
+				class="md:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
 				alt="maiyarap"
 			/>
 		</div>
@@ -131,7 +131,7 @@
 <div class="flex flex-col justify-between items-center bg-pink_light text-blue py-20">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
 		<div class="md:relative">
-			<img src="tuktuk2_logo.png" class="md:absolute max-h-full w-full object-contain top-0 left-0" alt="tuktukbytossakan" />
+			<img src="tuktuk2_logo.png" class="md:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0" alt="tuktukbytossakan" />
 		</div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
@@ -152,7 +152,7 @@
 					Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion
 					fingerfoods, we got you covered.
 				</p>
-				<div class="flex flex-1 text-4xl font-serif mt-10">
+				<div class="flex flex-1 text-4xl font-serif mt-10 md:place-self-start place-content-center">
 					<h2 class="px-2 r-5 bg-white text-blue uppercase">stay curious, stay excited</h2>
 					<h2 class="ml-2">💚💛💙</h2>
 				</div>
