@@ -15,8 +15,11 @@ export default {
       'white': '#fffaf2',
       'orange': '#fe7a38',
       'pink': '#ff50b0',
+      'pink_light': '#ff9dd3',
       'blue': '#6e44ff',
+      'blue_light': '#bbbdf6',
       'green': '#00c69d',
+      'green_light': '#c5ebc3',
       'black': '#000000',
       slate: colors.slate
     },

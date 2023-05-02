@@ -12,7 +12,7 @@
 		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarab</a></li>
 	</ul>
 	<div class="max-h-[100px] max-w-[120px]">
-		<a href='/'><img src='/tosxmai_logo.png' class="w-full h-full object-contain"></a>
+		<a href='/'><img src='/tosxmai_logo.png' class="w-full h-full object-contain" alt="tossakan"></a>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto items-center ">
 		<h2><a href="/faq" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
@@ -105,11 +105,11 @@
 				</div>
 			</div>
 		</div>
-		<!-- <div class="m-5">
-			<p class=" text-2xl">
-				Copyright &copy; 2021 All Rights Reserved by
-				<a href="#">TOSSAKAN BERLIN</a>.
+		<div class="font-sans text-2xl flex flex-row justify-between text-blue_light">
+			<p class="">
+				@ 2021 Tossakan Berlin
 			</p>
-		</div> -->
+			<a href="/datenschutz" class="italic">Privacy Policy</a>
+		</div>
 	</div>
 </footer>

@@ -1,21 +1,10 @@
-<div class="flex flex-col justify-between items-center bg-white text-green py-10 mx-6">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-start mx-6">
-		<div class="flex flex-col justify-center items-center h-full">
-			<div class="flex z-10 h-full text-7xl">
-				<div
-					class="relative flex flex-col text-center md:text-start items-center z-10 h-full justify-center px-5 py-8 gap-5"
-				>
-					<img
-						class="absolute max-h-full w-full object-cover top-auto left-0 opacity-40 z-[-1]"
-						src="/img1.jpeg"
-						alt="a"
-					/>
-					<h2>IT DOESN'T</h2>
-					<h2>GET MORE</h2>
-					<h2>AUTHENTIC</h2>
-					<h2>THAN THIS</h2>
-				</div>
-			</div>
+<div class="flex flex-col justify-between items-center bg-white text-blue py-10 mx-6">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
+		<div class="flex flex-col justify-center items-end h-full text-8xl px-5 pb-8 text-blue_light">
+			<h2>IT DOESN'T</h2>
+			<h2>GET MORE</h2>
+			<h2>AUTHENTIC</h2>
+			<h2>THAN THIS</h2>
 		</div>
 		<div class="grid md:col-span-2 gap-4 mx-6 md:text-start text-center">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
@@ -41,7 +30,7 @@
 			class="md:col-span-3 font-serif text-4xl md:text-5xl mx-6 place-self-center md:place-self-start"
 		>
 			<div class="flex">
-				<h2 class="px-2 py-2 bg-pink text-white">We keep things real : the spice the heat</h2>
+				<h2 class="px-2 py-2 bg-blue text-white">We keep things real : the spice the heat</h2>
 			</div>
 		</div>
 		<div class="grid md:col-span-3 font-sans text-center md:text-start text-xl mx-5 md:mx-[10rem]">
@@ -58,7 +47,7 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-start bg-green text-white py-10">
+<div class="flex flex-col justify-between items-start bg-blue_light text-white py-10">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-[10rem] items-start mx-6">
 		<div class="relative md:col-span-2 flex h-full">
 			<div class="flex flex-row justify-between md:col-span-2 font-serif">
@@ -69,7 +58,7 @@
 						alt="tossakan"
 					/>
 					<div
-						class="flex flex-col bg-orange h-min text-8xl px-8 py-5 gap-8 md:text-start text-center"
+						class="flex flex-col bg-blue h-min text-8xl px-8 py-5 gap-8 md:text-start text-center"
 					>
 						<h2>THE FEARLESS</h2>
 						<h2>THE FIERCEST</h2>
@@ -107,11 +96,11 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
+<div class="flex flex-col justify-between items-center bg-green_light text-blue py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
 		<div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
 			<h2 class="font-serif text-[2.5rem] mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
-			<div class="grid font-sans text-xl gap-4">
+			<div class="grid font-sans text-2xl gap-4">
 				<p>
 					Everybody has their go-to comfort food. For us, definately our noodle soups: Gieuw Tieuw.
 				</p>
@@ -139,10 +128,10 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-center bg-pink text-white py-20">
+<div class="flex flex-col justify-between items-center bg-pink_light text-blue py-20">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
-		<div class="flex justify-center mb-10">
-			<img src="tuktuk_logo.png" class="object-contain top-0 left-0" alt="tuktukbytossakan" />
+		<div class="md:relative">
+			<img src="tuktuk2_logo.png" class="md:absolute max-h-full w-full object-contain top-0 left-0" alt="tuktukbytossakan" />
 		</div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
@@ -154,7 +143,7 @@
 				<h2 class="text-3xl md:text-5xl self-center">OUR POP UP EVENT</h2>
 			</div>
 			<div
-				class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]"
+				class="flex flex-col justify-between text-center md:text-start font-sans text-2xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]"
 			>
 				<p>Every once in a while, we all crave for that different something.</p>
 				<p>Something different, something new, but THAI?</p>
@@ -163,7 +152,12 @@
 					Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion
 					fingerfoods, we got you covered.
 				</p>
+				<div class="flex flex-1 text-4xl font-serif mt-10">
+					<h2 class="px-2 r-5 bg-white text-blue uppercase">stay curious, stay excited</h2>
+					<h2 class="ml-2">💚💛💙</h2>
+				</div>
 			</div>
+			
 		</div>
 	</div>
 </div>
