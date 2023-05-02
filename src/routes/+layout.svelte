@@ -1,8 +1,13 @@
 <script>
+
 	import '../app.css';
+	import { Hamburger } from 'svelte-hamburgers';
+	  let open = false;
+	
 </script>
 
 <nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 ">
+	
 	<ul class="flex-1 justify-start mr-auto md:flex hidden items-center">
 		<li>
 			<a href="/" class="m-3 bg-growing-underline">Home</a>
@@ -14,7 +19,7 @@
 	<div class="max-h-[100px] max-w-[120px]">
 		<a href='/'><img src='/tosxmai_logo.png' class="w-full h-full object-contain" alt="tossakan"></a>
 	</div>
-	<div class="flex-1 flex justify-end ml-auto items-center ">
+	<div class="flex-1 flex justify-end ml-auto items-center  ">
 		<h2><a href="/faq" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
 		<h2>
 			<a href="https://www.instagram.com/tossakanberlin/" target="_blank" class="m-3">
@@ -33,10 +38,21 @@
 						d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
 					/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
 				>
-			</a>
+			</a>		
 		</h2>
+		<div class='md:hidden inline-block' >
+			<Hamburger
+   			 bind:open
+    		--color="white" />
+
+
+		</div>
+		
+
 	</div>
 </nav>
+
+
 
 <slot />
 

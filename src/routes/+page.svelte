@@ -1,4 +1,19 @@
+<script>
+	export let open;
+</script>
+
 <article class="w-screen h-fit relative font-serif">
+	{#if open}
+    <div>
+        {#each ['Home', 'Example', 'About', 'Contact'] as link, i}
+            <p transition:fly={{ y: -15, delay: 50 * i }}>
+                {link}
+            </p>
+        {/each}
+    </div>
+
+    <hr transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
+{/if}
 	<div class=" absolute top-0 m-2 w-full text-center z-10">
 		<h1 class="text-7xl text-white uppercase my-5">Neo-Thai Cuisine</h1>
 	</div>
@@ -41,4 +56,6 @@
 </article>
 
 <style lang="postcss">
+
+	
 </style>
