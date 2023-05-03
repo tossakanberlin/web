@@ -4,11 +4,11 @@
 
 <div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-		<div class="visible md:invisible md:absolute max-h-[360px] w-full">
+		<div class="block md:hidden max-h-[360px] w-full">
 			<Image
 				important
 				src="maiyarap_logo.png"
-				class="md:absolute visible md:invisible max-h-full w-full object-contain top-0 left-0"
+				class="max-h-full w-full object-contain top-0 left-0"
 				alt="maiyarap"
 			/>
 		</div>
@@ -17,42 +17,58 @@
 		>
 			<div class="grid text-xl gap-10">
 				<div
-					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10"
+					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif sm:gap-5 xl:gap-0"
 				>
-					<div class="flex flex-col">
-						<h2 class="text-8xl">MAIYARAP</h2>
-						<h2 class="text-4xl">ORANIENSTRASSE 200, 10999 BERLIN</h2>
+					<div class="flex flex-col col-span-full xl:col-span-1">
+						<h2 class="text-5xl sm:text-8xl">MAIYARAP</h2>
+						<h2 class="text-2xl sm:text-4xl">ORANIENSTRASSE 200, 10999 BERLIN</h2>
 					</div>
-					<div class="flex flex-col justify-center items-center">
+					<div
+						class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
+					>
 						<button
 							type="submit"
-							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
 							>MENU
 						</button>
 					</div>
 					<div class="flex flex-col justify-center items-center" />
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl">
-					<h2>OPEN DAILY</h2>
-					<h2>12:00 - 22:00</h2>
-					<h2>KITCHEN CLOSE</h2>
+				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl gap-5">
+					<div>
+						<h2>OPEN DAILY</h2>
+						<h2>12:00 - 22:00</h2>
+					</div>
+					<div>
+						<h2>KITCHEN CLOSE</h2>
 					<h2>21:00</h2>
+					</div>
+					
+					
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2">
-					<h2 class="text-2xl font-sans">*no reservations, just walk ins 😊</h2>
-					<button
-						type="submit"
-						class=" bg-green_light text-blue rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
-						>CONTACT US
-					</button>
+				<div
+					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif gap-5 md:gap-5 xl:gap-0"
+				>
+					<h2 class="text-xl font-sans col-span-full xl:col-span-1">
+						*no reservations, just walk ins 😊
+					</h2>
+					<div
+						class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
+					>
+						<button
+							type="submit"
+							class=" bg-green_light text-blue rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+							>CONTACT US
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="invisible md:visible md:relative max-h-[360px] w-full">
+		<div class="hidden md:block max-h-[360px] w-full">
 			<Image
 				important
 				src="maiyarap_logo.png"
-				class="md:absolute max-h-full w-full object-contain top-0 left-0"
+				class="max-h-full w-full object-contain top-0 left-0"
 				alt="maiyarap"
 			/>
 		</div>
@@ -62,7 +78,7 @@
 <div
 	class="flex flex-col justify-between items-center md:items-start bg-white text-blue py-10 gap-10 mx-10 mt-10"
 >
-	<div class="flex flex-col place-items-start">
+	<div class="flex flex-col place-items-center md:place-items-start text-center md:text-start">
 		<h2 class="text-5xl">THAI NOODLE BAR</h2>
 		<div class="flex flex-col md:flex-row gap-5">
 			<h2 class="font-sans text-5xl">thai noodle soup aka</h2>
