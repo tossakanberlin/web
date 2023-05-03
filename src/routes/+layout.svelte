@@ -1,13 +1,13 @@
 <script>
+	import { hamburger } from '$lib/store'
 
-	import '../app.css';
-	import { Hamburger } from 'svelte-hamburgers';
-	  let open = false;
-	
+	import { Hamburger } from 'svelte-hamburgers'
+	import '../app.css'
 </script>
 
-<nav class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 ">
-	
+<nav
+	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 "
+>
 	<ul class="flex-1 justify-start mr-auto md:flex hidden items-center">
 		<li>
 			<a href="/" class="m-3 bg-growing-underline">Home</a>
@@ -17,7 +17,9 @@
 		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarab</a></li>
 	</ul>
 	<div class="max-h-[100px] max-w-[120px]">
-		<a href='/'><img src='/tosxmai_logo.png' class="w-full h-full object-contain" alt="tossakan"></a>
+		<a href="/"
+			><img src="/tosxmai_logo.png" class="w-full h-full object-contain" alt="tossakan" /></a
+		>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto items-center  ">
 		<h2><a href="/faq" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
@@ -38,21 +40,13 @@
 						d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
 					/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg
 				>
-			</a>		
+			</a>
 		</h2>
-		<div class='md:hidden inline-block' >
-			<Hamburger
-   			 bind:open
-    		--color="white" />
-
-
+		<div class="md:hidden inline-block">
+			<Hamburger bind:open={$hamburger} --color="white" />
 		</div>
-		
-
 	</div>
 </nav>
-
-
 
 <slot />
 
@@ -122,9 +116,7 @@
 			</div>
 		</div>
 		<div class="font-sans text-2xl flex flex-row justify-between text-blue_light">
-			<p class="">
-				@ 2021 Tossakan Berlin
-			</p>
+			<p class="">@ 2021 Tossakan Berlin</p>
 			<a href="/datenschutz" class="italic">Privacy Policy</a>
 		</div>
 	</div>

@@ -1,14 +1,13 @@
 <script lang="ts">
 	import Image from '$lib/components/Image.svelte'
+	import { hamburger } from '$lib/store'
 	import { quadOut } from 'svelte/easing'
 	import { fly, scale } from 'svelte/transition'
-
-	export let open: boolean
 </script>
 
 <article class=" h-fit relative font-serif">
-	{#if open}
-		<div>
+	{#if $hamburger}
+		<div class="w-full h-screen bg-white z-100" transition:fly>
 			{#each ['Home', 'Example', 'About', 'Contact'] as link, i}
 				<p transition:fly={{ y: -15, delay: 50 * i }}>
 					{link}
