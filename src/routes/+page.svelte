@@ -29,6 +29,7 @@
 					src="/tossakan_logo.png"
 					width={500}
 					class=" lg:w-[500px] w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500  "
+					important
 				/>
 				<h2
 					class="lg:text-5xl lg:m-5 text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-3 "
@@ -53,6 +54,7 @@
 					width={500}
 					src="/maiyarap_logo.png"
 					class=" lg:w-[500px]  w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					important
 				/>
 				<h2
 					class="lg:text-5xl lg:m-5 text-center text-white uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-3 "
