@@ -2,12 +2,12 @@
 	import Image from '$lib/components/Image.svelte'
 	import { hamburger } from '$lib/store'
 	import { quadOut } from 'svelte/easing'
-	import { fly, scale } from 'svelte/transition'
+	import { fade, fly, scale } from 'svelte/transition'
 </script>
 
 <article class=" h-fit relative font-serif">
 	{#if $hamburger}
-		<div class="w-full h-screen bg-white z-100" transition:fly>
+		<div class="w-full h-screen p-4 bg-white z-100" in:fade>
 			{#each ['Home', 'Example', 'About', 'Contact'] as link, i}
 				<p transition:fly={{ y: -15, delay: 50 * i }}>
 					{link}

@@ -1,10 +1,14 @@
 <script>
 	import { hamburger } from '$lib/store'
 
+	import Image from '$lib/components/Image.svelte'
 	import { Hamburger } from 'svelte-hamburgers'
 	import '../app.css'
 </script>
 
+<svelte:head>
+	<title>Tossakan Berlin</title>
+</svelte:head>
 <nav
 	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 "
 >
@@ -18,7 +22,7 @@
 	</ul>
 	<div class="max-h-[100px] max-w-[120px]">
 		<a href="/"
-			><img src="/tosxmai_logo.png" class="w-full h-full object-contain" alt="tossakan" /></a
+			><Image src="/tosxmai_logo.png" class="w-full h-full object-contain" alt="tossakan" /></a
 		>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto items-center  ">
