@@ -11,7 +11,7 @@
 			alt="tossakan"
 		/>
 		<div
-			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
+			class="justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
 		>
 			<div class="grid text-xl gap-10">
 				<div
@@ -116,7 +116,7 @@
 			</div>
 
 			<div class="grid gap-10 text-center md:text-start">
-				<div class="flex flex-col text-blue mt-[5rem] md:mt-0">
+				<div class="text-blue mt-[5rem] md:mt-0">
 					<div class="grid gap-3">
 						<div class="font-serif text-5xl">
 							<h2>Special Events & Private Parties</h2>
