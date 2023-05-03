@@ -56,7 +56,7 @@
 		class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
 	>
 		<img
-			class="flex md:hidden max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+			class="block md:hidden max-h-[360px] w-full object-contain top-0 left-0"
 			src="/tossakan_logo.png"
 			alt="tossakan"
 		/>
@@ -68,7 +68,7 @@
 					alt="tossakan_half"
 				/>
 			</div>
-			<div class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10">
+			<div class="flex flex-col text-center md:text-end xl:text-start self-start gap-10">
 				<div
 					class="flex flex-col bg-blue font-serif h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
 				>
