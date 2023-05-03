@@ -76,7 +76,7 @@
 				</div>
 				<div class="max-h-[540px] md:z-10">
 					<img
-					class="absolute md:static hidden md:block max-h-full w-full object-contain top-0 -left-1/4"
+					class="absolute hidden md:block max-h-full w-full object-contain top-0 -left-1/4"
 					src="/tossakan_logo_half.png"
 					alt="tossakan_half"
 				/>
