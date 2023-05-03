@@ -36,7 +36,13 @@
 					Tossakan<br />P-Berg
 				</h2>
 			</div>
-			<Image src="/vertical_left.jpeg" class="  z-[-1] object-contain w-full" />
+			<Image
+				prioritize
+				eager
+				important
+				src="/vertical_left.jpeg"
+				class="  z-[-1] object-contain w-full"
+			/>
 		</div>
 
 		<div class="relative flex items-center justify-center group ">
@@ -54,7 +60,13 @@
 					Maiyarap<br />x-Berg
 				</h2>
 			</div>
-			<Image src="/vertical_right.jpeg" class="  z-[-1] object-contain w-full " />
+			<Image
+				src="/vertical_right.jpeg"
+				class="  z-[-1] object-contain w-full "
+				prioritize
+				eager
+				important
+			/>
 		</div>
 	</div>
 </article>

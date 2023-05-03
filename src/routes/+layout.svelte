@@ -26,6 +26,7 @@
 				src="/tosxmai_logo.png"
 				class="w-full h-full object-contain"
 				alt="tossakan"
+				important
 				width={120}
 			/></a
 		>
