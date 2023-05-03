@@ -3,27 +3,25 @@
 </script>
 
 <div class="justify-between items-center bg-green_light text-pink py-10">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
-		<div class="md:relative max-h-[360px] w-full">
-			<Image
-				width={600}
-				src="tossakan_logo.png"
-				class="md:absolute max-h-full w-full object-contain top-1/4 left-0"
-				alt="tossakan"
-			/>
-		</div>
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+		<Image
+			width={600}
+			src="tossakan_logo.png"
+			class="max-h-[360px] w-full object-contain top-0 left-0"
+			alt="tossakan"
+		/>
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
 		>
 			<div class="grid text-xl gap-10">
 				<div
-					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10 "
+					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10"
 				>
 					<div class="flex flex-col">
 						<h2 class="text-8xl">TOSSAKAN</h2>
 						<h2 class="text-4xl">SCLIEMANNSTRASSE 16, 10437 BERLIN</h2>
 					</div>
-					<div class="hidden xl:flex flex-col justify-center items-center ">
+					<div class="hidden xl:flex flex-col justify-center items-center">
 						<button
 							type="submit"
 							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
@@ -83,7 +81,9 @@
 <div class="grid justify-center items-center bg-white py-10">
 	<div class="flex m-10">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-			<div class="text-blue flex flex-col gap-[5rem] text-center md:text-start items-center md:items-start">
+			<div
+				class="text-blue flex flex-col gap-[5rem] text-center md:text-start items-center md:items-start"
+			>
 				<div class="grid gap-3">
 					<div class="font-serif text-5xl">
 						<h2>TABLE RESERVATION 🍷</h2>
@@ -116,7 +116,7 @@
 			</div>
 
 			<div class="grid gap-10 text-center md:text-start">
-				<div class="flex flex-col text-blue  mt-[5rem] md:mt-0">
+				<div class="flex flex-col text-blue mt-[5rem] md:mt-0">
 					<div class="grid gap-3">
 						<div class="font-serif text-5xl">
 							<h2>Special Events & Private Parties</h2>
