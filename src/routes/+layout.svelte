@@ -22,7 +22,12 @@
 	</ul>
 	<div class="max-h-[100px] max-w-[120px]">
 		<a href="/"
-			><Image src="/tosxmai_logo.png" class="w-full h-full object-contain" alt="tossakan" /></a
+			><Image
+				src="/tosxmai_logo.png"
+				class="w-full h-full object-contain"
+				alt="tossakan"
+				width={120}
+			/></a
 		>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto items-center  ">

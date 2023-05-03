@@ -27,6 +27,7 @@
 			>
 				<Image
 					src="/tossakan_logo.png"
+					width={500}
 					class=" lg:w-[500px] w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500  "
 				/>
 				<h2
@@ -43,6 +44,7 @@
 				class="  absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-8 md:px-6 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<Image
+					width={500}
 					src="/maiyarap_logo.png"
 					class=" lg:w-[500px]  w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 				/>
