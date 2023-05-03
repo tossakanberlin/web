@@ -15,36 +15,24 @@
 		>
 			<div class="grid text-xl gap-10">
 				<div
-					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10"
+					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif gap-10 xl:gap-0 "
 				>
-					<div class="flex flex-col">
+					<div class="flex flex-col col-span-full xl:col-span-1">
 						<h2 class="text-5xl sm:text-8xl">TOSSAKAN</h2>
 						<h2 class="text-4xl">SCLIEMANNSTRASSE 16, 10437 BERLIN</h2>
 					</div>
-					<div class="hidden xl:flex flex-col justify-center items-center">
+					<div class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 justify-center items-center lg:items-start xl:items-center">
 						<button
 							type="submit"
-							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 lg:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
 							>MENU
 						</button>
 						<button
 							type="submit"
-							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+							class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
 							>BOOK A TABLE
 						</button>
 					</div>
-				</div>
-				<div class="flex xl:hidden flex-col md:flex-row justify-center items-center">
-					<button
-						type="submit"
-						class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl md:mr-5 sm:mt-0 place-self-center my-5 py-1 w-[13rem]"
-						>MENU
-					</button>
-					<button
-						type="submit"
-						class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl sm:mt-0 place-self-center my-5 py-1 w-[13rem]"
-						>BOOK A TABLE
-					</button>
 				</div>
 				<h2 class="text-5xl">OPEN DAILY</h2>
 				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl">
