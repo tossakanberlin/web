@@ -132,23 +132,19 @@
 						</ul>
 					</div>
 				</div>
-				<div class="max-h-[360px]">
-					<Image
-						width={600}
-						src="tossakan_prev_1.jpeg"
-						class="object-cover max-h-full w-full"
-						alt="tossakan_drinks"
-					/>
-				</div>
-			</div>
-			<div class="max-h-[540px] col-span-full mt-10">
 				<Image
 					width={600}
-					src="tossakan_prev_2.jpeg"
-					class="max-h-full w-full object-cover"
-					alt="tossakan_foods"
+					src="tossakan_prev_1.jpeg"
+					class="max-h-[360px] w-full object-cover top-0 left-0"
+					alt="tossakan_drinks"
 				/>
 			</div>
+			<Image
+				width={600}
+				src="tossakan_prev_2.jpeg"
+				class="max-h-[540px] w-full col-span-full mt-10 object-cover top-0 left-0"
+				alt="tossakan_foods"
+			/>
 		</div>
 	</div>
 </div>
