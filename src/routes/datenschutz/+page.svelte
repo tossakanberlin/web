@@ -1,10 +1,10 @@
-<div class="flex flex-col md:items-start bg-green_light text-blue pt-10">
+<div class="flex flex-col md:items-start bg-green_light text-blue py-10">
 	<div
 		class="flex flex-row md:flex:col justify-center items-center md:items-start sm:ml-10 text-6xl md:text-8xl md:gap-4 font-serif my-5"
 	>
 		<h2>DATENSCHUTZ</h2>
 	</div>
-	<div class="flex flex-col md:justify-start items-center md:items-start md:ml-20 gap-8 my-5 mx-5">
+	<div class="flex flex-col md:justify-start items-center md:items-start gap-8 my-5 mx-5">
 		<div class="grid gap-3 text-center md:text-left">
 			<p>§ 1 Information über die Erhebung personenbezogener Daten</p>
 			<p>
