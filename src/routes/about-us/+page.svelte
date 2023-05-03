@@ -128,7 +128,7 @@
 		<div class="md:relative flex justify-between m-5 md:m-0">
 			<img
 				src="maiyarap_logo.png"
-				class="max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
 				alt="maiyarap"
 			/>
 		</div>
