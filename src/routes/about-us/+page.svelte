@@ -55,13 +55,11 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
 	>
-		<div class="flex md:hidden md:top-0 md:left-0 gap-5 justify-start">
-			<img
-				class="max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
-				src="/tossakan_logo.png"
-				alt="tossakan"
-			/>
-		</div>
+		<img
+			class="flex md:hidden max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+			src="/tossakan_logo.png"
+			alt="tossakan"
+		/>
 		<div class="md:col-span-2 flex h-full items-center">
 			<div class="max-h-[540px] max-w-[425px] md:z-10 col-span-1">
 				<img
