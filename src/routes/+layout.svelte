@@ -8,6 +8,7 @@
 
 <svelte:head>
 	<title>Tossakan Berlin</title>
+	<meta name="description" content="Tosskan berlin" />
 </svelte:head>
 <nav
 	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 "
