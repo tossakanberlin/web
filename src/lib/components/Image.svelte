@@ -14,7 +14,7 @@
 	let klass: string | undefined = undefined
 	export { klass as class }
 
-	export let loader = (src, width, quality) =>
+	export let loader = (src: string, width: number, quality: number) =>
 		dev
 			? src
 			: `https://tosskan-img.vercel.app/api/_image?${new URLSearchParams({
