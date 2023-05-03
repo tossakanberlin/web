@@ -1,24 +1,28 @@
 <div class="flex flex-col justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
-		<div class="flex flex-col justify-center items-center md:items-end h-full text-8xl px-5 pb-8 text-blue_light">
-			<h2>IT DOESN'T</h2>
-			<h2>GET MORE</h2>
-			<h2>AUTHENTIC</h2>
-			<h2>THAN THIS</h2>
+		<div
+			class="flex flex-col text-blue_light justify-center md:items-center h-full text-5xl sm:text-7xl lg:text-6xl xl:text-8xl px-5 pb-8 "
+		>
+			<div class="flex flex-col text-center md:text-end"> 
+				<h2>IT DOESN'T</h2>
+				<h2>GET MORE</h2>
+				<h2>AUTHENTIC</h2>
+				<h2>THAN THIS</h2>
+			</div>
 		</div>
-		<div class="grid md:col-span-2 gap-4 mx-6 md:text-start text-center">
+		<div class="grid md:col-span-2 gap-10 sm:gap-4 mx-6 md:text-start text-center">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
-			<p class="font-sans text-2xl">
+			<p class="font-sans text-xl xl:text-2xl ">
 				It all started with Chef Tanadon Santanaviboon, aka Don, 2nd generation Thai-German,
 				following his father´s footsteps to become a cook. Though starting as a fine dining cook,
 				Don realized his true passion lied in his ultimate comfort food, Thai Cuisine. He decided it
 				was time to introduce the Berliners the New Generation of Thai Cuisine.
 			</p>
-			<p class="font-sans text-xl">
+			<p class="font-sans text-xl xl:text-2xl">
 				Tossakan initially opened it´s doors in Charlottenburg, West Berlin. In 2022 reopened in
 				Schliemannstr. 16, Prenzlauerberg, East Berlin.
 			</p>
-			<p class="font-sans text-xl">
+			<p class="font-sans text-xl xl:text-2xl">
 				Bangkok is not just a beloved tourist destination for night life. It stands out for being a
 				world-known culinary capital. A new generation of passionate cooks have been rediscovering
 				their love and interest in traditional recipes and showing off their skills to deliver a
@@ -27,13 +31,13 @@
 			</p>
 		</div>
 		<div
-			class="md:col-span-3 font-serif text-4xl md:text-5xl mx-6 place-self-center md:place-self-start"
+			class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start"
 		>
-			<div class="flex">
+			<div class="flex text-center md:text-start ">
 				<h2 class="px-2 py-2 bg-blue text-white">We keep things real : the spice the heat</h2>
 			</div>
 		</div>
-		<div class="grid md:col-span-3 font-sans text-center md:text-start text-xl mx-5 md:mx-[10rem]">
+		<div class="grid md:col-span-3 font-sans text-center md:text-start text-xl xl:text-2xl mx-5 md:mx-[10rem] gap-10 sm:gap-4">
 			<p>
 				Following our traditional home cooking recipes with a small modern touch, Tossakan offers a
 				unique culinary experience. Our signature home made dumplings and Chef´s Choice menu stand
@@ -47,48 +51,51 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-start bg-blue_light text-white py-10">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-[10rem] items-start mx-6">
+<div class="flex flex-col justify-between bg-blue_light text-white py-10">
+	<div class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center">
 		<div class="relative md:col-span-2 flex h-full">
 			<div class="flex flex-row justify-between md:col-span-2 font-serif">
 				<div class="md:absolute md:top-0 md:left-[45%] flex flex-col gap-5">
 					<img
-						class="md:absolute visible md:invisible max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+						class="block md:hidden max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
 						src="/tossakan_logo.png"
 						alt="tossakan"
 					/>
 					<div
-						class="flex flex-col bg-blue h-min text-8xl px-8 py-5 gap-8 md:text-start text-center"
+						class="flex flex-col bg-blue h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-8xl px-8 py-5 gap-8 text-center md:text-end xl:text-start"
 					>
 						<h2>THE FEARLESS</h2>
 						<h2>THE FIERCEST</h2>
 					</div>
-					<div class="text-2xl font-sans px-5 md:text-start text-center">
+					<div class="text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start">
 						<p>
 							Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
 							Thai culture.
 						</p>
 					</div>
 				</div>
-				<img
-					class="absolute invisible md:visible max-h-full w-full object-contain top-0 -left-1/4 z-10"
+				<div class="max-h-[540px] md:z-10">
+					<img
+					class="absolute md:static hidden md:block max-h-full w-full object-contain top-0 -left-1/4"
 					src="/tossakan_logo_half.png"
 					alt="tossakan_half"
 				/>
+				</div>
+				
 			</div>
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
-			<ul class="text-center md:text-left text-5xl font-serif mb-10">
+			<ul class="text-center md:text-left text-4xl xl:text-5xl font-serif mb-10">
 				<li>THE DEMON KING</li>
 				<li>THE RULER OF RAKASAS</li>
 				<li>THE IMMORTAL GIANT</li>
 			</ul>
-			<div class="flex flex-col items-center md:item-start font-serif">
-				<div class="flex flex-col justify-center md:justify-start">
-					<p class="text-6xl md:text-7xl -mb-2">NO SUSHI NO PHO</p>
-					<p class="text-[2.5rem] md:text-5xl">NO ENTEKROSS SÜßSAUER</p>
+			<div class="flex flex-col items-center md:item-start text-center md:text-start font-serif">
+				<div class="flex flex-col justify-center md:justify-start xl:place-self-start">
+					<p class="text-6xl md:text-5xl lg:text-6xl xl:text-7xl -mb-2">NO SUSHI NO PHO</p>
+					<p class="text-5xl md:text-3xl lg:text-5xl">NO ENTEKROSS SÜßSAUER</p>
 				</div>
-				<div class="flex flex-1 text-[6.5rem] md:text-[7.5rem]">
+				<div class="flex flex-1 text-8xl sm:text-9xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full">
 					<h2 class="px-2 bg-white text-pink">JUST THAI</h2>
 				</div>
 			</div>
@@ -97,10 +104,10 @@
 </div>
 
 <div class="flex flex-col justify-between items-center bg-green_light text-blue py-10">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-12">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:py-12">
 		<div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
-			<h2 class="font-serif text-[2.5rem] mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
-			<div class="grid font-sans text-2xl gap-4">
+			<h2 class="font-serif text-5xl mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
+			<div class="grid font-sans text-xl xl:text-2xl gap-4">
 				<p>
 					Everybody has their go-to comfort food. For us, definately our noodle soups: Gieuw Tieuw.
 				</p>
@@ -118,10 +125,10 @@
 				</p>
 			</div>
 		</div>
-		<div class="md:relative flex justify-between">
+		<div class="md:relative flex justify-between m-5 md:m-0">
 			<img
 				src="maiyarap_logo.png"
-				class="md:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+				class="max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
 				alt="maiyarap"
 			/>
 		</div>
@@ -130,16 +137,20 @@
 
 <div class="flex flex-col justify-between items-center bg-pink_light text-blue py-20">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
-		<div class="md:relative">
-			<img src="tuktuk2_logo.png" class="md:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0" alt="tuktukbytossakan" />
+		<div class="md:relative place-self-center xl:place-self-auto">
+			<img
+				src="tuktuk2_logo.png"
+				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
+				alt="tuktukbytossakan"
+			/>
 		</div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
 		>
 			<div
-				class="flex flex-row justify-center md:justify-start text-center md:text-start md:items-end font-serif gap-4"
+				class="flex flex-row justify-center md:justify-start text-center md:text-start md:items-end font-serif gap-4 mb-5 sm:mb-0"
 			>
-				<h2 class="text-7xl md:text-9xl">TUK TUK</h2>
+				<h2 class="text-5xl md:text-8xl">TUK TUK</h2>
 				<h2 class="text-3xl md:text-5xl self-center">OUR POP UP EVENT</h2>
 			</div>
 			<div
@@ -152,12 +163,11 @@
 					Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion
 					fingerfoods, we got you covered.
 				</p>
-				<div class="flex flex-1 text-4xl font-serif mt-10 md:place-self-start place-content-center">
+				<div class="flex flex-1 text-3xl md:text-5xl font-serif mt-10 md:place-self-start place-content-center">
 					<h2 class="px-2 r-5 bg-white text-blue uppercase">stay curious, stay excited</h2>
 					<h2 class="ml-2">💚💛💙</h2>
 				</div>
 			</div>
-			
 		</div>
 	</div>
 </div>

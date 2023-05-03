@@ -6,10 +6,11 @@ export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     screens: {
-      sm: '480px',
+      sm: '440px',
       md: '976px',
       lg: '1024px',
-      xl: '1440px',
+      xl: '1280px',
+      '2xl': '1440px',
     },
     colors: {
       'white': '#fffaf2',
