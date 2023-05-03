@@ -80,7 +80,7 @@
 	</div>
 </div>
 
-<div class="justify-center items-center bg-white py-10">
+<div class="grid justify-center items-center bg-white py-10">
 	<div class="flex m-10">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 			<div class="text-blue flex flex-col gap-[5rem] text-center md:text-start items-center md:items-start">
@@ -115,8 +115,8 @@
 				</div>
 			</div>
 
-			<div class="flex flex-col gap-10 text-center md:text-start">
-				<div class="text-blue flex flex-col mt-[5rem] md:mt-0">
+			<div class="grid gap-10 text-center md:text-start">
+				<div class="flex flex-col text-blue  mt-[5rem] md:mt-0">
 					<div class="grid gap-3">
 						<div class="font-serif text-5xl">
 							<h2>Special Events & Private Parties</h2>
