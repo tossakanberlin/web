@@ -28,7 +28,12 @@
 	<div class="flex-1 flex justify-end ml-auto items-center  ">
 		<h2><a href="/faq" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
 		<h2>
-			<a href="https://www.instagram.com/tossakanberlin/" target="_blank" class="m-3">
+			<a
+				href="https://www.instagram.com/tossakanberlin/"
+				target="_blank"
+				rel="noreferrer"
+				class="m-3"
+			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
 					width="24"
