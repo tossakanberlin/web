@@ -1,3 +1,7 @@
+<script>
+	import Image from '$lib/components/Image.svelte'
+</script>
+
 <div class="justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
 		<div
@@ -55,16 +59,17 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
 	>
-		<img
+		<Image
+			width={600}
+			src="tossakan_logo.png"
 			class="block md:hidden max-h-[360px] w-full object-contain top-0 left-0"
-			src="/tossakan_logo.png"
 			alt="tossakan"
 		/>
 		<div class="md:col-span-2 flex h-full items-center">
 			<div class="max-h-[540px] max-w-[425px] md:z-10 col-span-1">
-				<img
+				<Image
+					src="tossakan_logo_half.png"
 					class="hidden md:block max-h-full w-full object-contain top-0 left-0"
-					src="/tossakan_logo_half.png"
 					alt="tossakan_half"
 				/>
 			</div>
@@ -129,11 +134,12 @@
 			</div>
 		</div>
 		<div class="md:relative flex justify-between m-5 md:m-0">
-			<img
-				src="maiyarap_logo.png"
-				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
+			<Image
+					width={600}
+					src="maiyarap_logo.png"
+					class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+					alt="maiyarap"
+				/>
 		</div>
 	</div>
 </div>
@@ -141,11 +147,12 @@
 <div class="justify-between items-center bg-pink_light text-blue py-20">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
 		<div class="md:relative place-self-center xl:place-self-auto">
-			<img
-				src="tuktuk2_logo.png"
-				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
-				alt="tuktukbytossakan"
-			/>
+			<Image
+					width={600}
+					src="tuktuk2_logo.png"
+					class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
+					alt="tuktukbytossakan"
+				/>
 		</div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
