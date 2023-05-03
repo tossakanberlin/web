@@ -6,7 +6,7 @@
 	export let open: boolean
 </script>
 
-<article class="w-screen h-fit relative font-serif">
+<article class=" h-fit relative font-serif">
 	{#if open}
 		<div>
 			{#each ['Home', 'Example', 'About', 'Contact'] as link, i}
@@ -18,7 +18,7 @@
 
 		<hr transition:scale={{ duration: 750, easing: quadOut, opacity: 1 }} />
 	{/if}
-	<div class=" absolute top-0 m-2 w-full text-center z-10">
+	<div class="left-0 absolute top-0  w-full text-center z-10">
 		<h1 class="text-7xl text-white uppercase my-5">Neo-Thai Cuisine</h1>
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2">
