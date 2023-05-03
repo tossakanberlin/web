@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { dev } from '$app/environment';
 	import type { Loader } from '$lib/@types/Loader.js';
 
 	export let src: string;
@@ -15,11 +16,13 @@
 	export { klass as class };
 
 	export let loader: Loader = (src, width, quality) =>
-		`/api/_image?${new URLSearchParams({
-			url: src,
-			w: width.toString(),
-			q: quality.toString()
-		}).toString()}`;
+		dev
+			? src
+			: `/api/_image?${new URLSearchParams({
+					url: src,
+					w: width.toString(),
+					q: quality.toString()
+			  }).toString()}`;
 
 	// all possible sizes from devices width to regular placeholders
 	const allSizes = [16, 32, 48, 64, 96, 128, 256, 384, 640, 750, 828, 1080, 1200, 1920, 2048, 3840];
