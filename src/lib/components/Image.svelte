@@ -18,7 +18,7 @@
 		dev
 			? src
 			: `https://tosskan-img.vercel.app/api/_image?${new URLSearchParams({
-					url: src,
+					url: `https://web-518.pages.dev` + src,
 					w: width.toString(),
 					q: quality.toString()
 			  }).toString()}`
