@@ -11,7 +11,7 @@
 			alt="tossakan"
 		/>
 		<div
-			class="justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
+			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
 		>
 			<div class="grid text-xl gap-10">
 				<div
@@ -116,7 +116,7 @@
 			</div>
 
 			<div class="grid gap-10 text-center md:text-start">
-				<div class="text-blue mt-[5rem] md:mt-0">
+				<div class="flex flex-col text-blue mt-[5rem] md:mt-0">
 					<div class="grid gap-3">
 						<div class="font-serif text-5xl">
 							<h2>Special Events & Private Parties</h2>
@@ -132,19 +132,19 @@
 						</ul>
 					</div>
 				</div>
+					<Image
+						width={600}
+						src="tossakan_prev_1.jpeg"
+						class="max-h-[360px] w-full object-cover top-0 left-0"
+						alt="tossakan_drinks"
+					/>
+			</div>
 				<Image
 					width={600}
-					src="tossakan_prev_1.jpeg"
-					class="max-h-[360px] w-full object-cover top-0 left-0"
-					alt="tossakan_drinks"
+					src="tossakan_prev_2.jpeg"
+					class="max-h-[540px] w-full col-span-full mt-10 object-cover top-0 left-0"
+					alt="tossakan_foods"
 				/>
-			</div>
-			<Image
-				width={600}
-				src="tossakan_prev_2.jpeg"
-				class="max-h-[540px] w-full col-span-full mt-10 object-cover top-0 left-0"
-				alt="tossakan_foods"
-			/>
 		</div>
 	</div>
 </div>
