@@ -167,7 +167,7 @@
 					fingerfoods, we got you covered.
 				</p>
 				<div
-					class="flex flex-1 text-3xl md:text-5xl font-serif mt-10 md:place-self-start place-content-center"
+					class="flex flex-1 text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-serif mt-10 md:place-self-start place-content-center"
 				>
 					<h2 class="px-2 r-5 bg-white text-blue uppercase">stay curious, stay excited</h2>
 					<h2 class="ml-2">💚💛💙</h2>
