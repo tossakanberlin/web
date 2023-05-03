@@ -21,9 +21,9 @@
 		<h1 class="text-7xl text-white uppercase my-5">Neo-Thai Cuisine</h1>
 	</div>
 	<div class="grid grid-cols-1 md:grid-cols-2">
-		<div class="  relative flex items-center justify-center group    ">
+		<div class="relative flex items-center justify-center group    ">
 			<div
-				class="   absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-8 md:px-6 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
+				class="absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-8 md:px-6 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<Image
 					src="/tossakan_logo.png"
@@ -42,7 +42,7 @@
 				eager
 				important
 				src="/vertical_left.jpeg"
-				class="  z-[-1] object-contain w-full"
+				class="z-[-1] object-contain w-full"
 			/>
 		</div>
 

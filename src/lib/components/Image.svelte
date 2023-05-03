@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { dev } from '$app/environment'
+
 	export let src: string
 	export let width: number | undefined = undefined
 	export let height: number | undefined = undefined
@@ -13,10 +15,10 @@
 	export { klass as class }
 
 	export let loader = (src: string, width: number, quality: number) =>
-		false
+		dev && false
 			? src
 			: `https://tosskan-img.vercel.app/api/_image?${new URLSearchParams({
-					url: `https://web-518.pages.dev` + src,
+					url: `https://web-518.pages.dev` + (src.startsWith('/') ? src : '/' + src),
 					w: width.toString(),
 					q: quality.toString()
 			  }).toString()}`
