@@ -1,9 +1,9 @@
 <div class="flex flex-col justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
 		<div
-			class="flex flex-col text-blue_light justify-center md:items-center h-full text-5xl sm:text-7xl lg:text-6xl xl:text-8xl px-5 pb-8 "
+			class="flex flex-col text-blue_light justify-center md:items-center h-full text-5xl sm:text-7xl lg:text-6xl xl:text-8xl px-5 pb-8"
 		>
-			<div class="flex flex-col text-center md:text-end"> 
+			<div class="flex flex-col text-center md:text-end">
 				<h2>IT DOESN'T</h2>
 				<h2>GET MORE</h2>
 				<h2>AUTHENTIC</h2>
@@ -12,7 +12,7 @@
 		</div>
 		<div class="grid md:col-span-2 gap-10 sm:gap-4 mx-6 md:text-start text-center">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
-			<p class="font-sans text-xl xl:text-2xl ">
+			<p class="font-sans text-xl xl:text-2xl">
 				It all started with Chef Tanadon Santanaviboon, aka Don, 2nd generation Thai-German,
 				following his father´s footsteps to become a cook. Though starting as a fine dining cook,
 				Don realized his true passion lied in his ultimate comfort food, Thai Cuisine. He decided it
@@ -30,14 +30,14 @@
 				Cuisine, our appreciation to our culture.
 			</p>
 		</div>
-		<div
-			class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start"
-		>
-			<div class="flex text-center md:text-start ">
+		<div class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start">
+			<div class="flex text-center md:text-start">
 				<h2 class="px-2 py-2 bg-blue text-white">We keep things real : the spice the heat</h2>
 			</div>
 		</div>
-		<div class="grid md:col-span-3 font-sans text-center md:text-start text-xl xl:text-2xl mx-5 md:mx-[10rem] gap-10 sm:gap-4">
+		<div
+			class="grid md:col-span-3 font-sans text-center md:text-start text-xl xl:text-2xl mx-5 md:mx-[10rem] gap-10 sm:gap-4"
+		>
 			<p>
 				Following our traditional home cooking recipes with a small modern touch, Tossakan offers a
 				unique culinary experience. Our signature home made dumplings and Chef´s Choice menu stand
@@ -52,36 +52,39 @@
 </div>
 
 <div class="flex flex-col justify-between bg-blue_light text-white py-10">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center">
-		<div class="relative md:col-span-2 flex h-full">
-			<div class="flex flex-row justify-between md:col-span-2 font-serif">
-				<div class="md:absolute md:top-0 md:left-[45%] flex flex-col gap-5">
-					<img
-						class="block md:hidden max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
-						src="/tossakan_logo.png"
-						alt="tossakan"
-					/>
-					<div
-						class="flex flex-col bg-blue h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-8xl px-8 py-5 gap-8 text-center md:text-end xl:text-start"
-					>
-						<h2>THE FEARLESS</h2>
-						<h2>THE FIERCEST</h2>
-					</div>
-					<div class="text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start">
-						<p>
-							Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
-							Thai culture.
-						</p>
-					</div>
-				</div>
-				<div class="max-h-[540px] md:z-10">
-					<img
-					class="absolute hidden md:block max-h-full w-full object-contain top-0 -left-1/4"
+	<div
+		class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
+	>
+		<div class="flex md:hidden md:top-0 md:left-0 gap-5 justify-start">
+			<img
+				class="max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+				src="/tossakan_logo.png"
+				alt="tossakan"
+			/>
+		</div>
+		<div class="md:col-span-2 flex h-full items-center">
+			<div class="max-h-[540px] max-w-[425px] md:z-10 col-span-1">
+				<img
+					class="hidden md:block max-h-full w-full object-contain top-0 left-0"
 					src="/tossakan_logo_half.png"
 					alt="tossakan_half"
 				/>
+			</div>
+			<div class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10">
+				<div
+					class="flex flex-col bg-blue font-serif h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
+				>
+					<h2 class="flex flex-1">THE FEARLESS</h2>
+					<h2 class="flex flex-1">THE FIERCEST</h2>
 				</div>
-				
+				<div
+					class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start grow-0"
+				>
+					<p>
+						Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
+						Thai culture.
+					</p>
+				</div>
 			</div>
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
@@ -95,7 +98,9 @@
 					<p class="text-6xl md:text-5xl lg:text-6xl xl:text-7xl -mb-2">NO SUSHI NO PHO</p>
 					<p class="text-5xl md:text-3xl lg:text-5xl">NO ENTEKROSS SÜßSAUER</p>
 				</div>
-				<div class="flex flex-1 text-8xl sm:text-9xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full">
+				<div
+					class="flex flex-1 text-8xl sm:text-9xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full"
+				>
 					<h2 class="px-2 bg-white text-pink">JUST THAI</h2>
 				</div>
 			</div>
@@ -163,7 +168,9 @@
 					Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion
 					fingerfoods, we got you covered.
 				</p>
-				<div class="flex flex-1 text-3xl md:text-5xl font-serif mt-10 md:place-self-start place-content-center">
+				<div
+					class="flex flex-1 text-3xl md:text-5xl font-serif mt-10 md:place-self-start place-content-center"
+				>
 					<h2 class="px-2 r-5 bg-white text-blue uppercase">stay curious, stay excited</h2>
 					<h2 class="ml-2">💚💛💙</h2>
 				</div>
