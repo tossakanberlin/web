@@ -18,7 +18,7 @@
 					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif md:gap-0 gap-10"
 				>
 					<div class="flex flex-col">
-						<h2 class="text-8xl">TOSSAKAN</h2>
+						<h2 class="text-5xl sm:text-8xl">TOSSAKAN</h2>
 						<h2 class="text-4xl">SCLIEMANNSTRASSE 16, 10437 BERLIN</h2>
 					</div>
 					<div class="hidden xl:flex flex-col justify-center items-center">
@@ -61,14 +61,14 @@
 						<h2>21:00</h2>
 					</div>
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl">
-					<div class="flex flex-col">
+				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl gap-5 xl:gap-0">
+					<div class="flex flex-col col-span-full xl:col-span-1">
 						<h2 class="text-3xl">TEL: +49 30 81477638</h2>
 					</div>
-					<div class="flex flex-col mt-10 md:mt-0">
+					<div class="flex flex-col mt-10 md:mt-0 place-self-center md:place-self-start xl:place-self-center">
 						<button
 							type="submit"
-							class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+							class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
 							>CONTACT US
 						</button>
 					</div>
