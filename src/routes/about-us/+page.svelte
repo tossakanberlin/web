@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-between items-center bg-white text-blue py-10 mx-6">
+<div class="justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
 		<div
 			class="flex flex-col text-blue_light justify-center md:items-center h-full text-5xl sm:text-7xl lg:text-6xl xl:text-8xl px-5 pb-8"
@@ -106,7 +106,7 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-center bg-green_light text-blue py-10">
+<div class="justify-between items-center bg-green_light text-blue py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:py-12">
 		<div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
 			<h2 class="font-serif text-5xl mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
@@ -138,7 +138,7 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-between items-center bg-pink_light text-blue py-20">
+<div class="justify-between items-center bg-pink_light text-blue py-20">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
 		<div class="md:relative place-self-center xl:place-self-auto">
 			<img
