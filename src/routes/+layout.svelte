@@ -10,7 +10,10 @@
 	<title>Tossakan Berlin</title>
 	<meta name="description" content="Tosskan berlin" />
 </svelte:head>
-<nav
+
+
+<nav class={$hamburger? "hidden":  "block"}>
+	<div
 	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 "
 >
 	<ul class="flex-1 justify-start mr-auto md:flex hidden items-center">
@@ -32,9 +35,9 @@
 			/></a
 		>
 	</div>
-	<div class="flex-1 flex justify-end ml-auto items-center  ">
-		<h2><a href="/faq" class="m-33 bg-growing-underline">FAQ and Contact</a></h2>
-		<h2>
+	<div class="flex-1 flex justify-end ml-auto items-center ">
+		<h2 class="hidden md:inline-block"><a href="/faq" class="m-33 bg-growing-underline ">FAQ and Contact</a></h2>
+		<h2 class="hidden md:inline-block">
 			<a
 				href="https://www.instagram.com/tossakanberlin/"
 				target="_blank"
@@ -62,11 +65,14 @@
 			<Hamburger bind:open={$hamburger} --color="white" />
 		</div>
 	</div>
+</div>
+
 </nav>
 
-<slot />
 
-<footer class="bg-blue py-5 font-serif text-white md:text-xl md:px-2">
+<slot />
+<footer class={$hamburger? "hidden":  "block"} >
+<div class="bg-blue py-5 font-serif text-white md:text-xl md:px-2">
 	<div class="mx-6 space-y-5">
 		<div class="text-center md:text-left">
 			<p class="text-5xl italic">OUR LOCATIONS</p>
@@ -136,4 +142,5 @@
 			<a href="/datenschutz" class="italic">Privacy Policy</a>
 		</div>
 	</div>
+</div>
 </footer>

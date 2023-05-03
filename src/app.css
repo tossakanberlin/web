@@ -10,6 +10,10 @@
         @apply relative no-underline hover:text-slate-200 before:content-[""] before:absolute before:block before:w-full before:h-0.5 before:bg-slate-200 before:transition-transform before:duration-[0.3s] before:ease-[ease] before:scale-x-0 before:left-0 before:bottom-0 hover:before:scale-x-100 transition-all ;
     }
 
+    .bg-growing-underline-green{
+        @apply relative no-underline hover:text-green_light before:content-[""] before:absolute before:block before:w-full before:h-0.5 before:bg-green_light before:transition-transform before:duration-[0.3s] before:ease-[ease] before:scale-x-0 before:left-0 before:bottom-0 hover:before:scale-x-100 transition-all ;
+    }
+
     .zoom {
         @apply transition-transform duration-[0.2s] mx-auto my-0 p-[50px] hover:scale-[1.2];
         /* Animation */
