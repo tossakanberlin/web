@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-between items-center bg-green_light text-pink py-10">
+<div class="justify-between items-center bg-green_light text-pink py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
 		<div class="md:relative max-h-[360px] w-full">
 			<img
@@ -64,7 +64,7 @@
 	</div>
 </div>
 
-<div class="flex flex-col justify-center items-center bg-white py-10">
+<div class="justify-center items-center bg-white py-10">
 	<div class="flex m-10">
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 			<div class="text-blue flex flex-col gap-[5rem]">
