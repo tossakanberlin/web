@@ -2,7 +2,7 @@
 	import Image from '$lib/components/Image.svelte'
 </script>
 
-<div class="justify-between items-center bg-green_light text-pink py-10">
+<div class="flex justify-between items-center bg-green_light text-pink py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
 		<div class="md:relative max-h-[360px] w-full">
 			<Image
