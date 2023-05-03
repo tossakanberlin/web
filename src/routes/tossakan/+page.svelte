@@ -2,7 +2,7 @@
 	import Image from '$lib/components/Image.svelte'
 </script>
 
-<div class="flex justify-between items-center bg-green_light text-pink py-10">
+<div class="justify-between items-center bg-green_light text-pink py-10">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 ">
 		<div class="md:relative max-h-[360px] w-full">
 			<Image
@@ -39,12 +39,12 @@
 				<div class="flex xl:hidden flex-col md:flex-row justify-center items-center">
 					<button
 						type="submit"
-						class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl md:mr-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+						class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl md:mr-5 sm:mt-0 place-self-center my-5 py-1 w-[13rem]"
 						>MENU
 					</button>
 					<button
 						type="submit"
-						class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+						class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl sm:mt-0 place-self-center my-5 py-1 w-[13rem]"
 						>BOOK A TABLE
 					</button>
 				</div>
@@ -132,18 +132,20 @@
 						</ul>
 					</div>
 				</div>
-				<div class="max-h-[360px] w-full">
+				<div class="max-h-[360px]">
 					<Image
+						width={600}
 						src="tossakan_prev_1.jpeg"
 						class="object-cover max-h-full w-full"
 						alt="tossakan_drinks"
 					/>
 				</div>
 			</div>
-			<div class="max-h-[540px] w-full col-span-full mt-10">
+			<div class="max-h-[540px] col-span-full mt-10">
 				<Image
+					width={600}
 					src="tossakan_prev_2.jpeg"
-					class=" max-h-full w-full object-cover"
+					class="max-h-full w-full object-cover"
 					alt="tossakan_foods"
 				/>
 			</div>
