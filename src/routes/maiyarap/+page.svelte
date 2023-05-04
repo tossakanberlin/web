@@ -21,7 +21,7 @@
 				>
 					<div class="flex flex-col col-span-full xl:col-span-1">
 						<h2 class="text-5xl sm:text-8xl">MAIYARAP</h2>
-						<h2 class="text-2xl sm:text-4xl">ORANIENSTRASSE 200, 10999 BERLIN</h2>
+						<h2 class="text-2xl font-sans md:-mt-5">ORANIENSTRASSE 200, 10999 BERLIN</h2>
 					</div>
 					<div
 						class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
@@ -34,24 +34,20 @@
 					</div>
 					<div class="flex flex-col justify-center items-center" />
 				</div>
-				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl gap-5">
+				<div class="grid grid-cols-1 md:grid-cols-2 text-3xl gap-5 font-sans">
 					<div>
 						<h2>OPEN DAILY</h2>
 						<h2>12:00 - 22:00</h2>
 					</div>
 					<div>
 						<h2>KITCHEN CLOSE</h2>
-					<h2>21:00</h2>
+						<h2>21:00</h2>
 					</div>
-					
-					
 				</div>
 				<div
-					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif gap-5 md:gap-5 xl:gap-0"
+					class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-sans gap-5 md:gap-5 xl:gap-0"
 				>
-					<h2 class="text-xl font-sans col-span-full xl:col-span-1">
-						*no reservations, just walk ins 😊
-					</h2>
+					<h2 class="text-xl col-span-full xl:col-span-1">*no reservations, just walk ins 😊</h2>
 					<div
 						class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
 					>
@@ -82,17 +78,16 @@
 		<h2 class="text-5xl">THAI NOODLE BAR</h2>
 		<div class="flex flex-col md:flex-row gap-5">
 			<h2 class="font-sans text-5xl">thai noodle soup aka</h2>
-			<h2 class="font-sans text-5xl bg-orange">gieuw tieuw</h2>
+			<h2 class="font-sans text-5xl bg-pink text-white">gieuw tieuw</h2>
 		</div>
 	</div>
 
 	<div
-		class="flex flex-col justify-between text-center md:text-start font-sans text-3xl gap-5 mb-10"
+		class="flex flex-col justify-between text-center md:text-start font-sans text-2xl gap-5 mb-10"
 	>
-		<p>If you´ve been to Thailand, you know how much we love our noodle soups.</p>
 		<p>
-			You´ll see Gieuw Tieuw sold in every corner 24/7 in Bangkok. That´s how great, diverse &
-			hearty our noodle soups are.
+			If you´ve been to Thailand, you know how much we love our noodle soups. The diverse & hearty
+			soup is sold in every corner 24/7 in Bangkok.
 		</p>
 		<p>Here at Maiyarap, our new location in Kreuzberg, we offer only the best of the best.</p>
 		<p>Gieuw Tieuw paired with our signature dumplings and unique cocktails🥂</p>

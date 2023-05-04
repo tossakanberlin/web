@@ -1,5 +1,7 @@
 <script>
 	import Image from '$lib/components/Image.svelte'
+	import { fly } from 'svelte/transition'
+	import { quintOut } from 'svelte/easing'
 </script>
 
 <div class="justify-between items-center bg-white text-blue py-10 mx-6">
@@ -16,38 +18,53 @@
 		</div>
 		<div class="grid md:col-span-2 gap-10 sm:gap-4 mx-6 md:text-start text-center">
 			<h2 class="font-serif text-5xl">NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY</h2>
-			<p class="font-sans text-xl xl:text-2xl">
+			<p class="font-sans text-xl">
 				It all started with Chef Tanadon Santanaviboon, aka Don, 2nd generation Thai-German,
 				following his father´s footsteps to become a cook. Though starting as a fine dining cook,
 				Don realized his true passion lied in his ultimate comfort food, Thai Cuisine. He decided it
 				was time to introduce the Berliners the New Generation of Thai Cuisine.
 			</p>
-			<p class="font-sans text-xl xl:text-2xl">
+			<p class="font-sans text-xl">
 				Tossakan initially opened it´s doors in Charlottenburg, West Berlin. In 2022 reopened in
 				Schliemannstr. 16, Prenzlauerberg, East Berlin.
 			</p>
-			<p class="font-sans text-xl xl:text-2xl">
+			<p class="font-sans text-xl">
 				Bangkok is not just a beloved tourist destination for night life. It stands out for being a
 				world-known culinary capital. A new generation of passionate cooks have been rediscovering
 				their love and interest in traditional recipes and showing off their skills to deliver a
-				unique Thai experience. At Tossakan, our main goal is to introduce a wider range of Thai
-				Cuisine, our appreciation to our culture.
+				unique Thai experience.
+			</p>
+			<p class="font-sans text-xl">
+				At Tossakan, our main goal is to introduce a wider range of Thai Cuisine, our appreciation
+				to our culture.
 			</p>
 		</div>
 		<div class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start">
-			<div class="flex text-center md:text-start">
+			<!-- {#if show} -->
+			<div
+				class="flex text-center md:text-start"
+				transition:fly={{
+					delay: 250,
+					duration: 300,
+					x: '-100vw',
+					y: 0,
+					opacity: 0.5,
+					easing: quintOut
+				}}
+			>
 				<h2 class="px-2 py-2 bg-blue text-white">We keep things real : the spice the heat</h2>
 			</div>
+			<!-- {/if} -->
 		</div>
 		<div
-			class="grid md:col-span-3 font-sans text-center md:text-start text-xl xl:text-2xl mx-5 md:mx-[10rem] gap-10 sm:gap-4"
+			class="grid md:col-span-3 font-sans text-center md:text-start mx-5 md:mx-[10rem] gap-10 sm:gap-4"
 		>
-			<p>
+			<p class="text-xl">
 				Following our traditional home cooking recipes with a small modern touch, Tossakan offers a
 				unique culinary experience. Our signature home made dumplings and Chef´s Choice menu stand
 				out for it´s most hearty flavors.
 			</p>
-			<p>
+			<p class="italic text-xl xl:text-2xl">
 				Here, we don´t adjust to cheap standards. This is how we THAI do. We love our food and our
 				culture
 			</p>
@@ -115,7 +132,7 @@
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-5 md:py-12">
 		<div class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10">
 			<h2 class="font-serif text-5xl mb-3">EXCUSE ME? YOU'VE NEVER TRIED GIEUW TIEUW?</h2>
-			<div class="grid font-sans text-xl xl:text-2xl gap-4">
+			<div class="grid font-sans text-xl gap-4">
 				<p>
 					Everybody has their go-to comfort food. For us, definately our noodle soups: Gieuw Tieuw.
 				</p>
@@ -135,11 +152,11 @@
 		</div>
 		<div class="md:relative flex justify-between m-5 md:m-0">
 			<Image
-					width={600}
-					src="maiyarap_logo.png"
-					class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
-					alt="maiyarap"
-				/>
+				width={600}
+				src="maiyarap_logo.png"
+				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+				alt="maiyarap"
+			/>
 		</div>
 	</div>
 </div>
@@ -148,11 +165,11 @@
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
 		<div class="md:relative place-self-center xl:place-self-auto">
 			<Image
-					width={600}
-					src="tuktuk2_logo.png"
-					class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
-					alt="tuktukbytossakan"
-				/>
+				width={600}
+				src="tuktuk2_logo.png"
+				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
+				alt="tuktukbytossakan"
+			/>
 		</div>
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
@@ -164,7 +181,7 @@
 				<h2 class="text-3xl md:text-5xl self-center">OUR POP UP EVENT</h2>
 			</div>
 			<div
-				class="flex flex-col justify-between text-center md:text-start font-sans text-2xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]"
+				class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-4 md:ml-[5rem] md:mr-[10rem] mx-[5rem]"
 			>
 				<p>Every once in a while, we all crave for that different something.</p>
 				<p>Something different, something new, but THAI?</p>
@@ -174,7 +191,7 @@
 					fingerfoods, we got you covered.
 				</p>
 				<div
-					class="flex flex-1 text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-serif mt-10 md:place-self-start place-content-center"
+					class="flex flex-1 text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-serif mt-5 md:place-self-start place-content-center"
 				>
 					<h2 class="px-2 r-5 bg-white text-blue uppercase">stay curious, stay excited</h2>
 					<h2 class="ml-2">💚💛💙</h2>
