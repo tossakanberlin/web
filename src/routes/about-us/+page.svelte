@@ -1,7 +1,23 @@
-<script>
+<script lang="ts">
 	import Image from '$lib/components/Image.svelte'
-	import { fly } from 'svelte/transition'
+	import { inview } from 'svelte-inview'
+	import { fly, fade } from 'svelte/transition'
 	import { quintOut } from 'svelte/easing'
+
+	let isInView_panel1: boolean
+	let isInView_tossakan: boolean
+	let isInView_maiyarap: boolean
+	let isInView_tuktuk: boolean
+	let options = {}
+	let defaultSlideParameters = {
+		delay: 250,
+		duration: 1000,
+		x: '-100vw',
+		y: 0,
+		opacity: 0.5,
+		easing: quintOut
+	}
+	let nexttrans: boolean
 </script>
 
 <div class="justify-between items-center bg-white text-blue py-10 mx-6">
@@ -39,22 +55,18 @@
 				to our culture.
 			</p>
 		</div>
-		<div class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start">
-			<!-- {#if show} -->
-			<div
-				class="flex text-center md:text-start"
-				transition:fly={{
-					delay: 250,
-					duration: 300,
-					x: '-100vw',
-					y: 0,
-					opacity: 0.5,
-					easing: quintOut
-				}}
-			>
-				<h2 class="px-2 py-2 bg-blue text-white">We keep things real : the spice the heat</h2>
-			</div>
-			<!-- {/if} -->
+		<div
+			use:inview={options}
+			on:inview_change={({ detail }) => {
+				isInView_panel1 = detail.inView
+			}}
+			class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start"
+		>
+			{#if isInView_panel1}
+				<div class="flex text-center md:text-start" in:fly={defaultSlideParameters} out:fade>
+					<h2 class="px-2 py-2 bg-blue text-white">We keep things real : the spice the heat</h2>
+				</div>
+			{/if}
 		</div>
 		<div
 			class="grid md:col-span-3 font-sans text-center md:text-start mx-5 md:mx-[10rem] gap-10 sm:gap-4"
@@ -75,36 +87,62 @@
 <div class="justify-between bg-blue_light text-white py-10">
 	<div
 		class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
+		use:inview={options}
+		on:inview_change={({ detail }) => {
+			isInView_tossakan = detail.inView
+		}}
 	>
-		<Image
-			width={600}
-			src="tossakan_logo.png"
-			class="block md:hidden max-h-[360px] w-full object-contain top-0 left-0"
-			alt="tossakan"
-		/>
-		<div class="md:col-span-2 flex h-full items-center">
-			<div class="max-h-[540px] max-w-[425px] md:z-10 col-span-1">
+		{#if isInView_tossakan}
+			<div
+				class="block md:hidden"
+				on:introstart={() => (nexttrans = false)}
+				on:introend={() => (nexttrans = true)}
+				transition:fade={{ duration: 500 }}
+			>
 				<Image
-					src="tossakan_logo_half.png"
-					class="hidden md:block max-h-full w-full object-contain top-0 left-0"
-					alt="tossakan_half"
+					width={600}
+					src="tossakan_logo.png"
+					class="block md:hidden max-h-[360px] w-full object-contain top-0 left-0"
+					alt="tossakan"
 				/>
 			</div>
+		{/if}
+		<div class="md:col-span-2 flex h-full items-center">
+			{#if isInView_tossakan}
+				<div
+					class="max-h-[540px] max-w-[425px] md:z-10 col-span-1"
+					on:introstart={() => (nexttrans = false)}
+					on:introend={() => (nexttrans = true)}
+					transition:fade={{ duration: 500 }}
+				>
+					<Image
+						src="tossakan_logo_half.png"
+						class="hidden md:block max-h-full w-full object-contain top-0 left-0"
+						alt="tossakan_half"
+					/>
+				</div>
+			{/if}
 			<div class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10">
-				<div
-					class="flex flex-col bg-blue font-serif h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
-				>
-					<h2 class="flex flex-1">THE FEARLESS</h2>
-					<h2 class="flex flex-1">THE FIERCEST</h2>
-				</div>
-				<div
-					class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start grow-0"
-				>
-					<p>
-						Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
-						Thai culture.
-					</p>
-				</div>
+				{#if nexttrans && isInView_tossakan}
+					<div
+						class="flex flex-col bg-blue font-serif h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
+						in:fly={defaultSlideParameters}
+						out:fade
+					>
+						<h2 class="flex flex-1">THE FEARLESS</h2>
+						<h2 class="flex flex-1">THE FIERCEST</h2>
+					</div>
+
+					<div
+						class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start grow-0"
+						transition:fade={{ duration: 1250 }}
+					>
+						<p>
+							Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
+							Thai culture.
+						</p>
+					</div>
+				{/if}
 			</div>
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
@@ -150,27 +188,48 @@
 				</p>
 			</div>
 		</div>
-		<div class="md:relative flex justify-between m-5 md:m-0">
-			<Image
-				width={600}
-				src="maiyarap_logo.png"
-				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
+		<div
+			class="md:relative flex justify-between m-5 md:m-0"
+			use:inview={options}
+			on:inview_change={({ detail }) => {
+				isInView_maiyarap = detail.inView
+			}}
+		>
+			{#if isInView_maiyarap}
+				<div transition:fade={{ duration: 1000 }}>
+					<Image
+						width={600}
+						src="maiyarap_logo.png"
+						class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+						alt="maiyarap"
+					/>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>
 
 <div class="justify-between items-center bg-pink_light text-blue py-20">
-	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6">
-		<div class="md:relative place-self-center xl:place-self-auto">
-			<Image
-				width={600}
-				src="tuktuk2_logo.png"
-				class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
-				alt="tuktukbytossakan"
-			/>
-		</div>
+	<div
+		class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6"
+		use:inview={options}
+		on:inview_change={({ detail }) => {
+			isInView_tuktuk = detail.inView
+		}}
+	>
+		{#if isInView_tuktuk}
+			<div
+				class="md:relative place-self-center xl:place-self-auto"
+				transition:fade={{ duration: 1000 }}
+			>
+				<Image
+					width={600}
+					src="tuktuk2_logo.png"
+					class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
+					alt="tuktukbytossakan"
+				/>
+			</div>
+		{/if}
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
 		>
