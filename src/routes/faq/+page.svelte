@@ -2,7 +2,7 @@
 	<div class="flex justify-center ml-10 text-6xl md:text-8xl gap-4">
 		<h2>IMPRESSUM</h2>
 	</div>
-	<div class="flex flex-col justify-between items-start font-sans text-xl my-10 mx-10 gap-4">
+	<div class="flex flex-col justify-between items-start font-sans text-2xl my-10 mx-10 gap-4">
 		<div class="font-sans">
 			<p>ChaCha Sweet Creations GmbH</p>
 			<p>Geschäftsführer: Tanadon Santanviboon</p>
@@ -24,11 +24,20 @@
 </div>
 
 <div class="flex flex-col md:flex-row bg-green text-white pt-10">
-	<div class="flex justify-center items-center md:items-start sm:ml-10 text-6xl md:text-8xl md:gap-4">
+	<div
+		class="flex justify-center items-center md:items-start sm:ml-10 text-6xl md:text-8xl md:gap-4"
+	>
 		<h2>CONTACT</h2>
 	</div>
-	<div class="grid grid-cols-1 sm:grid-cols-2 shadow-none rounded sm:gap-10 md:w-full mx-10 my-10 items-center md:items-start">
-		<form class="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4">
+	<div
+		class="grid grid-cols-1 sm:grid-cols-2 shadow-none rounded sm:gap-10 md:w-full mx-10 my-10 items-center md:items-start"
+	>
+		<form
+			class="sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-2xl"
+			action="mailto:woraphonchwg@gmail.com"
+			method="get"
+			enctype="text/plain"
+		>
 			<div class="grid">
 				<label for="name">Name *</label>
 				<input
@@ -70,16 +79,13 @@
 					rows="3"
 				/>
 			</div>
+			<input
+				type="submit"
+				class="flex justify-center items-center bg-pink rounded-md col-span-2 py-5 w-[10rem] shadow-none font-serif text-5xl mt-5 sm:mt-0"
+			/>
 		</form>
-
-		<button
-			type="submit"
-			class="flex justify-center items-center bg-pink rounded-md col-span-2 py-5 w-[10rem] shadow-none font-serif text-5xl mt-5 sm:mt-0">
-			Send
-		</button>
 	</div>
 </div>
-
 
 <style lang="postcss">
 	:global(html) {
