@@ -1,15 +1,31 @@
-<script>
+<script lang="ts">
 	import Image from '$lib/components/Image.svelte'
+	import { inview } from 'svelte-inview'
+	import { fade, scale } from 'svelte/transition'
+
+	let isInView_tossakan: boolean
+	let isInView_pic1: boolean
+	let options = {}
 </script>
 
 <div class="justify-between items-center bg-green_light text-pink py-10">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-		<Image
-			width={600}
-			src="tossakan_logo.png"
-			class="max-h-[360px] w-full object-contain top-0 left-0"
-			alt="tossakan"
-		/>
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+		use:inview={options}
+		on:inview_change={({ detail }) => {
+			isInView_tossakan = detail.inView
+		}}
+	>
+		{#if isInView_tossakan}
+			<div transition:fade={{ duration: 500 }}>
+				<Image
+					width={600}
+					src="tossakan_logo.png"
+					class="max-h-[360px] w-full object-contain top-0 left-0"
+					alt="tossakan"
+				/>
+			</div>
+		{/if}
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
 		>
@@ -108,7 +124,13 @@
 				</div>
 			</div>
 
-			<div class="grid gap-10 text-center md:text-start">
+			<div
+				class="grid gap-10 text-center md:text-start"
+				use:inview={options}
+				on:inview_change={({ detail }) => {
+					isInView_pic1 = detail.inView
+				}}
+			>
 				<div class="flex flex-col text-blue mt-[5rem] md:mt-0">
 					<div class="grid gap-3">
 						<div class="font-serif text-5xl">
@@ -125,19 +147,27 @@
 						</ul>
 					</div>
 				</div>
-				<Image
-					width={600}
-					src="tossakan_prev_1.jpeg"
-					class="max-h-[360px] w-full object-cover top-0 left-0"
-					alt="tossakan_drinks"
-				/>
+				{#if isInView_pic1}
+					<div in:scale={{ duration: 1500 }} out:fade>
+						<Image
+							width={600}
+							src="tossakan_prev_1.jpeg"
+							class="max-h-[360px] w-full object-cover top-0 left-0"
+							alt="tossakan_drinks"
+						/>
+					</div>
+				{/if}
 			</div>
-			<Image
-				width={600}
-				src="tossakan_prev_2.jpeg"
-				class="max-h-[540px] w-full col-span-full mt-10 object-cover top-0 left-0"
-				alt="tossakan_foods"
-			/>
+			{#if isInView_pic1}
+				<div class= "max-h-[540px] w-full col-span-full" in:scale={{ duration: 1500 }} out:fade>
+					<Image
+						width={600}
+						src="tossakan_prev_2.jpeg"
+						class="max-h-full w-full mt-10 object-cover top-0 left-0"
+						alt="tossakan_foods"
+					/>
+				</div>
+			{/if}
 		</div>
 	</div>
 </div>

@@ -1,17 +1,30 @@
-<script>
+<script lang="ts">
 	import Image from '$lib/components/Image.svelte'
+	import { inview } from 'svelte-inview'
+	import { fade, scale } from 'svelte/transition'
+
+	let isInView_maiyarap: boolean
+	let isInView_pic: boolean
+	let options = {}
 </script>
 
 <div class="flex flex-col justify-between items-center bg-blue text-white py-10">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-		<div class="block md:hidden max-h-[360px] w-full">
-			<Image
-				important
-				src="maiyarap_logo.png"
-				class="max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
-		</div>
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 gap-10"
+		use:inview={options}
+		on:inview_change={({ detail }) => {
+			isInView_maiyarap = detail.inView
+		}}
+	>
+		{#if isInView_maiyarap}
+			<div class="block md:hidden max-h-[360px] w-full" transition:fade={{ duration: 500 }}>
+				<Image
+					src="maiyarap_logo.png"
+					class="max-h-full w-full object-contain top-0 left-0"
+					alt="maiyarap"
+				/>
+			</div>
+		{/if}
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
 		>
@@ -60,14 +73,15 @@
 				</div>
 			</div>
 		</div>
-		<div class="hidden md:block max-h-[360px] w-full">
-			<Image
-				important
-				src="maiyarap_logo.png"
-				class="max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
-		</div>
+		{#if isInView_maiyarap}
+			<div class="hidden md:block max-h-[360px] w-full" transition:fade={{ duration: 500 }}>
+				<Image
+					src="maiyarap_logo.png"
+					class="max-h-full w-full object-contain top-0 left-0"
+					alt="maiyarap"
+				/>
+			</div>
+		{/if}
 	</div>
 </div>
 
@@ -92,9 +106,28 @@
 		<p>Here at Maiyarap, our new location in Kreuzberg, we offer only the best of the best.</p>
 		<p>Gieuw Tieuw paired with our signature dumplings and unique cocktails🥂</p>
 	</div>
-	<div class="flex max-h-[540px] w-full mb-5">
-		<img src="maiyarap_prev_1.jpg" class=" max-h-full w-full object-cover" alt="maiyarap_noodle" />
-	</div>
+	<!-- <div class="flex max-h-[540px] w-full mb-5 grid-cols-1 md:grid-cols-2">
+		<div>
+			<Image
+				src="maiyarap_pic.jpeg"
+				class="max-h-full w-full object-contain top-0 left-0"
+				alt="maiyarap"
+			/>
+		</div>
+		<div>
+			<Image
+				src="maiyarap_pic1.jpg"
+				class="max-h-full w-full object-contain top-0 left-0"
+				alt="maiyarap"
+			/>
+			<Image
+				width={600}
+				src="maiyarap_pic2.jpeg"
+				class="max-h-full w-full object-contain top-0 left-0"
+				alt="maiyarap"
+			/>
+		</div> -->
+	<!-- </div> -->
 </div>
 
 <style lang="postcss">

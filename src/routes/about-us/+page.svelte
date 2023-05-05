@@ -142,7 +142,7 @@
 							Thai culture.
 						</p>
 					</div>
-				{/if}
+				{/if} 	
 			</div>
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
