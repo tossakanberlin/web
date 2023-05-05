@@ -8,17 +8,18 @@
 	let options = {}
 </script>
 
-<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
+<div class="flex flex-col justify-between items-center bg-blue text-white py-20">
 	<div
-		class="grid grid-cols-1 md:grid-cols-2 gap-10"
+		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
 		use:inview={options}
 		on:inview_change={({ detail }) => {
 			isInView_maiyarap = detail.inView
 		}}
 	>
 		{#if isInView_maiyarap}
-			<div class="block md:hidden max-h-[360px] w-full" transition:fade={{ duration: 500 }}>
+			<div transition:fade={{ duration: 500 }}>
 				<Image
+					width={600}
 					src="maiyarap_logo.png"
 					class="max-h-full w-full object-contain top-0 left-0"
 					alt="maiyarap"
@@ -73,15 +74,6 @@
 				</div>
 			</div>
 		</div>
-		{#if isInView_maiyarap}
-			<div class="hidden md:block max-h-[360px] w-full" transition:fade={{ duration: 500 }}>
-				<Image
-					src="maiyarap_logo.png"
-					class="max-h-full w-full object-contain top-0 left-0"
-					alt="maiyarap"
-				/>
-			</div>
-		{/if}
 	</div>
 </div>
 
@@ -106,28 +98,42 @@
 		<p>Here at Maiyarap, our new location in Kreuzberg, we offer only the best of the best.</p>
 		<p>Gieuw Tieuw paired with our signature dumplings and unique cocktails🥂</p>
 	</div>
-	<!-- <div class="flex max-h-[540px] w-full mb-5 grid-cols-1 md:grid-cols-2">
-		<div>
-			<Image
-				src="maiyarap_pic.jpeg"
-				class="max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
+	<div class="w-full">
+		<div
+			class="grid w-full mb-5 grid-cols-1 md:grid-cols-2 gap-5"
+			use:inview={options}
+			on:inview_change={({ detail }) => {
+				isInView_pic = detail.inView
+			}}
+		>
+			{#if isInView_pic}
+				<div in:scale={{ duration: 1500, delay: 100 }}>
+					<Image
+						width={600}
+						src="maiyarap_pic.jpeg"
+						class="max-h-full w-full object-contain top-0 left-0"
+						alt="maiyarap"
+					/>
+				</div>
+				<div class="flex flex-col gap-5">
+					<div class="md:relative h-[50%] w-full" in:scale={{ duration: 1500, delay: 750 }}>
+						<Image
+							src="maiyarap_pic1.jpg"
+							class="md:absolute h-[100%] w-full object-cover top-0 left-0"
+							alt="maiyarap"
+						/>
+					</div>
+					<div class="relative h-[50%] w-full" in:scale={{ duration: 1500, delay: 1250 }}>
+						<Image
+							src="maiyarap_pic2.jpeg"
+							class="md:absolute h-[100%] w-full object-cover top-0 left-0"
+							alt="maiyarap"
+						/>
+					</div>
+				</div>
+			{/if}
 		</div>
-		<div>
-			<Image
-				src="maiyarap_pic1.jpg"
-				class="max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
-			<Image
-				width={600}
-				src="maiyarap_pic2.jpeg"
-				class="max-h-full w-full object-contain top-0 left-0"
-				alt="maiyarap"
-			/>
-		</div> -->
-	<!-- </div> -->
+	</div>
 </div>
 
 <style lang="postcss">

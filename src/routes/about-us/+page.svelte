@@ -17,7 +17,6 @@
 		opacity: 0.5,
 		easing: quintOut
 	}
-	let nexttrans: boolean
 </script>
 
 <div class="justify-between items-center bg-white text-blue py-10 mx-6">
@@ -93,12 +92,7 @@
 		}}
 	>
 		{#if isInView_tossakan}
-			<div
-				class="block md:hidden"
-				on:introstart={() => (nexttrans = false)}
-				on:introend={() => (nexttrans = true)}
-				transition:fade={{ duration: 500 }}
-			>
+			<div class="block md:hidden" in:fade={{ duration: 750, delay: 100 }}>
 				<Image
 					width={600}
 					src="tossakan_logo.png"
@@ -111,9 +105,7 @@
 			{#if isInView_tossakan}
 				<div
 					class="max-h-[540px] max-w-[425px] md:z-10 col-span-1"
-					on:introstart={() => (nexttrans = false)}
-					on:introend={() => (nexttrans = true)}
-					transition:fade={{ duration: 500 }}
+					in:fade={{ duration: 750, delay: 100 }}
 				>
 					<Image
 						src="tossakan_logo_half.png"
@@ -121,9 +113,10 @@
 						alt="tossakan_half"
 					/>
 				</div>
-			{/if}
-			<div class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10">
-				{#if nexttrans && isInView_tossakan}
+
+				<div
+					class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10"
+				>
 					<div
 						class="flex flex-col bg-blue font-serif h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
 						in:fly={defaultSlideParameters}
@@ -135,15 +128,15 @@
 
 					<div
 						class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start grow-0"
-						transition:fade={{ duration: 1250 }}
+						in:fade={{ duration: 1250, delay: 1000 }}
 					>
 						<p>
 							Inspired by the legendary Great Giant Tossakan, we fearlessly embrace ourselves, our
 							Thai culture.
 						</p>
 					</div>
-				{/if} 	
-			</div>
+				</div>
+			{/if}
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
 			<ul class="text-center md:text-left text-4xl xl:text-5xl font-serif mb-10">
@@ -189,14 +182,14 @@
 			</div>
 		</div>
 		<div
-			class="md:relative flex justify-between m-5 md:m-0"
+			class="md:relative flex justify-center md:justify-between m-5 md:m-0"
 			use:inview={options}
 			on:inview_change={({ detail }) => {
 				isInView_maiyarap = detail.inView
 			}}
 		>
 			{#if isInView_maiyarap}
-				<div transition:fade={{ duration: 1000 }}>
+				<div in:fade={{ duration: 1000 }}>
 					<Image
 						width={600}
 						src="maiyarap_logo.png"
@@ -220,7 +213,7 @@
 		{#if isInView_tuktuk}
 			<div
 				class="md:relative place-self-center xl:place-self-auto"
-				transition:fade={{ duration: 1000 }}
+				in:fade={{ duration: 1000 }}
 			>
 				<Image
 					width={600}

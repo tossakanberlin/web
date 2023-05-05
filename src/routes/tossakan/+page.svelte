@@ -148,7 +148,7 @@
 					</div>
 				</div>
 				{#if isInView_pic1}
-					<div in:scale={{ duration: 1500 }} out:fade>
+					<div in:scale={{ duration: 1500, delay: 100 }} out:fade>
 						<Image
 							width={600}
 							src="tossakan_prev_1.jpeg"
@@ -159,7 +159,11 @@
 				{/if}
 			</div>
 			{#if isInView_pic1}
-				<div class= "max-h-[540px] w-full col-span-full" in:scale={{ duration: 1500 }} out:fade>
+				<div
+					class="max-h-[540px] w-full col-span-full"
+					in:scale={{ duration: 1500, delay: 750 }}
+					out:fade
+				>
 					<Image
 						width={600}
 						src="tossakan_prev_2.jpeg"
