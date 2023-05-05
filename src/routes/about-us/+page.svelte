@@ -3,7 +3,8 @@
 	import { inview } from 'svelte-inview'
 	import { fly, fade } from 'svelte/transition'
 	import { quintOut } from 'svelte/easing'
-
+	import { hamburger } from '$lib/store'
+	import Menu from '$lib/components/hamburger_menu.svelte'
 	let isInView_panel1: boolean
 	let isInView_tossakan: boolean
 	let isInView_maiyarap: boolean
@@ -18,6 +19,7 @@
 		easing: quintOut
 	}
 </script>
+<Menu></Menu>
 <div class={$hamburger? "hidden":  "block"}> 
 <div class="justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">

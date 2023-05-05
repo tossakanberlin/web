@@ -4,12 +4,13 @@
 	import { fade, scale } from 'svelte/transition'
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
+	import Menu from '$lib/components/hamburger_menu.svelte'
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
 </script>
-
+<Menu></Menu>	
 <div class={$hamburger? "hidden":  "block"}> 
 
 

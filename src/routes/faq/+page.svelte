@@ -1,3 +1,15 @@
+<script>
+	import { hamburger } from '$lib/store'
+
+	
+	import Menu from '$lib/components/hamburger_menu.svelte'
+</script>
+
+
+
+
+<Menu></Menu>
+<div class={$hamburger? "hidden":  "block"}>
 <div class="flex flex-col md:flex-row bg-white text-green pt-10">
 	<div class="flex justify-center ml-10 text-6xl md:text-8xl gap-4">
 		<h2>IMPRESSUM</h2>
@@ -86,7 +98,7 @@
 		</form>
 	</div>
 </div>
-
+</div>
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.white);
