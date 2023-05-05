@@ -17,7 +17,7 @@
 		}}
 	>
 		{#if isInView_maiyarap}
-			<div transition:fade={{ duration: 500 }}>
+			<div in:fade={{ duration: 500 }}>
 				<Image
 					width={600}
 					src="maiyarap_logo.png"
@@ -25,6 +25,8 @@
 					alt="maiyarap"
 				/>
 			</div>
+		{:else}
+			<div class="h-[800px] md:h-full" />
 		{/if}
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
@@ -131,6 +133,8 @@
 						/>
 					</div>
 				</div>
+			{:else}
+				<div class="h-[500px] md:h-[1000px]" />
 			{/if}
 		</div>
 	</div>

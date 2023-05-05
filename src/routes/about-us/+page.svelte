@@ -136,6 +136,8 @@
 						</p>
 					</div>
 				</div>
+			{:else}
+				<div class="h-[1000px] md:h-full" />
 			{/if}
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
@@ -197,6 +199,8 @@
 						alt="maiyarap"
 					/>
 				</div>
+			{:else}
+				<div class="h-[500px] md:h-full" />
 			{/if}
 		</div>
 	</div>
@@ -211,10 +215,7 @@
 		}}
 	>
 		{#if isInView_tuktuk}
-			<div
-				class="md:relative place-self-center xl:place-self-auto"
-				in:fade={{ duration: 1000 }}
-			>
+			<div class="md:relative place-self-center xl:place-self-auto" in:fade={{ duration: 1000 }}>
 				<Image
 					width={600}
 					src="tuktuk2_logo.png"
@@ -222,6 +223,8 @@
 					alt="tuktukbytossakan"
 				/>
 			</div>
+		{:else}
+			<div class="h-[500px] md:h-full" />
 		{/if}
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"

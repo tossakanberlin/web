@@ -17,7 +17,7 @@
 		}}
 	>
 		{#if isInView_tossakan}
-			<div transition:fade={{ duration: 500 }}>
+			<div in:fade={{ duration: 500 }}>
 				<Image
 					width={600}
 					src="tossakan_logo.png"
@@ -25,6 +25,8 @@
 					alt="tossakan"
 				/>
 			</div>
+		{:else}
+			<div class="h-[800px] md:h-full" />
 		{/if}
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
@@ -171,6 +173,8 @@
 						alt="tossakan_foods"
 					/>
 				</div>
+			{:else}
+				<div class="h-[500px] md:h-[1000px]" />
 			{/if}
 		</div>
 	</div>
