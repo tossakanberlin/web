@@ -6,6 +6,7 @@
 	import { Hamburger } from 'svelte-hamburgers'
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
+	let isInView_pic2: boolean
 	let options = {}
 </script>
 
@@ -30,7 +31,7 @@
 				/>
 			</div>
 		{:else}
-			<div class="h-[800px] md:h-full" />
+			<div class="h-[360px] md:h-full" />
 		{/if}
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
@@ -164,22 +165,26 @@
 					</div>
 				{/if}
 			</div>
-			{#if isInView_pic1}
-				<div
-					class="max-h-[540px] w-full col-span-full"
-					in:scale={{ duration: 1500, delay: 750 }}
-					out:fade
-				>
-					<Image
-						width={600}
-						src="tossakan_prev_2.jpeg"
-						class="max-h-full w-full mt-10 object-cover top-0 left-0"
-						alt="tossakan_foods"
-					/>
-				</div>
-			{:else}
-				<div class="h-[500px] md:h-[1000px]" />
-			{/if}
+
+			<div
+				class="col-span-full mt-10"
+				use:inview={options}
+				on:inview_change={({ detail }) => {
+					isInView_pic2 = detail.inView
+				}}
+			>
+				{#if isInView_pic2}
+					<div class="max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 500 }} out:fade>
+						<Image
+							src="tossakan_prev_2.jpeg"
+							class="max-h-[540px] w-full object-cover top-0 left-0"
+							alt="tossakan_foods"
+						/>
+					</div>
+				{:else}
+					<div class="h-[500px] md:h-[1000px]" />
+				{/if}
+			</div>
 		</div>
 	</div>
 </div>
