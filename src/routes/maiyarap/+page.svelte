@@ -2,12 +2,13 @@
 	import Image from '$lib/components/Image.svelte'
 	import { inview } from 'svelte-inview'
 	import { fade, scale } from 'svelte/transition'
-
+	import { hamburger } from '$lib/store'
+	import { Hamburger } from 'svelte-hamburgers'
 	let isInView_maiyarap: boolean
 	let isInView_pic: boolean
 	let options = {}
 </script>
-
+<div class={$hamburger? "hidden":  "block"}> 
 <div class="flex flex-col justify-between items-center bg-blue text-white py-20">
 	<div
 		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
@@ -139,7 +140,7 @@
 		</div>
 	</div>
 </div>
-
+</div>
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.white);

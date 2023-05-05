@@ -2,11 +2,15 @@
 	import Image from '$lib/components/Image.svelte'
 	import { inview } from 'svelte-inview'
 	import { fade, scale } from 'svelte/transition'
-
+	import { hamburger } from '$lib/store'
+	import { Hamburger } from 'svelte-hamburgers'
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let options = {}
 </script>
+
+<div class={$hamburger? "hidden":  "block"}> 
+
 
 <div class="justify-between items-center bg-green_light text-pink py-10">
 	<div
@@ -178,6 +182,7 @@
 			{/if}
 		</div>
 	</div>
+</div>
 </div>
 
 <style lang="postcss">

@@ -18,7 +18,7 @@
 		easing: quintOut
 	}
 </script>
-
+<div class={$hamburger? "hidden":  "block"}> 
 <div class="justify-between items-center bg-white text-blue py-10 mx-6">
 	<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
 		<div
@@ -255,7 +255,7 @@
 		</div>
 	</div>
 </div>
-
+</div>
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.white);
