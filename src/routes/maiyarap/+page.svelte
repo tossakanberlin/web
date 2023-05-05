@@ -21,12 +21,12 @@
 				<Image
 					width={600}
 					src="maiyarap_logo.png"
-					class="max-h-full w-full object-contain top-0 left-0"
+					class="max-h-[360px] w-full object-contain top-0 left-0"
 					alt="maiyarap"
 				/>
 			</div>
 		{:else}
-			<div class="h-[800px] md:h-full" />
+			<div class="h-[360px] md:h-full" />
 		{/if}
 		<div
 			class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
