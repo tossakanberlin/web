@@ -12,6 +12,31 @@
 </script>
 
 <Menu />
+
+<div class="fixed bottom-[20px] right-[20px] z-10">
+	<div>
+		<button class="bg-blue rounded-full shadow-sm text-white px-5 py-5">
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="36"
+				height="36"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="lucide lucide-book"
+				><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
+					d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+				/></svg
+			>
+		</button>
+	</div>
+
+	<div id="quandoo-booking-widget" class="hidden" />
+</div>
+
 <div class={$hamburger ? 'hidden' : 'block'}>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
 		<div
@@ -54,11 +79,12 @@
 									>MENU
 								</button></a
 							>
-							<button
+							{@html `<div class="quandoo-widget-builder w-[15rem]" data-config='{"format":"text-button","bgcolor":"#1870C3","txcolor":"#ffffff","round":"yes","position":"","font":"md","merchant":97442,"txt":"Book a Table"}'></div>`}
+							<!-- <button
 								type="submit"
 								class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
 								>BOOK A TABLE
-							</button>
+							</button> -->
 						</div>
 					</div>
 					<h2 class="text-5xl font-sans">OPEN DAILY</h2>
@@ -191,6 +217,18 @@
 		</div>
 	</div>
 </div>
+
+<svelte:head>
+	<script
+		src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"
+	></script>
+	<script
+		src="https://booking-widget.quandoo.com/index.js"
+		data-merchant-id="97442"
+		data-theme="light"
+		data-primary-color="1870C3"
+	></script>
+</svelte:head>
 
 <style lang="postcss">
 	:global(html) {

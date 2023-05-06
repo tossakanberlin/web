@@ -19,4 +19,11 @@
         /* Animation */
     }
 
+    
+
+}
+
+
+.quandoo-button {
+    @apply block bg-pink text-white w-full rounded-md shadow-none font-serif text-2xl mx-0 sm:mt-0 my-5 py-1 text-center !important; 
 }
