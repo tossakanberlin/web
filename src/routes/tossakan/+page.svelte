@@ -18,7 +18,7 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
 		use:inview={options}
-		on:inview_change={({ detail }) => {
+		on:inview_enter={({ detail }) => {
 			isInView_tossakan = detail.inView
 		}}
 	>
@@ -135,7 +135,7 @@
 			<div
 				class="grid gap-10 text-center md:text-start"
 				use:inview={options}
-				on:inview_change={({ detail }) => {
+				on:inview_enter={({ detail }) => {
 					isInView_pic1 = detail.inView
 				}}
 			>
@@ -170,7 +170,7 @@
 			<div
 				class="col-span-full mt-10"
 				use:inview={options}
-				on:inview_change={({ detail }) => {
+				on:inview_enter={({ detail }) => {
 					isInView_pic2 = detail.inView
 				}}
 			>

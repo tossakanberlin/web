@@ -15,7 +15,7 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
 		use:inview={options}
-		on:inview_change={({ detail }) => {
+		on:inview_enter={({ detail }) => {
 			isInView_maiyarap = detail.inView
 		}}
 	>
@@ -107,7 +107,7 @@
 		<div
 			class="grid w-full mb-5 grid-cols-1 md:grid-cols-2 gap-5"
 			use:inview={options}
-			on:inview_change={({ detail }) => {
+			on:inview_enter={({ detail }) => {
 				isInView_pic = detail.inView
 			}}
 		>

@@ -58,7 +58,7 @@
 		</div>
 		<div
 			use:inview={options}
-			on:inview_change={({ detail }) => {
+			on:inview_enter={({ detail }) => {
 				isInView_panel1 = detail.inView
 			}}
 			class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start"
@@ -89,7 +89,7 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
 		use:inview={options}
-		on:inview_change={({ detail }) => {
+		on:inview_enter={({ detail }) => {
 			isInView_tossakan = detail.inView
 		}}
 	>
@@ -115,7 +115,10 @@
 						alt="tossakan_half"
 					/>
 				</div>
-
+				{:else}
+				<div class="h-[400px]" />
+			{/if}
+			{#if isInView_tossakan}
 				<div
 					class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10"
 				>
@@ -138,8 +141,8 @@
 						</p>
 					</div>
 				</div>
-			{:else}
-				<div class="h-[1000px] md:h-full" />
+				{:else}
+				<div class="h-[500px]" />
 			{/if}
 		</div>
 		<div class="flex flex-col justify-between md:justify-start">
@@ -188,7 +191,7 @@
 		<div
 			class="md:relative flex justify-center md:justify-between m-5 md:m-0"
 			use:inview={options}
-			on:inview_change={({ detail }) => {
+			on:inview_enter={({ detail }) => {
 				isInView_maiyarap = detail.inView
 			}}
 		>
@@ -202,7 +205,7 @@
 					/>
 				</div>
 			{:else}
-				<div class="h-[500px] md:h-full" />
+				<div class="h-[400px]" />
 			{/if}
 		</div>
 	</div>
@@ -212,7 +215,7 @@
 	<div
 		class="grid grid-cols-1 md:grid-cols-3 gap-4 mx-6"
 		use:inview={options}
-		on:inview_change={({ detail }) => {
+		on:inview_enter={({ detail }) => {
 			isInView_tuktuk = detail.inView
 		}}
 	>
@@ -226,7 +229,7 @@
 				/>
 			</div>
 		{:else}
-			<div class="h-[500px] md:h-full" />
+			<div class="h-[400px]" />
 		{/if}
 		<div
 			class="flex flex-col justify-between md:justify-start md:col-span-2 items-center md:items-start"
