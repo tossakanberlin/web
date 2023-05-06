@@ -10,7 +10,7 @@
 
 
 {#if $hamburger}
-	<div class="w-full h-screen p-4 bg-white z-100   flex flex-col items-center text-center text-5xl realtive font-sans " in:fade>
+	<div class="w-full h-screen p-2 bg-white z-100   flex flex-col items-center text-center text-5xl realtive font-sans " in:fade>
 		<nav class="flex flex-row w-full items-center justify-between py-5 px-10 top-0 left-0 absolute">
 			<h1 class="text-center "><a href ='/' class="items-center text-green">Tossakan</a></h1>    
 			<Hamburger bind:open={$hamburger} --color={"#00c69d"}  />
