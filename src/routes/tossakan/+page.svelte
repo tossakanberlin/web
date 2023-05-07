@@ -80,7 +80,7 @@
 							<a href="menu_tossakan.pdf" target="_blank">
 								<button
 									type="submit"
-									class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 lg:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
+									class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 lg:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem] md:w-[12rem] xl:w-[15rem]"
 									>MENU
 								</button></a
 							>
