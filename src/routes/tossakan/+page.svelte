@@ -5,28 +5,24 @@
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/hamburger_menu.svelte'
-	
+
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
 	let active = true
-
-	
 </script>
 
 <Menu />
 
-<div class="fixed bottom-[20px] right-[20px] z-10 " >
-	
-	
-	<div class="flex flex-col justify-end"  >
-		
-			
-		<div id="quandoo-booking-widget" class= {active? "hidden ":  "block"}/>
-	
-		
-		<button class=" bg-blue rounded-full shadow-sm text-white px-5 py-5 self-end "  on:click={() => active = !active}>
+<div class="fixed bottom-[20px] right-[20px] z-10">
+	<div class="flex flex-col justify-end">
+		<div id="quandoo-booking-widget" class={active ? 'hidden ' : 'block'} />
+
+		<button
+			class=" bg-blue rounded-full shadow-sm text-white px-5 py-5 self-end"
+			on:click={() => (active = !active)}
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="36"
@@ -43,13 +39,8 @@
 				/></svg
 			>
 		</button>
-	
-	
+	</div>
 </div>
-</div>
-
-
-
 
 <div class={$hamburger ? 'hidden' : 'block'}>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
@@ -123,11 +114,13 @@
 						<div
 							class="flex flex-col mt-10 md:mt-0 place-self-center md:place-self-start xl:place-self-center"
 						>
-							<button
-								type="submit"
-								class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
-								>CONTACT US
-							</button>
+							<a href="/faq?tossakan">
+								<button
+									type="submit"
+									class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+									>CONTACT US
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
