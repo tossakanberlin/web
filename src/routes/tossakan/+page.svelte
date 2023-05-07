@@ -85,11 +85,6 @@
 								</button></a
 							>
 							{@html `<div class="quandoo-widget-builder w-[15rem]" data-config='{"format":"text-button","bgcolor":"#1870C3","txcolor":"#ffffff","round":"yes","position":"","font":"md","merchant":97442,"txt":"Book a Table"}'></div>`}
-							<!-- <button
-								type="submit"
-								class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
-								>BOOK A TABLE
-							</button> -->
 						</div>
 					</div>
 					<h2 class="text-5xl font-sans">OPEN DAILY</h2>
