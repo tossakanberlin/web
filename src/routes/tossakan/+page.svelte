@@ -11,38 +11,40 @@
 	let isInView_pic2: boolean
 	let options = {}
 	let active = true
+
+	
 </script>
 
 <Menu />
 
-<div class="fixed bottom-[20px] right-[20px] z-10">
-	<div class="flex flex-col">
-		<div class={active ? 'hidden' : 'block'}>
-			<div id="quandoo-booking-widget" />
-		</div>
-		<div class="">
-			<button
-				class=" bg-blue rounded-full shadow-sm text-white px-5 py-5"
-				on:click={() => (active = !active)}
+<div class="fixed bottom-[20px] right-[20px] z-10 " >
+	
+	
+	<div class="flex flex-col justify-end"  >
+		
+			
+		<div id="quandoo-booking-widget" class= {active? "hidden ":  "block"}/>
+	
+		
+		<button class=" bg-blue rounded-full shadow-sm text-white px-5 py-5 self-end "  on:click={() => active = !active}>
+			<svg
+				xmlns="http://www.w3.org/2000/svg"
+				width="36"
+				height="36"
+				viewBox="0 0 24 24"
+				fill="none"
+				stroke="currentColor"
+				stroke-width="2"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				class="lucide lucide-book"
+				><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
+					d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+				/></svg
 			>
-				<svg
-					xmlns="http://www.w3.org/2000/svg"
-					width="36"
-					height="36"
-					viewBox="0 0 24 24"
-					fill="none"
-					stroke="currentColor"
-					stroke-width="2"
-					stroke-linecap="round"
-					stroke-linejoin="round"
-					class="lucide lucide-book"
-					><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
-						d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-					/></svg
-				>
-			</button>
-		</div>
-	</div>
+		</button>
+	
+	
 </div>
 
 <div class={$hamburger ? 'hidden' : 'block'}>
