@@ -73,11 +73,13 @@
 						<div
 							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
 						>
-							<button
-								type="submit"
-								class=" bg-green_light text-blue rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
-								>CONTACT US
-							</button>
+							<a href="/faq?maiyarap">
+								<button
+									type="submit"
+									class=" bg-green_light text-blue rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+									>CONTACT US
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>

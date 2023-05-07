@@ -5,50 +5,45 @@
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/hamburger_menu.svelte'
-	
+
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
 	let active = true
-	
-	
 </script>
 
 <Menu />
 
-<div class="fixed bottom-[20px] right-[20px] z-10 " >
-	
-	
-	<div class="flex flex-col ">
-		<div class= {active? "hidden":  "block"}>
-			<div id="quandoo-booking-widget"/>
+<div class="fixed bottom-[20px] right-[20px] z-10">
+	<div class="flex flex-col">
+		<div class={active ? 'hidden' : 'block'}>
+			<div id="quandoo-booking-widget" />
 		</div>
 		<div class="">
-		<button class=" bg-blue rounded-full shadow-sm text-white px-5 py-5"  on:click={() => active = !active}>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="36"
-				height="36"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				class="lucide lucide-book"
-				><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
-					d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-				/></svg
+			<button
+				class=" bg-blue rounded-full shadow-sm text-white px-5 py-5"
+				on:click={() => (active = !active)}
 			>
-		</button>
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="36"
+					height="36"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+					class="lucide lucide-book"
+					><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
+						d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+					/></svg
+				>
+			</button>
+		</div>
 	</div>
-	
 </div>
-</div>
-
-
-
 
 <div class={$hamburger ? 'hidden' : 'block'}>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
@@ -93,11 +88,6 @@
 								</button></a
 							>
 							{@html `<div class="quandoo-widget-builder w-[15rem]" data-config='{"format":"text-button","bgcolor":"#1870C3","txcolor":"#ffffff","round":"yes","position":"","font":"md","merchant":97442,"txt":"Book a Table"}'></div>`}
-							<!-- <button
-								type="submit"
-								class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
-								>BOOK A TABLE
-							</button> -->
 						</div>
 					</div>
 					<h2 class="text-5xl font-sans">OPEN DAILY</h2>
@@ -122,11 +112,13 @@
 						<div
 							class="flex flex-col mt-10 md:mt-0 place-self-center md:place-self-start xl:place-self-center"
 						>
-							<button
-								type="submit"
-								class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
-								>CONTACT US
-							</button>
+							<a href="/faq?tossakan">
+								<button
+									type="submit"
+									class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+									>CONTACT US
+								</button>
+							</a>
 						</div>
 					</div>
 				</div>
