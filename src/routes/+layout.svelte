@@ -22,7 +22,7 @@
 		</li>
 		<li><a href="/about-us" class="m-3 bg-growing-underline">About us</a></li>
 		<li><a href="/tossakan" class="m-3 bg-growing-underline">Tossakan</a></li>
-		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarab</a></li>
+		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarap</a></li>
 	</ul>
 	<div class="max-h-[100px] max-w-[120px]">
 		<a href="/"
