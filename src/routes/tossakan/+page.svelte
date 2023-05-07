@@ -10,7 +10,8 @@
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
-	let active = false
+	let active = true
+	
 	
 </script>
 
