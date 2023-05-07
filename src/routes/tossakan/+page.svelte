@@ -11,7 +11,7 @@
 	let isInView_pic2: boolean
 	let options = {}
 	let active = true
-	
+
 	
 </script>
 
@@ -20,12 +20,13 @@
 <div class="fixed bottom-[20px] right-[20px] z-10 " >
 	
 	
-	<div class="flex flex-col ">
-		<div class= {active? "hidden":  "block"}>
-			<div id="quandoo-booking-widget"/>
-		</div>
-		<div class="">
-		<button class=" bg-blue rounded-full shadow-sm text-white px-5 py-5"  on:click={() => active = !active}>
+	<div class="flex flex-col justify-end"  >
+		
+			
+		<div id="quandoo-booking-widget" class= {active? "hidden ":  "block"}/>
+	
+		
+		<button class=" bg-blue rounded-full shadow-sm text-white px-5 py-5 self-end "  on:click={() => active = !active}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="36"
@@ -42,7 +43,7 @@
 				/></svg
 			>
 		</button>
-	</div>
+	
 	
 </div>
 </div>

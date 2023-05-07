@@ -19,7 +19,11 @@
         /* Animation */
     }
 
-    
+    .reservation_menu_full_size{
+
+        @apply fixed w-full h-screen max-h-full rounded-none inset-0 z-20 !important;
+    }
+
 
 }
 

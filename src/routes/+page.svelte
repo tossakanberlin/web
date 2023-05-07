@@ -20,7 +20,7 @@
 				<Image
 					src="/tossakan_logo.png"
 					width={500}
-					class=" lg:w-[500px] w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500  "
+					class=" lg:w-[500px] w-[150px] md:w-[200px] mt-7 max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500  "
 					important
 				/>
 				<h2
@@ -34,7 +34,7 @@
 				eager
 				important
 				src="/vertical_left.jpeg"
-				class="z-[-1] object-contain w-full"
+				class="z-[-1] w-full h-[calc(100vh-130px)] object-cover"
 			/>
 		</div>
 
@@ -45,7 +45,7 @@
 				<Image
 					width={500}
 					src="/maiyarap_logo.png"
-					class=" lg:w-[500px]  w-[150px] md:w-[200px] mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
+					class=" lg:w-[500px]  w-[150px] md:w-[200px]  max-h-screen mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500"
 					important
 				/>
 				<h2
@@ -56,7 +56,7 @@
 			</div>
 			<Image
 				src="/vertical_right.jpeg"
-				class="  z-[-1] object-contain w-full "
+				class="  z-[-1] object-cover w-full h-[calc(100vh-130px)]"
 				prioritize
 				eager
 				important
