@@ -1,7 +1,7 @@
 import type { Actions } from './$types';
 import { render } from 'svelte-email';
 import nodemailer from 'nodemailer';
-import { fail, redirect } from '@sveltejs/kit'
+import { fail } from '@sveltejs/kit'
 import { PRIVATE_EMAIL_PASSWORD, PRIVATE_EMAIL_USERNAME } from '$env/static/private';
 import EmailP from '$lib/components/Emails.svelte';
 
