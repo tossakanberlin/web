@@ -5,17 +5,26 @@
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/hamburger_menu.svelte'
+	
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
+	let active = false
+	
 </script>
 
 <Menu />
 
-<div class="fixed bottom-[20px] right-[20px] z-10">
-	<div>
-		<button class="bg-blue rounded-full shadow-sm text-white px-5 py-5">
+<div class="fixed bottom-[20px] right-[20px] z-10 " >
+	
+	
+	<div class="flex flex-col ">
+		<div class= {active? "hidden":  "block"}>
+			<div id="quandoo-booking-widget"/>
+		</div>
+		<div class="">
+		<button class=" bg-blue rounded-full shadow-sm text-white px-5 py-5"  on:click={() => active = !active}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="36"
@@ -33,9 +42,12 @@
 			>
 		</button>
 	</div>
-
-	<div id="quandoo-booking-widget" class="hidden" />
+	
 </div>
+</div>
+
+
+
 
 <div class={$hamburger ? 'hidden' : 'block'}>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
