@@ -105,7 +105,7 @@ export const actions = {
 			html: emailHtml
 		}
 
-		const result = await fetch(`https://tosskan-img.vercel.app/api/email`, {
+		const result = await fetch(`https://img-tossakanberlin.vercel.app/api/email`, {
 			method: 'POST',
 			headers: {
 				'Content-Type': 'application/json'

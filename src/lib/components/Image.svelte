@@ -17,7 +17,7 @@
 	export let loader = (src: string, width: number, quality: number) =>
 		dev && false
 			? src
-			: `https://tosskan-img.vercel.app/api/_image?${new URLSearchParams({
+			: `https://img-tossakanberlin.vercel.app/api/_image?${new URLSearchParams({
 					url: `https://web-518.pages.dev` + (src.startsWith('/') ? src : '/' + src),
 					w: width.toString(),
 					q: quality.toString()
