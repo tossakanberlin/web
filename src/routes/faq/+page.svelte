@@ -73,7 +73,7 @@
 					}
 				}}
 			>
-				<div class="grid grid-cols-2 gap-x-10 items-end">
+				<div class="grid grid-cols-2 gap-x-5 md:gap-x-10 items-end">		
 					<div class="flex flex-col">
 						<label for="fname">Name *</label>
 						<input
