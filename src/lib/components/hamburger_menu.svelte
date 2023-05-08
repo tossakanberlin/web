@@ -10,18 +10,19 @@
 
 
 {#if $hamburger}
-	<div class="w-full h-screen py-2 bg-white z-100   flex flex-col items-center text-center text-5xl realtive font-sans " in:fade>
-		<nav class="flex flex-row w-full items-center justify-between py-2 px-10  top-0 left-0 absolute">
+	<div class="w-full h-screen fixed top-0 right-0 py-5 px-10 bg-white z-100   flex flex-col items-center text-center text-5xl realtive font-sans " in:fade>
+		<nav class="flex flex-row w-full h-[130px] items-center justify-between py-2 px-10 absolute top-0 left-0  ">
 			<h1 class="text-center "><a href ='/' class="items-center text-green">Tossakan</a></h1>    
-			<Hamburger bind:open={$hamburger} --color={"#00c69d"}  />
+			<div class='items-center'><Hamburger bind:open={$hamburger} --color={"#00c69d"}  /></div>
+			
 		</nav>
 		<div class="flex flex-col items-center h-full justify-center m-5 p-5">
 		
-			<h1 transition:fly={{ y: -15, delay: 50  }} class="m-3 md:m-5  bg-growing-underline-green text-green "><a href='/' on:click={handleClick} >Home</a></h1>
+			<p transition:fly={{ y: -15, delay: 50  }} class="m-3 md:m-5  bg-growing-underline-green text-green "><a href='/' on:click={handleClick} >Home</a></p>
 			<p transition:fly={{ y: -15, delay: 50  }} class=" m-3 md:m-5 bg-growing-underline-green text-green "><a href='/about-us' on:click={handleClick} >About us</a></p>
 			<p transition:fly={{ y: -15, delay: 50  }} class=" m-3 md:m-5 bg-growing-underline-green text-green "><a href='/tossakan' on:click={handleClick}>Tossakan</a></p>
 			<p transition:fly={{ y: -15, delay: 50  }} class=" m-3 md:m-5 bg-growing-underline-green text-green "><a href='/maiyarap ' on:click={handleClick}>Maiyarap</a></p>
-			<p transition:fly={{ y: -15, delay: 50  }} class=" m-3 md:m-5 bg-growing-underline-green text-green "><a href='/faq' on:click={handleClick}>FAQ and Contact</a></p>
+			<p transition:fly={{ y: -15, delay: 50  }} class=" m-3 md:m-5 bg-growing-underline-green text-green "><a href='/faq' on:click={handleClick}>FAQ & Contact</a></p>
 		
 		</div>
         <a href ='https://www.instagram.com/tossakanberlin/' class="items-center text-green" target="blank">

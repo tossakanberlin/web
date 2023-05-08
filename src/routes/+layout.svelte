@@ -12,14 +12,12 @@
 </svelte:head>
 
 
-<nav class={$hamburger? "hidden":  "block"}>
-	<div
-	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-2xl md:px-10 "
+<nav >
+	<div 
+	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-4xl "
 >
 	<ul class="flex-1 justify-start mr-auto md:flex hidden items-center">
-		<li>
-			<a href="/" class="m-3 bg-growing-underline">Home</a>
-		</li>
+		<li><a href="/" class="m-3 bg-growing-underline">Home</a></li>
 		<li><a href="/about-us" class="m-3 bg-growing-underline">About us</a></li>
 		<li><a href="/tossakan" class="m-3 bg-growing-underline">Tossakan</a></li>
 		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarap</a></li>
@@ -36,7 +34,7 @@
 		>
 	</div>
 	<div class="flex-1 flex justify-end ml-auto items-center ">
-		<h2 class="hidden md:inline-block"><a href="/faq" class="m-33 bg-growing-underline ">FAQ and Contact</a></h2>
+		<h2 class="hidden md:inline-block"><a href="/faq" class="m-33 bg-growing-underline ">FAQ & Contact</a></h2>
 		<h2 class="hidden md:inline-block">
 			<a
 				href="https://www.instagram.com/tossakanberlin/"
@@ -71,7 +69,7 @@
 
 
 <slot />
-<footer class={$hamburger? "hidden":  "block"} >
+<footer >
 <div class="bg-blue py-5 font-serif text-white md:text-xl md:px-2">
 	<div class="mx-6 space-y-5">
 		<div class="text-center md:text-left">

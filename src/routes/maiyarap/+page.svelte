@@ -4,14 +4,14 @@
 	import { fade, scale } from 'svelte/transition'
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
-	import Menu from '$lib/components/hamburger_menu.svelte'
+	import Menu from '$lib/components/Hamburger_menu.svelte'
 	let isInView_maiyarap: boolean
 	let isInView_pic: boolean
 	let options = {}
 </script>
 
 <Menu />
-<div class={$hamburger ? 'hidden' : 'block'}>
+<div >
 	<div class="flex flex-col justify-between items-center bg-blue text-white py-20">
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"

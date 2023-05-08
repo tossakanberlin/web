@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms'
 	import Modal from '$lib/components/Modal.svelte'
-	import Menu from '$lib/components/hamburger_menu.svelte'
+	import Menu from '$lib/components/Hamburger_menu.svelte'
 	import { hamburger } from '$lib/store'
 	import type { ActionData } from './$types'
 
@@ -12,7 +12,7 @@
 </script>
 
 <Menu />
-<div class={$hamburger ? 'hidden' : 'block'}>
+<div >
 	<div class="flex flex-col md:flex-row bg-white text-green pt-10">
 		<div class="flex justify-center text-center md:text-start md:ml-10 text-6xl md:text-8xl gap-4">
 			<h2>IMPRESSUM</h2>

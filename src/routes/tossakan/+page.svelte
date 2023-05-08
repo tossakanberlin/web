@@ -4,7 +4,7 @@
 	import { fade, scale } from 'svelte/transition'
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
-	import Menu from '$lib/components/hamburger_menu.svelte'
+	import Menu from '$lib/components/Hamburger_menu.svelte'
 
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
@@ -42,7 +42,7 @@
 	</div>
 </div>
 
-<div class={$hamburger ? 'hidden' : 'block'}>
+<div >
 	<div class="justify-between items-center bg-green_light text-pink py-10">
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
