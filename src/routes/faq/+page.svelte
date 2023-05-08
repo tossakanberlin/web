@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { hamburger } from '$lib/store'
-	import Modal from '$lib/components/Modal.svelte'
 	import { enhance } from '$app/forms'
+	import Modal from '$lib/components/Modal.svelte'
 	import Menu from '$lib/components/hamburger_menu.svelte'
-	import { invalidateAll } from '$app/navigation'
+	import { hamburger } from '$lib/store'
 	import type { ActionData } from './$types'
 
 	export let form: ActionData
+	$: console.log(form)
 	let showModal = false
-	let showLoad = false
+	let loading = false
 </script>
 
 <Menu />
@@ -47,24 +47,25 @@
 			<h2>CONTACT</h2>
 		</div>
 		<div
-			class="grid grid-cols-1 sm:grid-cols-2 shadow-none rounded sm:gap-10 md:w-full mx-5 md:mx-10 my-10 items-center md:items-start"
+			class="grid grid-cols-1  shadow-none rounded sm:gap-10 md:w-full mx-5 md:mx-10 my-10 items-center md:items-start"
 		>
 			<form
-				class="col-span-1 sm:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 text-2xl w-full"
+				class=" text-2xl w-full space-y-4"
 				method="POST"
-				use:enhance={({ form, data, action, cancel, submitter }) => {
-					//console.log('g')
-					showLoad = true
+				use:enhance={({ form, data, action, cancel }) => {
 					// `form` is the `<form>` element
 					// `data` is its `FormData` object
 					// `action` is the URL to which the form is posted
 					// `cancel()` will prevent the submission
 					// `submitter` is the `HTMLElement` that caused the form to be submitted
-
+					loading = true
 					return async ({ result, update }) => {
-						showModal = true
-						showLoad = false
-						form.reset()
+						loading = false
+						if (result.type == 'success') {
+							showModal = true
+							form.reset()
+						}
+
 						await update()
 						//console.log(result)
 						// `result` is an `ActionResult` object
@@ -72,30 +73,41 @@
 					}
 				}}
 			>
-				<div class="grid grid-cols-1 md:grid-cols-2 w-full gap-10 col-span-full">
+				<div class="grid grid-cols-2 gap-x-10 items-end">
 					<div class="flex flex-col">
 						<label for="fname">Name *</label>
 						<input
-							class="shadow rounded h-[2.5rem] text-black px-3 py-[0.32rem] leading-[1.6] outline-none"
+							class="shadow rounded h-[2.5rem] text-black px-3 py-[0.32rem] leading-[1.6] outline-none transition-all"
 							id="fname"
 							name="fname"
 							type="text"
 							placeholder="First Name"
-							required
+							value={form?.fname ?? ''}
+							disabled={loading}
 						/>
 					</div>
-					<div class="flex flex-col justify-end">
+					<div class="">
 						<input
-							class="shadow rounded h-[2.5rem] text-black px-3 py-[0.32rem] leading-[1.6] outline-none"
+							class="w-full shadow rounded h-[2.5rem] text-black px-3 py-[0.32rem] leading-[1.6] outline-none transition-all"
 							id="lname"
 							name="lname"
 							type="text"
+							value={form?.lname ?? ''}
 							placeholder="Last Name"
-							required
+							disabled={loading}
 						/>
 					</div>
+					<div class="-mt-2">
+						{#if form?.errors?.fname}
+							<span class="text-sm -mt-4 inline-block">{form?.errors?.fname}</span>
+						{/if}
+					</div>
+					<div class="-mt-2">
+						{#if form?.errors?.lname}
+							<span class="text-sm -mt-4 inline-block">{form?.errors?.lname}</span>
+						{/if}
+					</div>
 				</div>
-
 				<div class="flex flex-col col-span-full">
 					<label for="email">Email *</label>
 					<input
@@ -104,8 +116,13 @@
 						name="email"
 						type="email"
 						value={form?.email ?? ''}
-						required
+						disabled={loading}
 					/>
+					<div class="-mt-2">
+						{#if form?.errors?.email}
+							<span class="text-sm -mt-4 inline-block">{form?.errors?.email}</span>
+						{/if}
+					</div>
 				</div>
 				<div class="flex flex-col col-span-full">
 					<label for="subject">Subject *</label>
@@ -114,8 +131,14 @@
 						id="subject"
 						name="subject"
 						type="text"
-						required
+						value={form?.subject ?? ''}
+						disabled={loading}
 					/>
+					<div class="-mt-2">
+						{#if form?.errors?.subject}
+							<span class="text-sm -mt-4 inline-block">{form?.errors?.subject}</span>
+						{/if}
+					</div>
 				</div>
 				<div class="grid col-span-full">
 					<label for="message">Message *</label>
@@ -124,18 +147,28 @@
 						id="message"
 						name="message"
 						rows="3"
-						required
+						value={form?.message?.toString() ?? ''}
+						disabled={loading}
 					/>
+
+					<div class="-mt-2">
+						{#if form?.errors?.message}
+							<span class="text-sm -mt-4 inline-block">{form?.errors?.message}</span>
+						{/if}
+					</div>
 				</div>
-				<input
+				<button
 					type="submit"
-					class="flex justify-center items-center bg-pink rounded-md col-span-2 py-4 w-[10rem] shadow-none font-serif text-5xl mt-5 sm:mt-0 place-self-center md:place-self-start md:mt-5"
-				/>
+					disabled={loading}
+					class="flex justify-center items-center bg-pink rounded-md col-span-2 py-3 px-6 shadow-none font-serif mt-5 sm:mt-0 place-self-center md:place-self-start md:mt-5"
+				>
+					{loading ? `Submitting` : 'Submit'}
+				</button>
 			</form>
 		</div>
 	</div>
 </div>
-{#if showLoad}
+{#if loading}
 <div role="status" class="fixed top-1/2 right-1/2">
 	<svg
 		aria-hidden="true"
