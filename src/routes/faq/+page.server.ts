@@ -1,5 +1,5 @@
 import EmailP from '$lib/components/Emails.svelte'
-import { fail } from '@sveltejs/kit'
+import { fail, type Actions } from '@sveltejs/kit'
 import { render } from 'svelte-email'
 import { z } from 'zod'
 
