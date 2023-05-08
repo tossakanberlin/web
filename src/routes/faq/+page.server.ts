@@ -2,14 +2,14 @@ import type { Actions } from './$types';
 import { render } from 'svelte-email';
 import nodemailer from 'nodemailer';
 import { fail } from '@sveltejs/kit'
-import { env } from '$env/dynamic/private';
+import { PRIVATE_EMAIL_PASSWORD, PRIVATE_EMAIL_USERNAME } from '$env/static/private';
 import EmailP from '$lib/components/Emails.svelte';
 
 
 export const actions = {
     default: async ({request, url}) => {
         
-        let recipientEmail = 'woraphonchwg@gmail.com'
+        let recipientEmail = 'woraphon412@gmail.com'
 
         const data = await request.formData();
         const fname = data.get('fname')
@@ -36,14 +36,14 @@ export const actions = {
 		}
 
         if (url.searchParams.has('maiyarap')) {
-			recipientEmail = 'phoori12@gmail.com'
+			recipientEmail = 'woraphon412@gmail.com'
 		}
 
         const transporter = nodemailer.createTransport({
             service: 'gmail',
             auth: {
-                user: env.PRIVATE_EMAIL_USERNAME,
-                pass: env.PRIVATE_EMAIL_PASSWORD
+                user: PRIVATE_EMAIL_USERNAME,
+                pass: PRIVATE_EMAIL_PASSWORD
             }
         });
         
