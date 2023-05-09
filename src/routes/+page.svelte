@@ -8,7 +8,7 @@
 
 <article class=" h-fit relative font-serif">
 
-<div class={$hamburger? 'hidden' : 'block'} >
+<div  >
 	<div class="left-0 absolute top-0  w-full text-center z-10">
 		<h1 class="lg:text-7xl text-5xl text-white uppercase my-5 md:hidden " >Neo-Thai Cuisine</h1>
 	</div>

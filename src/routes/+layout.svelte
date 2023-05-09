@@ -135,7 +135,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="font-sans text-2xl flex flex-row justify-between text-blue_light">
+		<div class="font-sans text-2xl flex flex-row justify-between  text-blue_light">
 			<p class="">@ 2021 Tossakan Berlin</p>
 			<a href="/datenschutz" class="italic">Privacy Policy</a>
 		</div>

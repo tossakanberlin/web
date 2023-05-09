@@ -49,7 +49,7 @@
 							<a href="menu_maiyarap.pdf" target="_blank">
 								<button
 									type="submit"
-									class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
+									class=" bg-pink hover:bg-[#ff64b9] text-white rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
 									>MENU
 								</button>
 							</a>
@@ -76,7 +76,7 @@
 							<a href="/faq?maiyarap">
 								<button
 									type="submit"
-									class=" bg-green_light text-blue rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+									class=" bg-green_light  hover:bg-[#b7e6b4] text-blue rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
 									>CONTACT US
 								</button>
 							</a>

@@ -11,16 +11,23 @@
 	let isInView_pic2: boolean
 	let options = {}
 	let active = true
+	let y_window 
+	let widget_class = " bg-pink rounded-full shadow-sm text-white px-5 py-5 self-end       hover:scale-[1.1]  transition-all ease-in-out duration-500" 
+	
+	
+	
+	
 </script>
-
+<svelte:window bind:scrollY={y_window} />
 <Menu />
 
 <div class="fixed bottom-[20px] right-[20px] z-10">
 	<div class="flex flex-col justify-end">
-		<div id="quandoo-booking-widget" class={active ? 'hidden ' : 'block'} />
+		<div id="quandoo-booking-widget" class={active ? 'hidden  ' : 'block'} />
 
 		<button
-			class=" bg-blue rounded-full shadow-sm text-white px-5 py-5 self-end"
+			class= {widget_class}
+
 			on:click={() => (active = !active)}
 		>
 			<svg
@@ -80,7 +87,7 @@
 							<a href="menu_tossakan.pdf" target="_blank">
 								<button
 									type="submit"
-									class=" bg-pink text-white rounded-md shadow-none font-serif text-2xl mx-5 lg:mx-0 xl:mx-5 sm:mt-0 my-5 md:my-0 xl:my-5 py-1 w-[15rem] md:w-[12rem] xl:w-[15rem]"
+									class=" bg-pink hover:bg-[#ff64b9] text-white rounded-md shadow-none font-serif text-2xl mx-5 lg:mx-0 xl:mx-5 sm:mt-0 my-5 md:my-0 xl:my-5 py-1 w-[15rem] md:w-[12rem] xl:w-[15rem]"
 									>MENU
 								</button></a
 							>
@@ -112,7 +119,7 @@
 							<a href="/faq?tossakan">
 								<button
 									type="submit"
-									class=" bg-blue_light text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
+									class=" bg-blue_light hover:bg-[#878bef] text-white rounded-md shadow-none font-serif text-2xl xl:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
 									>CONTACT US
 								</button>
 							</a>
