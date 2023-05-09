@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Image from '$lib/components/Image.svelte'
 	import { hamburger } from '$lib/store'
-	import Menu from '$lib/components/Hamburger_menu.svelte'
+	import Menu from '$lib/components/Overlay_menu.svelte'
 
 	
 </script>

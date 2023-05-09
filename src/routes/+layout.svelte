@@ -22,7 +22,7 @@
 		<li><a href="/tossakan" class="m-3 bg-growing-underline">Tossakan</a></li>
 		<li><a href="/maiyarap" class="m-3 bg-growing-underline">Maiyarap</a></li>
 	</ul>
-	<div class="max-h-[100px] max-w-[120px]">
+	<div class="max-h-[100px] max-w-[120px] ">
 		<a href="/"
 			><Image
 				src="/tosxmai_logo.png"
@@ -59,7 +59,7 @@
 				>
 			</a>
 		</h2>
-		<div class="md:hidden inline-block">
+		<div class="md:hidden inline-block ">
 			<Hamburger bind:open={$hamburger} --color="white" />
 		</div>
 	</div>

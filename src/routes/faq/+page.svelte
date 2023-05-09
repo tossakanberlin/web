@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { enhance } from '$app/forms'
 	import Modal from '$lib/components/Modal.svelte'
-	import Menu from '$lib/components/Hamburger_menu.svelte'
+	import Menu from '$lib/components/Overlay_menu.svelte'
 	import { hamburger } from '$lib/store'
 	import type { ActionData } from './$types'
 

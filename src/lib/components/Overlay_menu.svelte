@@ -10,11 +10,14 @@
 
 
 {#if $hamburger}
-	<div class="w-full h-screen fixed top-0 right-0 py-5 px-10 bg-white z-100   flex flex-col items-center text-center text-5xl realtive font-sans " in:fade>
-		<nav class="flex flex-row w-full h-[130px] items-center justify-between py-2 px-10 absolute top-0 left-0  ">
+	<div class="w-full h-screen fixed top-0 right-0 py-5 px-10 bg-white z-100   flex flex-col items-center text-center text-5xl  font-sans " in:fade>
+		<nav class="flex-row flex justify-between ml-auto  w-screen h-[130px] items-center py-2 px-10 absolute top-0   ">
 			<h1 class="text-center "><a href ='/' class="items-center text-green">Tossakan</a></h1>    
-			<div class='items-center'><Hamburger bind:open={$hamburger} --color={"#00c69d"}  /></div>
 			
+			<div class=' flex-1 flex justify-end ml-auto items-center  '>	
+				
+				<Hamburger bind:open={$hamburger} --color={"#00c69d"}  />		
+			</div>	
 		</nav>
 		<div class="flex flex-col items-center h-full justify-center m-5 p-5">
 		

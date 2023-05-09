@@ -4,7 +4,7 @@
 	import { fade, scale } from 'svelte/transition'
 	import { hamburger } from '$lib/store'
 	import { Hamburger } from 'svelte-hamburgers'
-	import Menu from '$lib/components/Hamburger_menu.svelte'
+	import Menu from '$lib/components/Overlay_menu.svelte'
 	let isInView_maiyarap: boolean
 	let isInView_pic: boolean
 	let options = {}

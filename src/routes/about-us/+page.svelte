@@ -4,7 +4,7 @@
 	import { fly, fade } from 'svelte/transition'
 	import { quintOut } from 'svelte/easing'
 	import { hamburger } from '$lib/store'
-	import Menu from '$lib/components/Hamburger_menu.svelte'
+	import Menu from '$lib/components/Overlay_menu.svelte'
 	let isInView_panel1: boolean
 	let isInView_tossakan: boolean
 	let isInView_maiyarap: boolean
