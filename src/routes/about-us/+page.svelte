@@ -152,12 +152,12 @@
 				<li>THE IMMORTAL GIANT</li>
 			</ul>
 			<div class="flex flex-col items-center md:item-start text-center md:text-start font-serif">
-				<div class="flex flex-col justify-center md:justify-start xl:place-self-start">
-					<p class="text-6xl md:text-5xl lg:text-6xl xl:text-7xl -mb-2">NO SUSHI NO PHO</p>
-					<p class="text-5xl md:text-3xl lg:text-5xl">NO ENTEKROSS SÜßSAUER</p>
+				<div class="flex flex-col justify-center md:justify-start md:place-self-start text-justify">
+					<p class="text-4xl md:text-5xl lg:text-5xl xl:text-7xl -mb-2">NO SUSHI NO PHO</p>
+					<p class="text-4xl md:text-3xl lg:text-3xl">NO ENTEKROSS SÜßSAUER</p>
 				</div>
 				<div
-					class="flex flex-1 text-8xl sm:text-9xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full"
+					class="flex flex-1 text-8xl sm:text-8xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full"
 				>
 					<h2 class="px-2 bg-white text-pink">JUST THAI</h2>
 				</div>

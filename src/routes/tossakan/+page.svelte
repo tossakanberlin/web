@@ -219,7 +219,7 @@
 							/>
 						</div>
 					{:else}
-						<div class="h-[500px] md:h-[1000px]" />
+						<div class="h-[600px] md:h-[1000px]" />
 					{/if}
 				</div>
 			</div>
