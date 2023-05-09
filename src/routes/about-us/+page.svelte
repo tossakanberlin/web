@@ -120,7 +120,7 @@
 			{/if}
 			{#if isInView_tossakan}
 				<div
-					class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-10"
+					class="flex flex-col text-center md:text-end xl:text-start self-start md:-ml-10 gap-5"
 				>
 					<div
 						class="flex flex-col bg-blue font-serif h-min text-6xl md:text-6xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
@@ -132,7 +132,7 @@
 					</div>
 
 					<div
-						class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-end xl:text-start grow-0"
+						class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-justify xl:text-start grow-0"
 						in:fade={{ duration: 1250, delay: 1000 }}
 					>
 						<p>
@@ -152,9 +152,9 @@
 				<li>THE IMMORTAL GIANT</li>
 			</ul>
 			<div class="flex flex-col items-center md:item-start text-center md:text-start font-serif">
-				<div class="flex flex-col justify-center md:justify-start md:place-self-start text-justify">
-					<p class="text-4xl md:text-5xl lg:text-5xl xl:text-7xl -mb-2">NO SUSHI NO PHO</p>
-					<p class="text-4xl md:text-3xl lg:text-3xl">NO ENTEKROSS SÜßSAUER</p>
+				<div class="flex flex-col justify-center md:justify-start md:place-self-start text-center md:text-justify">
+					<p class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl -mb-2">NO SUSHI NO PHO</p>
+					<p class="text-4xl md:text-3xl lg:text-4xl">NO ENTEKROSS SÜßSAUER</p>
 				</div>
 				<div
 					class="flex flex-1 text-8xl sm:text-8xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full"

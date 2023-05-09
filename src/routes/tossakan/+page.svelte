@@ -85,7 +85,7 @@
 							<h2 class="text-2xl font-sans">SCLIEMANNSTRASSE 16, 10437 BERLIN</h2>
 						</div>
 						<div
-							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 justify-center items-center lg:items-start xl:items-center"
+							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 justify-center items-center md:items-start lg:items-start xl:items-center"
 						>
 							<a href="menu_tossakan.pdf" target="_blank">
 								<button

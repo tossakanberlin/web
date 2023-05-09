@@ -14,7 +14,7 @@
 
 <nav >
 	<div 
-	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-xl text-white  md:text-4xl "
+	class="bg-blue py-5 px-10 flex flex-row justify-between font-serif text-white text-xl md:text-2xl lg:text-3xl "
 >
 	<ul class="flex-1 justify-start mr-auto md:flex hidden items-center">
 		<li><a href="/" class="m-3 bg-growing-underline">Home</a></li>
