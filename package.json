@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"svelte-carousel": "^1.0.25",
 		"svelte-email": "^0.0.4",
 		"svelte-inview": "^4.0.0",
 		"zod": "^3.21.4"

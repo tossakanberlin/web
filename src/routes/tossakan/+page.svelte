@@ -11,14 +11,14 @@
 	let isInView_pic2: boolean
 	let options = {}
 	let active = true
-	let y_window 
+	
 	let widget_class = " bg-pink rounded-full shadow-sm text-white px-5 py-5 self-end       hover:scale-[1.1]  transition-all ease-in-out duration-500" 
 	
 	
 	
 	
 </script>
-<svelte:window bind:scrollY={y_window} />
+
 <Menu />
 
 <div class="fixed bottom-[20px] right-[20px] z-10">
@@ -62,7 +62,7 @@
 				<div in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
-						src="tossakan_logo.png"
+						src="TossakanPhotos/tossakan_logo.png"
 						class="max-h-[360px] w-full object-contain top-0 left-0"
 						alt="tossakan"
 					/>
@@ -195,9 +195,9 @@
 						<div in:scale={{ duration: 1500, delay: 100 }} out:fade>
 							<Image
 								width={600}
-								src="tossakan_prev_1.jpeg"
+								src="TossakanPhotos/tossakan_prev_1.jpeg"
 								class="max-h-[360px] w-full object-cover top-0 left-0"
-								alt="tossakan_drinks"
+								alt="TossakanPhotos/tossakan_drinks"
 							/>
 						</div>
 					{/if}
@@ -213,7 +213,7 @@
 					{#if isInView_pic2}
 						<div class="max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 500 }} out:fade>
 							<Image
-								src="tossakan_prev_2.jpeg"
+								src="TossakanPhotos/tossakan_prev_2.jpeg"
 								class="max-h-[540px] w-full object-cover top-0 left-0"
 								alt="tossakan_foods"
 							/>

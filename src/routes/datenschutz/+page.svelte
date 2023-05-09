@@ -1,3 +1,10 @@
+<script lang="ts">
+	import Menu from '$lib/components/Overlay_menu.svelte'
+
+</script>
+ 
+
+<Menu />
 <div class="flex flex-col md:items-start bg-green_light text-blue py-10">
 	<div
 		class="flex flex-row md:flex:col justify-center items-center md:items-start sm:ml-10 text-6xl md:text-8xl md:gap-4 font-serif my-5"

@@ -15,7 +15,7 @@
 	export { klass as class }
 
 	export let loader = (src: string, width: number, quality: number) =>
-		dev && false
+		dev 
 			? src
 			: `https://img-tossakanberlin.vercel.app/api/_image?${new URLSearchParams({
 					url: `https://web-518.pages.dev` + (src.startsWith('/') ? src : '/' + src),
