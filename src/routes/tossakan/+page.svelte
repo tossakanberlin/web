@@ -6,22 +6,25 @@
 	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/Overlay_menu.svelte'
 
+	let isStuck = false
+	let widget_class =
+		' bg-pink rounded-full shadow-sm text-white px-5 py-5 self-end       hover:scale-[1.1]  transition-all ease-in-out duration-500'
+	let active = true
+
+	function handleStuck(e) {
+		isStuck = e.detail.isStuck
+	}
+
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
-	let active = true
-	
-	let widget_class = " bg-pink rounded-full shadow-sm text-white px-5 py-5 self-end       hover:scale-[1.1]  transition-all ease-in-out duration-500" 
-	
-	
-	
-	
+	let stickToTop = false
 </script>
 
 <Menu />
 
-<div class="fixed bottom-[20px] right-[20px] z-10">
+<!-- <div class="fixed bottom-[20px] right-[20px] z-10">
 	<div class="flex flex-col justify-end">
 		<div id="quandoo-booking-widget" class={active ? 'hidden  ' : 'block'} />
 
@@ -47,9 +50,9 @@
 			>
 		</button>
 	</div>
-</div>
+</div> -->
 
-<div >
+<div>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
@@ -82,7 +85,7 @@
 							<h2 class="text-2xl font-sans">SCLIEMANNSTRASSE 16, 10437 BERLIN</h2>
 						</div>
 						<div
-							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 justify-center items-center lg:items-start xl:items-center"
+							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 justify-center items-center md:items-start lg:items-start xl:items-center"
 						>
 							<a href="menu_tossakan.pdf" target="_blank">
 								<button
@@ -91,7 +94,7 @@
 									>MENU
 								</button></a
 							>
-							{@html `<div class="quandoo-widget-builder w-[15rem]" data-config='{"format":"text-button","bgcolor":"#1870C3","txcolor":"#ffffff","round":"yes","position":"","font":"md","merchant":97442,"txt":"Book a Table"}'></div>`}
+							{@html `<div class="quandoo-widget-builder" data-config='{"format":"text-button","bgcolor":"#1870C3","txcolor":"#ffffff","round":"yes","position":"","font":"md","merchant":97442,"txt":"Book a Table"}'></div>`}
 						</div>
 					</div>
 					<h2 class="text-5xl font-sans">OPEN DAILY</h2>
@@ -227,6 +230,34 @@
 	</div>
 </div>
 
+<div
+	class="sticky mb-[20px] mr-[20px] flex flex-col justify-end"
+	class:isStuck
+	data-position={stickToTop ? 'top' : 'bottom'}
+	use:sticky={{ stickToTop }}
+	on:stuck={handleStuck}
+>
+	<div id="quandoo-booking-widget" class={active ? 'hidden w-full h-full' : 'block w-full h-full'} />
+
+	<button class={widget_class} on:click={() => (active = !active)}>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			width="36"
+			height="36"
+			viewBox="0 0 24 24"
+			fill="none"
+			stroke="currentColor"
+			stroke-width="2"
+			stroke-linecap="round"
+			stroke-linejoin="round"
+			class="lucide lucide-book"
+			><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
+				d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
+			/></svg
+		>
+	</button>
+</div>
+
 <svelte:head>
 	<script
 		src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"
@@ -242,5 +273,12 @@
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.white);
+	}
+	.sticky[data-position='top'] {
+		top: 1rem;
+	}
+
+	.sticky[data-position='bottom'] {
+		bottom: 1rem;
 	}
 </style>
