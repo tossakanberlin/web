@@ -81,12 +81,12 @@
 				<Image
 					src="tossakan/tossakan_logo.png"
 					width={500}
-					class=" xl:w-[400px] lg:w-[350px]  w-[300px] sm:w-[300px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					class=" xl:w-[400px] lg:w-[350px]  w-[250px] sm:w-[300px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
 				/>
 			</a>
 				<h2
-					class="lg:text-5xl lg:m-5 text-4xl sm:text-5xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-3 "
+					class="lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
 				>
 					Tossakan<br />P-Berg
 				</h2>
@@ -107,13 +107,13 @@
 				<a href='/maiyarap'>
 					<Image
 					width={500}
-					src="MaiyarapPhotos/maiyarap_logo.png"
-					class=" xl:w-[400px] lg:w-[350px]   w-[300px] sm:w-[300px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					src="maiyarap/maiyarap_logo.png"
+					class=" xl:w-[400px] lg:w-[350px]  w-[250px] sm:w-[300px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
 				/>
 				</a>
 				<h2
-					class="lg:text-5xl lg:m-5  text-4xl sm:text-3xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
+					class="lg:text-5xl lg:m-5  text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
 				>
 					Maiyarap<br />x-Berg
 				</h2>
