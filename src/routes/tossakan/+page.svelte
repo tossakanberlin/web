@@ -2,55 +2,26 @@
 	import Image from '$lib/components/Image.svelte'
 	import { inview } from 'svelte-inview'
 	import { fade, scale } from 'svelte/transition'
-	import { hamburger } from '$lib/store'
-	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/Overlay_menu.svelte'
 
 	let isStuck = false
-	let widget_class =
-		' bg-pink rounded-full shadow-sm text-white px-5 py-5 self-end       hover:scale-[1.1]  transition-all ease-in-out duration-500'
-	let active = true
+	// let widget_class =
+	// 	' bg-pink rounded-full shadow-sm text-white px-5 py-5 self-end       hover:scale-[1.1]  transition-all ease-in-out duration-500'
+	// let active = true
 
-	function handleStuck(e) {
-		isStuck = e.detail.isStuck
-	}
+	// function handleStuck(e) {
+	// 	isStuck = e.detail.isStuck
+	// }
 
 	let isInView_tossakan: boolean
 	let isInView_pic1: boolean
 	let isInView_pic2: boolean
 	let options = {}
-	let stickToTop = false
+	// let stickToTop = false
 </script>
 
 <Menu />
 
-<!-- <div class="fixed bottom-[20px] right-[20px] z-10">
-	<div class="flex flex-col justify-end">
-		<div id="quandoo-booking-widget" class={active ? 'hidden  ' : 'block'} />
-
-		<button
-			class= {widget_class}
-
-			on:click={() => (active = !active)}
-		>
-			<svg
-				xmlns="http://www.w3.org/2000/svg"
-				width="36"
-				height="36"
-				viewBox="0 0 24 24"
-				fill="none"
-				stroke="currentColor"
-				stroke-width="2"
-				stroke-linecap="round"
-				stroke-linejoin="round"
-				class="lucide lucide-book"
-				><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" /><path
-					d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"
-				/></svg
-			>
-		</button>
-	</div>
-</div> -->
 
 <div>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
@@ -230,7 +201,7 @@
 	</div>
 </div>
 
-<div
+<!-- <div
 	class="sticky mb-[20px] mr-[20px] flex flex-col justify-end"
 	class:isStuck
 	data-position={stickToTop ? 'top' : 'bottom'}
@@ -256,29 +227,29 @@
 			/></svg
 		>
 	</button>
-</div>
+</div> -->
 
 <svelte:head>
 	<script
 		src="https://s3-eu-west-1.amazonaws.com/quandoo-website/widget-builder/quandoo-widget-builder.js"
 	></script>
-	<script
+	<!-- <script
 		src="https://booking-widget.quandoo.com/index.js"
 		data-merchant-id="97442"
 		data-theme="light"
 		data-primary-color="1870C3"
-	></script>
+	></script> -->
 </svelte:head>
 
 <style lang="postcss">
 	:global(html) {
 		background-color: theme(colors.white);
 	}
-	.sticky[data-position='top'] {
+	/* .sticky[data-position='top'] {
 		top: 1rem;
 	}
 
 	.sticky[data-position='bottom'] {
 		bottom: 1rem;
-	}
+	} */
 </style>
