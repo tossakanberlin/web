@@ -2,8 +2,6 @@
 	import Image from '$lib/components/Image.svelte'
 	import { inview } from 'svelte-inview'
 	import { fade, scale } from 'svelte/transition'
-	import { hamburger } from '$lib/store'
-	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/Overlay_menu.svelte'
 	let isInView_maiyarap: boolean
 	let isInView_pic: boolean
@@ -24,7 +22,8 @@
 				<div in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
-						src="/MaiyarapPhotos/maiyarap_logo.png"
+						height={360}
+						src="maiyarap/maiyarap_logo.png"
 						class="max-h-[360px] w-full object-contain top-0 left-0"
 						alt="maiyarap"
 					/>
@@ -120,7 +119,7 @@
 					<div in:scale={{ duration: 1500, delay: 100 }}>
 						<Image
 							width={600}
-							src="/MaiyarapPhotos/maiyarap_pic.jpeg"
+							src="maiyarap/maiyarap_pic1.jpg"
 							class="max-h-full w-full object-contain top-0 left-0"
 							alt="maiyarap"
 						/>
@@ -128,14 +127,14 @@
 					<div class="flex flex-col gap-5">
 						<div class="md:relative h-[50%] w-full" in:scale={{ duration: 1500, delay: 750 }}>
 							<Image
-								src="/MaiyarapPhotos/maiyarap_pic1.jpg"
+								src="maiyarap/maiyarap_pic2.jpg"
 								class="md:absolute h-[100%] w-full object-cover top-0 left-0"
 								alt="maiyarap"
 							/>
 						</div>
 						<div class="relative h-[50%] w-full" in:scale={{ duration: 1500, delay: 1250 }}>
 							<Image
-								src="/MaiyarapPhotos/maiyarap_pic.jpeg"
+								src="maiyarap/maiyarap_pic3.jpg"
 								class="md:absolute h-[100%] w-full object-cover top-0 left-0"
 								alt="maiyarap"
 							/>
