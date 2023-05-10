@@ -75,13 +75,13 @@
 	<div class="grid grid-cols-1 lg:grid-cols-2 ">
 		<div class="relative flex items-center justify-center group  ">
 			<div
-				class="absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center  md:px-6 xl:px-4 px-4   group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
+				class="absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center  md:px-6 xl:px-4 px-5   group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 			<a href='/tossakan'>
 				<Image
 					src="tossakan/tossakan_logo.png"
 					width={500}
-					class=" xl:w-[400px] lg:w-[350px]  w-[250px] sm:w-[300px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					class=" xl:w-[400px] lg:w-[350px]  w-[200px] sm:w-[250px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
 				/>
 			</a>
@@ -102,13 +102,13 @@
 
 		<div class="relative flex items-center justify-center group ">
 			<div
-				class="  absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4  px-4  group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
+				class="  absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4  px-5   group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 			>
 				<a href='/maiyarap'>
 					<Image
 					width={500}
 					src="maiyarap/maiyarap_logo.png"
-					class=" xl:w-[400px] lg:w-[350px]  w-[250px] sm:w-[300px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					class=" xl:w-[400px] lg:w-[350px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
 				/>
 				</a>
@@ -135,10 +135,10 @@
 
 
 <Menu></Menu>	
-<!-- <div class="bg-blue">
+<div class="bg-blue ">
   <Carousel /> 
 
-</div> -->
+</div>
 
 </article>
 

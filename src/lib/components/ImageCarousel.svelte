@@ -1,74 +1,60 @@
 <script>
-    import Carousel from "svelte-carousel";
+    
     import Image from '$lib/components/Image.svelte'
    
     const images = [
       {
-        url: "/Horizontal_left.jpg",
+        url: "slider/slider_1.jpg",
         description: "image1",
         index:1
       },
       {
-        url: "/Horizontal_right.jpg",
+        url: "slider/slider_2.jpg",
         description: "image2",
         index:2
       },
       {
-        url: "/Horizontal_left.jpg",
+        url: "slider/slider_3.jpg",
         description: "image3",
         index:3
       },
       {
-        url: "/Horizontal_left.jpg",
+        url: "slider/slider_4.jpg",
         description: "image4",
         index:4
       },
       {
-        url: "/Horizontal_left.jpg",
+        url: "slider/slider_5.jpg",
         description: "image5",
         index:5
       },
     ];
-    let carousel; // for calling methods of the carousel instance
-    const handleNextClick = () => {
-      carousel.goToNext();
-    };
-
-    
-
-
-    
   </script>
+
   
-  <Carousel
-      bind:this={carousel}
-      let:loaded
-      autoplay
-      autoplayDuration={3000}
-      infinite
-      particlesToShow = 3
-      let:showPrevPage
-      let:showNextPage
- 
-  >
-  <div slot="prev" >
-    <i />
-  </div>
-  {#each images as src, imageIndex (src)}
-      <div class="img-container">
-        {#if loaded.includes(imageIndex)}
-          <Image
-						 src={src.url}
-						class=" h-fit  w-full object-cover top-0 left-0 m-5 p-1"
-						alt={src.description}
-					/>
-        {/if}
-      </div>
-    {/each}
-    <div slot="next" >
-      <i />
+    <div class="flex overflow-x-auto w-fit  gap-6 snap-x snap-mandatory w-[">
+       
+        {#each images as slide}
+        <div class="shrink-0 snap-center before:schrink-0 before:w-[30vw] after:shrink-0 after:w-[30vw] m-auto scroll-smooth ">
+          <Image width={400}
+					src={slide.url} 
+          class="    p-5 w-full  transition-all ease-in-out duration-500 group-hover:opacity-50"
+				  prioritize
+				  eager
+				  important
+				/>
+        </div>
+         
+        {/each}
+       
+
     </div>
-  </Carousel>
+    
 
 
+
+
+
+
+ 
   
