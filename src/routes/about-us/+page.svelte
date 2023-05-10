@@ -97,7 +97,7 @@
 			<div class="block md:hidden" in:fade={{ duration: 750, delay: 100 }}>
 				<Image
 					width={600}
-					src="TossakanPhotos/tossakan_logo.png"
+					src="tossakan/tossakan_logo.png"
 					class="block md:hidden max-h-[360px] w-full object-contain top-0 left-0"
 					alt="tossakan"
 				/>
@@ -110,7 +110,7 @@
 					in:fade={{ duration: 750, delay: 100 }}
 				>
 					<Image
-						src="TossakanPhotos/tossakan_logo_half.png"
+						src="tossakan/tossakan_logo_half.png"
 						class="hidden md:block max-h-full w-full object-contain top-0 left-0"
 						alt="tossakan_half"
 					/>
@@ -199,7 +199,7 @@
 				<div in:fade={{ duration: 1000 }}>
 					<Image
 						width={600}
-						src="MaiyarapPhotos/maiyarap_logo.png"
+						src="maiyarap/maiyarap_logo.png"
 						class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
 						alt="maiyarap"
 					/>
@@ -223,7 +223,7 @@
 			<div class="md:relative place-self-center xl:place-self-auto" in:fade={{ duration: 1000 }}>
 				<Image
 					width={600}
-					src="AboutusPhotos/tuktuk2_logo.png"
+					src="tossakan/tuktuk_logo.png"
 					class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
 					alt="tuktukbytossakan"
 				/>

@@ -36,7 +36,7 @@
 				<div in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
-						src="TossakanPhotos/tossakan_logo.png"
+						src="tossakan/tossakan_logo.png"
 						class="max-h-[360px] w-full object-contain top-0 left-0"
 						alt="tossakan"
 					/>
@@ -166,12 +166,12 @@
 						</div>
 					</div>
 					{#if isInView_pic1}
-						<div in:scale={{ duration: 1500, delay: 100 }} out:fade>
+						<div in:scale={{ duration: 1500, delay: 100 }}>
 							<Image
 								width={600}
-								src="TossakanPhotos/tossakan_prev_1.jpeg"
+								src="tossakan/tossakan_prev_1.jpg"
 								class="max-h-[360px] w-full object-cover top-0 left-0"
-								alt="TossakanPhotos/tossakan_drinks"
+								alt="tossakan/tossakan_drinks"
 							/>
 						</div>
 					{/if}
@@ -185,11 +185,11 @@
 					}}
 				>
 					{#if isInView_pic2}
-						<div class="max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 500 }} out:fade>
+						<div class="max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 300 }}>
 							<Image
-								src="TossakanPhotos/tossakan_prev_2.jpeg"
+								src="tossakan/tossakan_prev_2.jpg"
 								class="max-h-[540px] w-full object-cover top-0 left-0"
-								alt="tossakan_foods"
+								alt="tossakan/tossakan_foods"
 							/>
 						</div>
 					{:else}

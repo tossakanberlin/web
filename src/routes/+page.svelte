@@ -79,7 +79,7 @@
 			>
 			<a href='/tossakan'>
 				<Image
-					src="TossakanPhotos/tossakan_logo.png"
+					src="tossakan/tossakan_logo.png"
 					width={500}
 					class=" xl:w-[400px] lg:w-[300px]  w-[400px]   mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
@@ -95,7 +95,7 @@
 				prioritize
 				eager
 				important
-				src="/vertical_left.jpeg"
+				src="/vertical_left.jpg"
 				class="z-[-1] w-full h-[calc(100vh-130px)] object-cover  transition-all ease-in-out duration-500 group-hover:opacity-50"
 			/>
 		</div>
@@ -107,7 +107,7 @@
 				<a href='/maiyarap'>
 					<Image
 					width={500}
-					src="MaiyarapPhotos/maiyarap_logo.png"
+					src="maiyarap/maiyarap_logo.png"
 					class=" xl:w-[400px] lg:w-[300px]   w-[400px]  mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4"
 					important
 				/>
@@ -119,7 +119,7 @@
 				</h2>
 			</div>
 			<Image
-				src="/vertical_right.jpeg"
+				src="/vertical_right.jpg"
 				class="  z-[-1] object-cover w-full h-[calc(100vh-130px)] transition-all ease-in-out duration-500 group-hover:opacity-50"
 				prioritize
 				eager
