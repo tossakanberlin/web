@@ -2,8 +2,6 @@
 	import Image from '$lib/components/Image.svelte'
 	import { inview } from 'svelte-inview'
 	import { fade, scale } from 'svelte/transition'
-	import { hamburger } from '$lib/store'
-	import { Hamburger } from 'svelte-hamburgers'
 	import Menu from '$lib/components/Overlay_menu.svelte'
 	let isInView_maiyarap: boolean
 	let isInView_pic: boolean
@@ -24,6 +22,7 @@
 				<div in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
+						height={360}
 						src="maiyarap/maiyarap_logo.png"
 						class="max-h-[360px] w-full object-contain top-0 left-0"
 						alt="maiyarap"
