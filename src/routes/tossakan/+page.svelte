@@ -187,11 +187,20 @@
 					}}
 				>
 					{#if isInView_pic2}
-						<div class="max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 300 }}>
+						<div class="hidden lg:block max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 300 }}>
 							<Image
 								width={600}
 								height={540}
 								src="tossakan/tossakan_prev_2.jpg"
+								class="max-h-[540px] w-full object-cover top-0 left-0"
+								alt="tossakan/tossakan_foods"
+							/>
+						</div>
+						<div class="block lg:hidden max-h-[540px] w-full" in:scale={{ duration: 1500, delay: 300 }}>
+							<Image
+								width={600}
+								height={540}
+								src="tossakan/tossakan_prev_2m.jpg"
 								class="max-h-[540px] w-full object-cover top-0 left-0"
 								alt="tossakan/tossakan_foods"
 							/>
