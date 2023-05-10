@@ -135,10 +135,10 @@
 
 
 <Menu></Menu>	
-<!-- <div class="bg-blue">
+<div class="bg-blue">
   <Carousel /> 
 
-</div> -->
+</div>
 
 </article>
 
