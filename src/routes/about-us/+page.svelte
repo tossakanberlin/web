@@ -200,7 +200,7 @@
 				</div>
 			</div>
 			<div
-				class="md:relative flex justify-center md:justify-between m-5 md:m-0"
+				class="md:relative flex justify-center md:justify-between items-center lg:items-start m-5 md:m-0"
 				use:inview={options}
 				on:inview_enter={({ detail }) => {
 					isInView_maiyarap = detail.inView
@@ -212,7 +212,7 @@
 							width={600}
 							height={360}
 							src="maiyarap/maiyarap_logo.png"
-							class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0"
+							class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain"
 							alt="maiyarap"
 						/>
 					</div>
