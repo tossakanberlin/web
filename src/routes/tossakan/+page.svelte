@@ -237,7 +237,7 @@
 	use:sticky={{ stickToTop }}
 	on:stuck={handleStuck}
 >
-	<div id="quandoo-booking-widget" class={active ? 'hidden w-full h-full' : 'block w-full h-full'} />
+	<div id="quandoo-booking-widget" class={active ? 'hidden' : 'block'} />
 
 	<button class={widget_class} on:click={() => (active = !active)}>
 		<svg
