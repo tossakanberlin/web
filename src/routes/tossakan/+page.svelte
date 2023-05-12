@@ -80,7 +80,7 @@
 							<a href="/faq?tossakan">
 								<button
 									type="submit"
-									class=" bg-blue_light hover:bg-[#878bef] text-white rounded-md shadow-none font-serif text-2xl lg:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem] md:w-[12rem] xl:w-[15rem]"
+									class=" bg-blue_light hover:bg-[#878bef] text-white rounded-md shadow-none font-serif text-2xl lg:mx-5 mt-0 sm:mt-0 md:mt-5 lg:mt-0 place-self-center my-5 py-1 w-[15rem] md:w-[12rem] xl:w-[15rem]"
 									>CONTACT US
 								</button>
 							</a>
