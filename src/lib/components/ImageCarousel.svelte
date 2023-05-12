@@ -1,5 +1,5 @@
 <script>
-    
+    import Image from '$lib/components/Image.svelte'
    
     import { fade, blur, fly, slide, scale } from "svelte/transition";
   
@@ -12,7 +12,7 @@
     let timer;
     
     onMount(() => {
-    let timer = setInterval(next, 5000);
+    let timer = setInterval(next, 4000);
   });
 
    onDestroy(() => {
@@ -30,8 +30,15 @@
       <section  class=" flex justify-center   ">
        
         {#key src}
-      <img   in:fly="{{delay:50, duration:2000}}"  {src} alt="none"  
-       class="  p-4   w-[350px] sm:w-[400px] md:w-[300px] lg:w-[400px] md:h-[200px] sm:h-[175px] h-[150px]  lg:h-[300px] ">
+    
+        <div in:fly="{{delay:50, duration:2000}}">
+       
+       <Image
+								{src}
+								class="p-4   w-[350px] sm:w-[400px] md:w-[300px] lg:w-[400px] md:h-[200px] sm:h-[175px] h-[150px]  lg:h-[300px]"
+								alt="slider"
+							/>
+        </div>
        {/key}
    
       </section>
