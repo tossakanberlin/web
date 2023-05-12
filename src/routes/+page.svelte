@@ -5,10 +5,56 @@
   import { fade, blur, fly, slide, scale } from "svelte/transition";
   import { quintOut } from "svelte/easing";
 
+
+
+  const images_1 = [
+      {
+        url: "slider/slider_1.jpg",
+        
+      },
+	  {
+        url: "slider/slider_2.jpg",
+        
+      },
+	  {
+        url: "slider/slider_3.jpg",
+     
+      },
+     
+    ];
+	const images_2 = [
+      {
+        url: "slider/slider_2.jpg",
+        
+      },
+	  {
+        url: "slider/slider_3.jpg",
+        
+      },
+	  {
+        url: "slider/slider_1.jpg",
+        
+      },
+     
+    ];
+	const images_3 = [
+      {
+        url: "slider/slider_3.jpg",
+        
+      },
+	  {
+        url: "slider/slider_1.jpg",
+        
+      },
+	  {
+        url: "slider/slider_2.jpg",
+        
+      },
+     
+    ];
 </script>
 
 <article class=" h-fit relative font-serif">
-
 <!-- <div  >
 	<div class="left-0 absolute top-0  w-full text-center z-10">
 		<h1 class="lg:text-7xl text-5xl text-white uppercase my-5 md:hidden " >Neo-Thai Cuisine</h1>
@@ -71,7 +117,7 @@
 </div> -->
 <div  >
 	<div class="left-0 absolute top-0  w-full text-center z-10">
-		<h1 class="lg:text-7xl text-5xl text-white uppercase my-5 md:hidden " >Neo-Thai Cuisine</h1>
+		<h1 class="lg:text-7xl  text-5xl text-white uppercase my-5 md:my-6  " >Neo-Thai Cuisine</h1>
 	</div>
 	<div class="grid grid-cols-1 lg:grid-cols-2 ">
 		<div class="relative flex items-center justify-center group  ">
@@ -82,7 +128,7 @@
 				<Image
 					src="tossakan/tossakan_logo.png"
 					width={500}
-					class=" xl:w-[400px] lg:w-[350px]  w-[200px] sm:w-[250px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
 				/>
 			</a>
@@ -109,7 +155,7 @@
 					<Image
 					width={500}
 					src="maiyarap/maiyarap_logo.png"
-					class=" xl:w-[400px] lg:w-[350px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
 					important
 				/>
 				</a>
@@ -129,16 +175,11 @@
 		</div>
 	</div>
 </div>
-
-
-
-
-
-
 <Menu></Menu>	
-<div class="bg-blue flex justify-center ">
-  <Carousel /> 
-
+<div class="bg-blue  flex justify-around items-center ">
+  	<Carousel images={images_1}/> 
+	<Carousel images={images_2}/> 
+	<Carousel images={images_3}/> 
 </div>
 
 </article>

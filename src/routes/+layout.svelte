@@ -1,6 +1,5 @@
 <script>
 	import { hamburger } from '$lib/store'
-
 	import Image from '$lib/components/Image.svelte'
 	import { Hamburger } from 'svelte-hamburgers'
 	import '../app.css'
@@ -69,6 +68,8 @@
 
 
 <slot />
+
+
 <footer >
 <div class="bg-blue py-5 font-serif text-white md:text-xl md:px-2">
 	<div class="mx-6 space-y-5">

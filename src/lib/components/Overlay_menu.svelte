@@ -10,7 +10,7 @@
 
 
 {#if $hamburger}
-	<div class="w-full h-screen fixed top-0 right-0 py-5 px-10 bg-white z-10   flex flex-col items-center text-center text-5xl  font-sans " in:fade>
+	<div class="w-full h-screen fixed top-0 right-0 py-5 px-10 bg-white z-10   flex flex-col items-center text-center text-4xl xl:text-5xl   font-sans " in:fade>
 		<nav class="flex-row flex justify-between ml-auto  w-screen h-[130px] items-center py-2 px-10 absolute top-0   ">
 			<h1 class="text-center "><a href ='/' class="items-center text-green">Tossakan</a></h1>    
 			
