@@ -25,7 +25,7 @@
 	<div class="justify-between items-center bg-white text-blue py-10 mx-6">
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center mx-6">
 			<div
-				class="flex flex-col text-blue_light justify-center md:items-center h-full text-4xl sm:text-7xl md:text-5xl lg:text-6xl xl:text-[5rem] px-5 pb-8"
+				class="flex flex-col text-blue_light justify-center md:items-center h-full text-4xl sm:text-7xl md:text-6xl xl:text-[5rem] px-5 pb-8"
 			>
 				<div class="flex flex-col text-center md:text-justify">
 					<h2 class="">IT DOESN'T</h2>
@@ -40,27 +40,27 @@
 					</div>
 				</div>
 			</div>
-			<div class="grid md:col-span-2 gap-10 sm:gap-4 mx-6 md:text-start text-center">
-				<h2 class="font-serif text-5xl">
+			<div class="grid md:col-span-2 gap-5 sm:gap-4 mx-6 md:text-start text-center">
+				<h2 class="font-serif text-3xl xl:text-5xl">
 					NEO THAI CUISINE: IT’S MORE THAN JUST PAD THAI AND CURRY
 				</h2>
-				<p class="font-sans text-xl">
+				<p class="font-sans text-lg xl:text-xl">
 					It all started with Chef Tanadon Santanaviboon, aka Don, 2nd generation Thai-German,
 					following his father´s footsteps to become a cook. Though starting in fine dining, Don
 					realized his true passion lied in his ultimate comfort food, Thai Cuisine. He decided it
 					was time to introduce the Berliners a New Generation of Thai Cuisine.
 				</p>
-				<p class="font-sans text-xl">
+				<p class="font-sans text-lg xl:text-xl">
 					Tossakan initially opened it´s doors in Charlottenburg, West Berlin. In 2022 reopened in
 					Schliemannstr. 16, Prenzlauerberg, East Berlin.
 				</p>
-				<p class="font-sans text-xl">
+				<p class="font-sans text-lg xl:text-xl">
 					Bangkok is not just a beloved tourist destination for night life. It stands out for being
 					a world-known culinary capital. A new generation of passionate cooks have been
 					rediscovering their love and interest in traditional recipes and showing off their skills
 					to deliver a unique Thai experience.
 				</p>
-				<p class="font-sans text-xl">
+				<p class="font-sans text-lg xl:text-xl">
 					At Tossakan, our main goal is to introduce a wider range of Thai Cuisine & our
 					appreciation to our culture.
 				</p>
@@ -70,7 +70,7 @@
 				on:inview_enter={({ detail }) => {
 					isInView_panel1 = detail.inView
 				}}
-				class="md:col-span-3 font-serif text-5xl mx-6 place-self-center md:place-self-start"
+				class="md:col-span-3 font-serif text-3xl xl:text-5xl mx-6 place-self-center md:place-self-start"
 			>
 				{#if isInView_panel1}
 					<div class="flex text-center md:text-start" in:fly={defaultSlideParameters} out:fade>
@@ -81,7 +81,7 @@
 			<div
 				class="grid md:col-span-3 font-sans text-center md:text-start mx-5 md:mx-[10rem] gap-10 sm:gap-4"
 			>
-				<p class="text-xl">
+				<p class="text-lg xl:text-xl">
 					Following our traditional home cooking recipes with a modern touch, Tossakan offers a
 					unique culinary experience. Our signature home made dumplings and Chef´s Choice menu stand
 					out for it´s most hearty flavors.
