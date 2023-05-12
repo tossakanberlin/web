@@ -94,7 +94,23 @@
 		</div>
 	</div>
 
-	<div class="justify-between bg-blue_light text-white py-10">
+	<div class="relative justify-between bg-blue_light text-white py-10">
+		{#if isInView_tossakan}
+					<div
+						class="absolute flex max-h-[375px] max-w-[450px] md:z-10 col-span-2 my-5 left-0 top-0"
+						in:fade={{ duration: 750, delay: 100 }}
+					>
+						<Image
+							width={540}
+							height={425}
+							src="tossakan/tossakan_logo_half.png"
+							class="hidden md:block max-h-full w-full object-contain "
+							alt="tossakan_half"
+						/>
+					</div>
+				{:else}
+					<div class="h-[400px]" />
+				{/if}
 		<div
 			class="grid grid-cols-1 md:grid-cols-3 gap-10 xl:gap-[10rem] items-start mx-6 lg:items-center"
 			use:inview={options}
@@ -113,29 +129,14 @@
 					/>
 				</div>
 			{/if}
-			<div class="relative md:col-span-2 flex w-full h-full items-center">
-				{#if isInView_tossakan}
-					<div
-						class="absolute flex max-h-[380px] max-w-[450px] md:z-10 col-span-2 my-5 -left-[5%]"
-						in:fade={{ duration: 750, delay: 100 }}
-					>
-						<Image
-							width={540}
-							height={425}
-							src="tossakan/tossakan_logo_half.png"
-							class="hidden md:block max-h-full w-full object-contain"
-							alt="tossakan_half"
-						/>
-					</div>
-				{:else}
-					<div class="h-[400px]" />
-				{/if}
+			<div class="relative md:col-span-2 w-full h-full items-center">
+				
 				{#if isInView_tossakan}
 					<div
 						class="flex flex-col text-center md:text-end xl:text-start self-start gap-5 md:ml-[18rem]"
 					>
 						<div
-							class="flex flex-col bg-blue font-serif h-min text-5xl sm:text-6xl md:text-5xl xl:text-7xl 2xl:text-9xl px-8 py-5 gap-8 items-center md:items-start"
+							class="flex flex-col bg-blue font-serif h-min text-5xl sm:text-6xl md:text-5xl xl:text-7xl px-8 py-5 gap-8 items-center md:items-start"
 							in:fly={defaultSlideParameters}
 							out:fade
 						>
@@ -144,7 +145,7 @@
 						</div>
 
 						<div
-							class="grid md:col-span-2 text-2xl xl:text-3xl font-sans px-5 text-center md:text-start xl:text-start grow-0"
+							class="grid md:col-span-2 text-2xl lg:text-3xl font-sans px-5 text-center md:text-start xl:text-start grow-0"
 							in:fade={{ duration: 1250, delay: 1000 }}
 						>
 							<p>
@@ -169,7 +170,7 @@
 					>
 						<p class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl -mb-2">NO SUSHI NO PHO</p>
 						<div
-							class="flex flex-row text-4xl md:text-3xl lg:text-3xl xl:text-4xl justify-between gap-3 md:gap-0"
+							class="flex flex-row text-4xl md:text-3xl lg:text-4xl justify-between gap-3 md:gap-0"
 						>
 							<p>NO</p>
 							<p>ENTEKROSS</p>
@@ -177,7 +178,7 @@
 						</div>
 						<!-- <p class="text-4xl md:text-3xl lg:text-4xl justify-between">NO ENTEKROSS SÜßSAUER</p> -->
 					</div>
-					<div class="flex text-7xl sm:text-8xl md:text-6xl xl:text-8xl 2xl:text-8xl md:w-full">
+					<div class="flex text-7xl sm:text-8xl md:text-6xl lg:text-8xl 2xl:text-8xl md:w-full">
 						<h2 class="px-2 bg-white text-pink">JUST THAI</h2>
 					</div>
 				</div>
@@ -213,7 +214,7 @@
 				</div>
 			</div>
 			<div
-				class="flex justify-center  items-center lg:items-start m-5 md:m-0"
+				class="flex justify-center items-center lg:items-start m-5 md:m-0"
 				use:inview={options}
 				on:inview_enter={({ detail }) => {
 					isInView_maiyarap = detail.inView
@@ -245,12 +246,12 @@
 			}}
 		>
 			{#if isInView_tuktuk}
-				<div class="md:relative place-self-center xl:place-self-auto mx-5 xl:mx-0" in:fade={{ duration: 1000 }}>
+				<div class="h-[400px] w-[360px] place-self-center mx-5 xl:mx-0 self" in:fade={{ duration: 1000 }}>
 					<Image
-						width={500}
+						width={400}
 						height={360}
 						src="tossakan/tuktuk_logo.png"
-						class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain top-0 left-0 mb-10 md:mb-0"
+						class="max-h-full w-full object-contain mb-10 md:mb-0"
 						alt="tuktukbytossakan"
 					/>
 				</div>
