@@ -32,7 +32,7 @@
 				<div class="h-[360px] md:h-full" />
 			{/if}
 			<div
-				class="flex flex-col justify-between text-center md:text-start md:items-start ml-10 font-serif lg:col-span-2"
+				class="flex flex-col justify-between text-center md:text-start md:items-start md:ml-10 font-serif lg:col-span-2"
 			>
 				<div class="grid text-xl gap-5 w-full">
 					<div
