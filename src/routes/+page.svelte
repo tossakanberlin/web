@@ -1,8 +1,9 @@
 <script lang="ts">
-	import Image from '$lib/components/Image.svelte'
+  import Image from '$lib/components/Image.svelte'
   import Menu from '$lib/components/Overlay_menu.svelte'
   import Carousel from '$lib/components/ImageCarousel.svelte' 
-   
+  import { fade, blur, fly, slide, scale } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
 
 </script>
 
@@ -88,7 +89,7 @@
 				<h2
 					class="lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
 				>
-					Tossakan<br />P-Berg
+					Tossakan
 				</h2>
 			</div>
 			<Image
@@ -115,7 +116,7 @@
 				<h2
 					class="lg:text-5xl lg:m-5  text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
 				>
-					Maiyarap<br />x-Berg
+					Maiyarap
 				</h2>
 			</div>
 			<Image
@@ -135,7 +136,7 @@
 
 
 <Menu></Menu>	
-<div class="bg-blue ">
+<div class="bg-blue flex justify-center ">
   <Carousel /> 
 
 </div>
