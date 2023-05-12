@@ -213,19 +213,19 @@
 				</div>
 			</div>
 			<div
-				class="md:relative flex justify-center md:justify-between items-center lg:items-start m-5 md:m-0"
+				class="flex justify-center  items-center lg:items-start m-5 md:m-0"
 				use:inview={options}
 				on:inview_enter={({ detail }) => {
 					isInView_maiyarap = detail.inView
 				}}
 			>
 				{#if isInView_maiyarap}
-					<div in:fade={{ duration: 1000 }}>
+					<div class="self-center max-h-[360px] max-w-[540px]" in:fade={{ duration: 1000 }}>
 						<Image
 							width={600}
 							height={360}
 							src="maiyarap/maiyarap_logo.png"
-							class="xl:absolute max-h-[360px] md:max-h-full w-full object-contain"
+							class="max-h-[360px] md:max-h-full w-full object-contain"
 							alt="maiyarap"
 						/>
 					</div>
