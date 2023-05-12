@@ -9,17 +9,17 @@
 </script>
 
 <Menu />
-<div >
-	<div class="flex flex-col justify-between items-center bg-blue text-white py-20">
+<div>
+	<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 		<div
-			class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center w-full"
 			use:inview={options}
 			on:inview_enter={({ detail }) => {
 				isInView_maiyarap = detail.inView
 			}}
 		>
 			{#if isInView_maiyarap}
-				<div in:fade={{ duration: 500 }}>
+				<div class="flex md:max-w-[450px] max-h-[270px] md:ml-5" in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
 						height={360}
@@ -32,50 +32,51 @@
 				<div class="h-[360px] md:h-full" />
 			{/if}
 			<div
-				class="flex flex-col justify-between text-center md:text-start md:items-start mr-10 ml-10 font-serif"
+				class="flex flex-col justify-between text-center md:text-start md:items-start ml-10 font-serif lg:col-span-2"
 			>
-				<div class="grid text-xl gap-10">
+				<div class="grid text-xl gap-5 w-full">
 					<div
-						class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif sm:gap-5 xl:gap-0"
+						class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-serif gap-0 md:gap-10 xl:gap-0"
 					>
-						<div class="flex flex-col col-span-full xl:col-span-1">
+						<div class="flex flex-col col-span-1 md:col-span-2 lg:col-span-1">
 							<h2 class="text-5xl sm:text-8xl">MAIYARAP</h2>
-							<h2 class="text-2xl font-sans md:-mt-5">ORANIENSTRASSE 200, 10999 BERLIN</h2>
+							<h2 class="text-2xl font-sans md:-mt-5">ORANIENSTRASSE 200</h2>
+							<h2 class="text-2xl font-sans md:-mt-2">10999 BERLIN</h2>
 						</div>
 						<div
-							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
+							class="flex flex-col md:flex-row lg:flex-col col-span-full lg:col-span-1 justify-center md:justify-start lg:justify-center items-center md:items-start lg:items-center gap-0 md:gap-10 lg:gap-0"
 						>
 							<a href="menu_maiyarap.pdf" target="_blank">
 								<button
 									type="submit"
-									class=" bg-pink hover:bg-[#ff64b9] text-white rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 my-5 py-1 w-[15rem]"
+									class="bg-pink hover:bg-[#ff64b9] text-white rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 lg:mx-5  my-5 md:my-0 lg:my-5 py-1 w-[15rem]"
 									>MENU
 								</button>
 							</a>
 						</div>
 						<div class="flex flex-col justify-center items-center" />
 					</div>
-					<div class="grid grid-cols-1 md:grid-cols-2 text-3xl gap-5 font-sans">
-						<div>
-							<h2>OPEN DAILY</h2>
-							<h2>12:00 - 22:00</h2>
-						</div>
-						<div>
-							<h2>KITCHEN CLOSE</h2>
-							<h2>21:00</h2>
-						</div>
+					<div class="grid grid-cols-1 md:grid-cols-2 font-sans text-3xl md:text-2xl lg:text-3xl">
+						<h2>OPEN DAILY</h2>
+						<h2>12:00 - 22:00</h2>
+						<h2>KITCHEN CLOSE</h2>
+						<h2>21:00</h2>
 					</div>
+					<h2 class="text-xl col-span-full font-sans lg:col-span-1">*no reservations, just walk ins 😊</h2>
 					<div
-						class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-sans gap-5 md:gap-5 xl:gap-0"
+						class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-sans gap-0 md:gap-5 xl:gap-0"
 					>
-						<h2 class="text-xl col-span-full xl:col-span-1">*no reservations, just walk ins 😊</h2>
+						
+						<div class="flex flex-col col-span-full lg:col-span-1 gap-0">
+							<h2 class="text-3xl">TEL: +49 12 34567890</h2>
+						</div>
 						<div
-							class="flex flex-col md:flex-row xl:flex-col col-span-full xl:col-span-1 items-center justify-center md:justify-start xl:justify-center"
+							class="flex flex-col mt-10 md:mt-0 place-self-center md:place-self-start lg:place-self-center"
 						>
 							<a href="/faq?maiyarap">
 								<button
 									type="submit"
-									class=" bg-green_light  hover:bg-[#b7e6b4] text-blue rounded-md shadow-none font-serif text-2xl mx-5 md:mx-0 xl:mx-5 sm:mt-0 place-self-center my-5 py-1 px-5 w-[15rem]"
+									class=" bg-blue_light hover:bg-[#878bef] text-white rounded-md shadow-none font-serif text-2xl lg:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
 									>CONTACT US
 								</button>
 							</a>
@@ -98,7 +99,7 @@
 		</div>
 
 		<div
-			class="flex flex-col justify-between text-center md:text-start font-sans text-2xl gap-5 mb-10"
+			class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-5 mb-10"
 		>
 			<p>
 				If you´ve been to Thailand, you know how much we love our noodle soups. The diverse & hearty
@@ -141,7 +142,7 @@
 						</div>
 					</div>
 				{:else}
-					<div class="h-[500px] md:h-[1000px]" />
+					<div class="h-[1000px]" />
 				{/if}
 			</div>
 		</div>

@@ -15,14 +15,14 @@
 <div>
 	<div class="justify-between items-center bg-green_light text-pink py-10">
 		<div
-			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center mx-5"
+			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center w-full"
 			use:inview={options}
 			on:inview_enter={({ detail }) => {
 				isInView_tossakan = detail.inView
 			}}
 		>
 			{#if isInView_tossakan}
-				<div class="flex md:max-w-[450px] max-h-[270px]" in:fade={{ duration: 500 }}>
+				<div class="flex md:max-w-[450px] max-h-[270px] md:ml-5" in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
 						height={360}
