@@ -35,7 +35,7 @@
        
        <Image
 								{src}
-								class="p-4   w-[350px] sm:w-[400px] md:w-[300px] lg:w-[400px] md:h-[200px] sm:h-[175px] h-[150px]  lg:h-[300px]"
+								class="p-2 sm:p-4  w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]    h-[200px] sm:h-[250px] md:h-[300px]    lg:h-[350px]"
 								alt="slider"
 							/>
         </div>

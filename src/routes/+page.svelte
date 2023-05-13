@@ -7,54 +7,182 @@
 
 
 
-  const images_1 = [
+  const gallery_1 = [
       {
-        url: "slider/slider_1.jpg",
+        url: "slider/display_1.jpg",
         
       },
 	  {
-        url: "slider/slider_2.jpg",
+        url: "slider/display_2.jpg",
         
       },
 	  {
-        url: "slider/slider_3.jpg",
+        url: "slider/display_3.jpg",
+     
+      },
+	  {
+        url: "slider/display_4.jpg",
+     
+      },
+	  {
+        url: "slider/display_5.jpg",
+     
+      },
+	  {
+        url: "slider/display_6.jpg",
+     
+      },
+	  {
+        url: "slider/display_7.jpg",
      
       },
      
     ];
-	const images_2 = [
-      {
-        url: "slider/slider_2.jpg",
+
+	const gallery_2 = [
+      
+	  {
+        url: "slider/display_2.jpg",
         
       },
 	  {
-        url: "slider/slider_3.jpg",
-        
+        url: "slider/display_3.jpg",
+     
       },
 	  {
-        url: "slider/slider_1.jpg",
+        url: "slider/display_4.jpg",
+     
+      },
+	  {
+        url: "slider/display_5.jpg",
+     
+      },
+	  {
+        url: "slider/display_6.jpg",
+     
+      },
+	  {
+        url: "slider/display_7.jpg",
+     
+      },
+	  {
+        url: "slider/display_1.jpg",
         
       },
      
     ];
-	const images_3 = [
-      {
-        url: "slider/slider_3.jpg",
+	const gallery_3 = [
+      
+	  
+	  {
+        url: "slider/display.jpg",
+     
+      },
+	  {
+        url: "slider/display.jpg",
+     
+      },
+	  {
+        url: "slider/display.jpg",
+     
+      },
+	  {
+        url: "slider/display.jpg",
+     
+      },
+	  {
+        url: "slider/display.jpg",
+     
+      },
+	  {
+        url: "slider/display.jpg",
         
       },
 	  {
-        url: "slider/slider_1.jpg",
-        
-      },
-	  {
-        url: "slider/slider_2.jpg",
+        url: "slider/display.jpg",
         
       },
      
     ];
+	const gallery_4 = [
+     
+	  {
+        url: "slider/display.jpg",
+     
+      },
+	  {
+        url: "slider/display_5.jpg",
+     
+      },
+	  {
+        url: "slider/display_6.jpg",
+     
+      },
+	  {
+        url: "slider/display_7.jpg",
+     
+      },
+	  {
+        url: "slider/display_1.jpg",
+        
+      },
+	  {
+        url: "slider/display_2.jpg",
+        
+      },
+	  {
+        url: "slider/display_3.jpg",
+     
+      },
+     
+    ];
+	const gallery_5 = [
+      
+	  {
+        url: "slider/display_5.jpg",
+     
+      },
+	  {
+        url: "slider/display_6.jpg",
+     
+      },
+	  {
+        url: "slider/display_7.jpg",
+     
+      },
+	  {
+        url: "slider/display.jpg",
+        
+      },
+	  {
+        url: "slider/display_2.jpg",
+        
+      },
+	  {
+        url: "slider/display_3.jpg",
+     
+      },
+	  {
+        url: "slider/display_4.jpg",
+     
+      },
+     
+    ];
+	
+	//   function renderCarousel(number){
+	// 	for (var i = 1; i <= number ; i++){
+	// 		return   <Carousel images = {`gallery_${i}`}/>
+	// 	}
+
+	// 	}
+
+
+	  
+
+
 </script>
 
-<article class=" h-fit relative font-serif">
+<article class="  h-fit relative font-serif">
 <!-- <div  >
 	<div class="left-0 absolute top-0  w-full text-center z-10">
 		<h1 class="lg:text-7xl text-5xl text-white uppercase my-5 md:hidden " >Neo-Thai Cuisine</h1>
@@ -176,10 +304,28 @@
 	</div>
 </div>
 <Menu></Menu>	
-<div class="bg-blue  flex justify-around items-center ">
-  	<Carousel images={images_1}/> 
-	<Carousel images={images_2}/> 
-	<Carousel images={images_3}/> 
+
+	<div class="bg-blue">
+		<div class=' hidden md:flex  justify-around items-center'>
+			<Carousel images={gallery_1}/> 
+			<Carousel images={gallery_2}/> 
+			<Carousel images={gallery_3}/>
+			<Carousel images={gallery_4}/> 
+			<Carousel images={gallery_5}/> 
+		</div>
+
+	<div class='  md:hidden flex justify-around items-center'>
+			<Carousel images={gallery_1}/> 
+			<Carousel images={gallery_2}/> 
+			<Carousel images={gallery_3}/>
+		
+		</div>
+		   
+  	 
+
+	
+	
+
 </div>
 
 </article>
