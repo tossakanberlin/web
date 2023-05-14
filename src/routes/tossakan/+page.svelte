@@ -22,7 +22,7 @@
 			}}
 		>
 			{#if isInView_tossakan}
-				<div class="flex md:max-w-[450px] max-h-[270px] md:ml-5" in:fade={{ duration: 500 }}>
+				<div class="flex md:max-w-[450px] max-h-[270px] md:ml-5 place-self-center" in:fade={{ duration: 500 }}>
 					<Image
 						width={600}
 						height={360}
