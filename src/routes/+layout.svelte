@@ -23,7 +23,7 @@
 		<div class="max-h-[100px] max-w-[120px]">
 			<a href="/"
 				><Image
-					src="/tosxmai_logo.jpg"
+					src="/tosxmai_logo.png"
 					class="w-full h-full object-contain"
 					alt="tossakan"
 					important
