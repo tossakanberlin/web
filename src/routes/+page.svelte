@@ -25,9 +25,9 @@
 		{
 			url: 'slider/display_5.jpg'
 		},
-		{
-			url: 'slider/display_6.jpg'
-		},
+		// {
+		// 	url: 'slider/display_6.jpg'
+		// },
 		{
 			url: 'slider/display_7.jpg'
 		}
@@ -125,6 +125,18 @@
 			url: 'slider/display_4.jpg'
 		}
 	]
+
+	const gallery_6 = [
+		{
+			url: 'slider/display_5.jpg'
+		},
+		{
+			url: 'slider/display_2.jpg'
+		},
+		{
+			url: 'slider/display_4.jpg'
+		}
+	]
 </script>
 
 <article class="  h-fit relative font-serif">
@@ -197,18 +209,18 @@
 			isInView = detail.inView
 		}}
 	>
-		<div class="flex flex-col lg:grid lg:grid-cols-2 xl:flex xl:flex-row justify-around items-center">
+		<div class="hidden lg:grid lg:grid-cols-2 xl:flex xl:flex-row justify-around items-center">
 			{#if isInView}
 				<!-- <div in:fade={{ duration: 3000 }}>
 					<Image src="slider/display_4.jpg" class="p-2 sm:p-4" alt="slider" />
 				</div> -->
 				{#each gallery_1 as imgC}
-					<div in:scale={{ duration: 750 , delay:500 }}>
+					<div in:scale={{ duration: 750, delay: 500 }}>
 						<Image src={imgC.url} class="p-2 sm:p-4" alt="slider" />
 					</div>
 				{/each}
 			{:else}
-					<div class="h-[500px]"></div>
+				<div class="h-[500px]" />
 			{/if}
 
 			<!-- <Carousel images={gallery_1} />
@@ -216,6 +228,21 @@
 			<Carousel images={gallery_3} />
 			<Carousel images={gallery_4} />
 			<Carousel images={gallery_5} /> -->
+		</div>
+
+		<div class="flex flex-col lg:hidden justify-around items-center">
+			{#if isInView}
+				<!-- <div in:fade={{ duration: 3000 }}>
+				<Image src="slider/display_4.jpg" class="p-2 sm:p-4" alt="slider" />
+			</div> -->
+				{#each gallery_6 as imgC}
+					<div in:scale={{ duration: 750, delay: 500 }}>
+						<Image src={imgC.url} class="p-2 sm:p-4" alt="slider" />
+					</div>
+				{/each}
+			{:else}
+				<div class="h-[500px]" />
+			{/if}
 		</div>
 
 		<!-- <div class="  xl:hidden flex justify-around items-center">
