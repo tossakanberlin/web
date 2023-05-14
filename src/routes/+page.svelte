@@ -182,8 +182,8 @@
 				<!-- <div in:fade={{ duration: 3000 }}>
 					<Image src="slider/display_4.jpg" class="p-2 sm:p-4" alt="slider" />
 				</div> -->
-				{#each gallery_1 as imgC}
-					<div in:scale={{ duration: 750, delay: 500 }}>
+				{#each gallery_1 as imgC, index}
+					<div in:scale={{ duration: 750, delay: 500 + index*200  }}>
 						<Image src={imgC.url} class="p-2 sm:p-4" alt="slider" />
 					</div>
 				{/each}
