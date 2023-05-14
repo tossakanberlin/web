@@ -142,7 +142,7 @@
 						</div>
 					</div>
 				{:else}
-					<div class="h-[1000px]" />
+					<div class="h-[1000px] md:h-[2000px]" />
 				{/if}
 			</div>
 		</div>
