@@ -43,7 +43,7 @@
 					>
 						<div class="flex flex-col col-span-1 md:col-span-2 lg:col-span-1">
 							<h2 class="text-5xl sm:text-8xl">TOSSAKAN</h2>
-							<h2 class="text-2xl font-sans md:-mt-5">SCLIEMANNSTRASSE 16</h2>
+							<h2 class="text-2xl font-sans md:-mt-5">SCHLIEMANNSTRASSE 16</h2>
 							<h2 class="text-2xl font-sans md:-mt-2">10437 BERLIN</h2>
 						</div>
 						<div class="flex flex-col md:flex-row lg:flex-col col-span-full lg:col-span-1 justify-center md:justify-start lg:justify-center items-center md:items-start lg:items-center gap-0 md:gap-10 lg:gap-0">
