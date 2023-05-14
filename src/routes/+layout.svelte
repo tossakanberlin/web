@@ -7,7 +7,7 @@
 
 <svelte:head>
 	<title>Tossakan Berlin</title>
-	<meta name="description" content="Tosskan berlin" />
+	<meta name="description" content="Welcome to Tossakan Berlin. Berlin's most authentic Neo-Thai Cuisine. We keeps things real; the spice , the heat." />
 </svelte:head>
 
 <nav>
