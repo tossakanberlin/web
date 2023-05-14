@@ -1,47 +1,40 @@
 <script>
-    import Image from '$lib/components/Image.svelte'
-   
-    import { fade, blur, fly, slide, scale } from "svelte/transition";
-  
-    import { onDestroy, onMount } from "svelte";
+	import Image from '$lib/components/Image.svelte'
 
-    export let images;
-    
+	import { fade, blur, fly, slide, scale } from 'svelte/transition'
 
-    let index = 0;
-    let timer;
-    
-    onMount(() => {
-    let timer = setInterval(next, 4000);
-  });
+	import { onDestroy, onMount } from 'svelte'
 
-   onDestroy(() => {
-    clearInterval(timer);
-  });
+	export let images
 
-    const next = function nextSlide(){
-      index = (index+1) % images.length;
-    }
-    
-    $: src = images[index].url;
-      
-  </script>
+	let index = 0
+	let timer
 
-      <section  class=" flex justify-center   ">
-       
-        {#key src}
-    
-        <div in:fly="{{delay:50, duration:2000}}">
-       
-       <Image
-								{src}
-								class="p-2 sm:p-4  w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]    h-[200px] sm:h-[250px] md:h-[300px]    lg:h-[350px]"
-								alt="slider"
-							/>
-        </div>
-       {/key}
-   
-      </section>
-     
+	onMount(() => {
+		let timer = setInterval(next, 4000)
+	})
 
+	onDestroy(() => {
+		clearInterval(timer)
+	})
 
+	const next = function nextSlide() {
+		index = (index + 1) % images.length
+	}
+
+	$: src = images[index].url
+</script>
+
+<section class=" flex justify-center">
+	{#key src}
+		<div in:fade={{ delay: 400, duration: 2000 }}>
+			<Image
+				{src}
+				class="p-2 sm:p-4"
+				alt="slider"
+			/>
+		</div>
+	{/key}
+</section>
+
+<!-- w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]    h-[200px] sm:h-[250px] md:h-[300px]    lg:h-[350px] -->

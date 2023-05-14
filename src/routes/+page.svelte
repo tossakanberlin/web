@@ -1,333 +1,229 @@
 <script lang="ts">
-  import Image from '$lib/components/Image.svelte'
-  import Menu from '$lib/components/Overlay_menu.svelte'
-  import Carousel from '$lib/components/ImageCarousel.svelte' 
-  import { fade, blur, fly, slide, scale } from "svelte/transition";
-  import { quintOut } from "svelte/easing";
+	import Image from '$lib/components/Image.svelte'
+	import Menu from '$lib/components/Overlay_menu.svelte'
+	import Carousel from '$lib/components/ImageCarousel.svelte'
+	import { fade, blur, fly, slide, scale } from 'svelte/transition'
+	import { quintOut } from 'svelte/easing'
+	import { inview } from 'svelte-inview'
 
+	let isInView: boolean
+	let options = {}
 
-
-  const gallery_1 = [
-      {
-        url: "slider/display_1.jpg",
-        
-      },
-	  {
-        url: "slider/display_2.jpg",
-        
-      },
-	  {
-        url: "slider/display_3.jpg",
-     
-      },
-	  {
-        url: "slider/display_4.jpg",
-     
-      },
-	  {
-        url: "slider/display_5.jpg",
-     
-      },
-	  {
-        url: "slider/display_6.jpg",
-     
-      },
-	  {
-        url: "slider/display_7.jpg",
-     
-      },
-     
-    ];
+	const gallery_1 = [
+		{
+			url: 'slider/display_1.jpg'
+		},
+		{
+			url: 'slider/display_2.jpg'
+		},
+		{
+			url: 'slider/display_3.jpg'
+		},
+		{
+			url: 'slider/display_4.jpg'
+		},
+		{
+			url: 'slider/display_5.jpg'
+		},
+		{
+			url: 'slider/display_6.jpg'
+		},
+		{
+			url: 'slider/display_7.jpg'
+		}
+	]
 
 	const gallery_2 = [
-      
-	  {
-        url: "slider/display_2.jpg",
-        
-      },
-	  {
-        url: "slider/display_3.jpg",
-     
-      },
-	  {
-        url: "slider/display_4.jpg",
-     
-      },
-	  {
-        url: "slider/display_5.jpg",
-     
-      },
-	  {
-        url: "slider/display_6.jpg",
-     
-      },
-	  {
-        url: "slider/display_7.jpg",
-     
-      },
-	  {
-        url: "slider/display_1.jpg",
-        
-      },
-     
-    ];
+		{
+			url: 'slider/display_2.jpg'
+		},
+		{
+			url: 'slider/display_3.jpg'
+		},
+		{
+			url: 'slider/display_4.jpg'
+		},
+		{
+			url: 'slider/display_5.jpg'
+		},
+		{
+			url: 'slider/display_6.jpg'
+		},
+		{
+			url: 'slider/display_7.jpg'
+		},
+		{
+			url: 'slider/display_1.jpg'
+		}
+	]
 	const gallery_3 = [
-      
-	  
-	  {
-        url: "slider/display.jpg",
-     
-      },
-	  {
-        url: "slider/display.jpg",
-     
-      },
-	  {
-        url: "slider/display.jpg",
-     
-      },
-	  {
-        url: "slider/display.jpg",
-     
-      },
-	  {
-        url: "slider/display.jpg",
-     
-      },
-	  {
-        url: "slider/display.jpg",
-        
-      },
-	  {
-        url: "slider/display.jpg",
-        
-      },
-     
-    ];
+		{
+			url: 'slider/display_3.jpg'
+		},
+		{
+			url: 'slider/display_4.jpg'
+		},
+		{
+			url: 'slider/display_5.jpg'
+		},
+		{
+			url: 'slider/display_6.jpg'
+		},
+		{
+			url: 'slider/display_7.jpg'
+		},
+		{
+			url: 'slider/display_1.jpg'
+		},
+		{
+			url: 'slider/display_2.jpg'
+		}
+	]
 	const gallery_4 = [
-     
-	  {
-        url: "slider/display.jpg",
-     
-      },
-	  {
-        url: "slider/display_5.jpg",
-     
-      },
-	  {
-        url: "slider/display_6.jpg",
-     
-      },
-	  {
-        url: "slider/display_7.jpg",
-     
-      },
-	  {
-        url: "slider/display_1.jpg",
-        
-      },
-	  {
-        url: "slider/display_2.jpg",
-        
-      },
-	  {
-        url: "slider/display_3.jpg",
-     
-      },
-     
-    ];
+		{
+			url: 'slider/display_4.jpg'
+		},
+		{
+			url: 'slider/display_5.jpg'
+		},
+		{
+			url: 'slider/display_6.jpg'
+		},
+		{
+			url: 'slider/display_7.jpg'
+		},
+		{
+			url: 'slider/display_1.jpg'
+		},
+		{
+			url: 'slider/display_2.jpg'
+		},
+		{
+			url: 'slider/display_3.jpg'
+		}
+	]
 	const gallery_5 = [
-      
-	  {
-        url: "slider/display_5.jpg",
-     
-      },
-	  {
-        url: "slider/display_6.jpg",
-     
-      },
-	  {
-        url: "slider/display_7.jpg",
-     
-      },
-	  {
-        url: "slider/display.jpg",
-        
-      },
-	  {
-        url: "slider/display_2.jpg",
-        
-      },
-	  {
-        url: "slider/display_3.jpg",
-     
-      },
-	  {
-        url: "slider/display_4.jpg",
-     
-      },
-     
-    ];
-	
-	//   function renderCarousel(number){
-	// 	for (var i = 1; i <= number ; i++){
-	// 		return   <Carousel images = {`gallery_${i}`}/>
-	// 	}
-
-	// 	}
-
-
-	  
-
-
+		{
+			url: 'slider/display_5.jpg'
+		},
+		{
+			url: 'slider/display_6.jpg'
+		},
+		{
+			url: 'slider/display_7.jpg'
+		},
+		{
+			url: 'slider/display_1.jpg'
+		},
+		{
+			url: 'slider/display_2.jpg'
+		},
+		{
+			url: 'slider/display_3.jpg'
+		},
+		{
+			url: 'slider/display_4.jpg'
+		}
+	]
 </script>
 
 <article class="  h-fit relative font-serif">
-<!-- <div  >
-	<div class="left-0 absolute top-0  w-full text-center z-10">
-		<h1 class="lg:text-7xl text-5xl text-white uppercase my-5 md:hidden " >Neo-Thai Cuisine</h1>
-	</div>
-	<div class="grid grid-cols-1 md:grid-cols-2">
-		<div class="relative flex items-center justify-center group  z-[-1]">
-			<div
-				class="absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-4 md:px-6  group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
-			>
-			<a href='/tossakan'>
+	<div>
+		<div class="left-0 absolute top-0 w-full text-center z-10">
+			<h1 class="lg:text-7xl text-5xl text-white uppercase my-5 md:my-6">Neo-Thai Cuisine</h1>
+		</div>
+		<div class="grid grid-cols-1 lg:grid-cols-2">
+			<div class="relative flex items-center justify-center group">
+				<div
+					class="absolute flex-col z-10 rounded-full aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4 px-5 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
+				>
+					<a href="/tossakan">
+						<Image
+							src="tossakan/tossakan_logo.png"
+							width={500}
+							class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+							important
+						/>
+					</a>
+					<h2
+						class="lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2"
+					>
+						Tossakan
+					</h2>
+				</div>
 				<Image
-					src="TossakanPhotos/tossakan_logo.png"
-					width={500}
-					class=" lg:w-[500px] w-[300px] md:w-[200px] mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					prioritize
+					eager
 					important
+					src="/vertical_left.jpg"
+					class="z-[-1] w-full h-[calc(100vh-130px)] object-cover  transition-all ease-in-out duration-500 group-hover:opacity-50"
 				/>
-			</a>
-				<h2
-					class="lg:text-5xl lg:m-5 text-5xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-3 "
-				>
-					Tossakan<br />P-Berg
-				</h2>
 			</div>
-			<Image
-				prioritize
-				eager
-				important
-				src="/vertical_left.jpeg"
-				class="z-[-1] w-full h-[calc(100vh-130px)] object-cover  transition-all ease-in-out duration-500 group-hover:opacity-50"
-			/>
-		</div>
 
-		<div class="relative flex items-center justify-center group  z-[-1]">
-			<div
-				class="  absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center px-4 md:px-6 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
-			>
-				<a href='/maiyarap'>
-					<Image
-					width={500}
-					src="MaiyarapPhotos/maiyarap_logo.png"
-					class=" lg:w-[500px]  w-[300px] md:w-[200px]  max-h-screen mt-7 object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4"
-					important
-				/>
-				</a>
-				<h2
-					class="lg:text-5xl lg:m-5  text-5xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
+			<div class="relative flex items-center justify-center group">
+				<div
+					class="  absolute flex-col z-10 rounded-full aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4 px-5 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 				>
-					Maiyarap<br />x-Berg
-				</h2>
-			</div>
-			<Image
-				src="/vertical_right.jpeg"
-				class="  z-[-1] object-cover w-full h-[calc(100vh-130px)] transition-all ease-in-out duration-500 group-hover:opacity-50"
-				prioritize
-				eager
-				important
-			/>
-		</div>
-	</div>
-</div> -->
-<div  >
-	<div class="left-0 absolute top-0  w-full text-center z-10">
-		<h1 class="lg:text-7xl  text-5xl text-white uppercase my-5 md:my-6  " >Neo-Thai Cuisine</h1>
-	</div>
-	<div class="grid grid-cols-1 lg:grid-cols-2 ">
-		<div class="relative flex items-center justify-center group  ">
-			<div
-				class="absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center  md:px-6 xl:px-4 px-5   group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
-			>
-			<a href='/tossakan'>
+					<a href="/maiyarap">
+						<Image
+							width={500}
+							src="maiyarap/maiyarap_logo.png"
+							class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+							important
+						/>
+					</a>
+					<h2
+						class="lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2"
+					>
+						Maiyarap
+					</h2>
+				</div>
 				<Image
-					src="tossakan/tossakan_logo.png"
-					width={500}
-					class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px]  mt-7  max-h-screen object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+					src="/vertical_right.jpg"
+					class="  z-[-1] object-cover w-full h-[calc(100vh-130px)] transition-all ease-in-out duration-500 group-hover:opacity-50"
+					prioritize
+					eager
 					important
 				/>
-			</a>
-				<h2
-					class="lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
-				>
-					Tossakan
-				</h2>
 			</div>
-			<Image
-				prioritize
-				eager
-				important
-				src="/vertical_left.jpg"
-				class="z-[-1] w-full h-[calc(100vh-130px)] object-cover  transition-all ease-in-out duration-500 group-hover:opacity-50"
-			/>
-		</div>
-
-		<div class="relative flex items-center justify-center group ">
-			<div
-				class="  absolute flex-col z-10 rounded-full  aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4  px-5   group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
-			>
-				<a href='/maiyarap'>
-					<Image
-					width={500}
-					src="maiyarap/maiyarap_logo.png"
-					class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
-					important
-				/>
-				</a>
-				<h2
-					class="lg:text-5xl lg:m-5  text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
-				>
-					Maiyarap
-				</h2>
-			</div>
-			<Image
-				src="/vertical_right.jpg"
-				class="  z-[-1] object-cover w-full h-[calc(100vh-130px)] transition-all ease-in-out duration-500 group-hover:opacity-50"
-				prioritize
-				eager
-				important
-			/>
 		</div>
 	</div>
-</div>
-<Menu></Menu>	
+	<Menu />
 
-	<div class="bg-blue">
-		<div class=' hidden md:flex  justify-around items-center'>
-			<Carousel images={gallery_1}/> 
-			<Carousel images={gallery_2}/> 
-			<Carousel images={gallery_3}/>
-			<Carousel images={gallery_4}/> 
-			<Carousel images={gallery_5}/> 
+	<div
+		class="bg-blue py-5 px-5"
+		use:inview={options}
+		on:inview_enter={({ detail }) => {
+			isInView = detail.inView
+		}}
+	>
+		<div class="flex flex-col lg:grid lg:grid-cols-2 xl:flex xl:flex-row justify-around items-center">
+			{#if isInView}
+				<!-- <div in:fade={{ duration: 3000 }}>
+					<Image src="slider/display_4.jpg" class="p-2 sm:p-4" alt="slider" />
+				</div> -->
+				{#each gallery_1 as imgC}
+					<div in:scale={{ duration: 750 , delay:500 }}>
+						<Image src={imgC.url} class="p-2 sm:p-4" alt="slider" />
+					</div>
+				{/each}
+			{:else}
+					<div class="h-[500px]"></div>
+			{/if}
+
+			<!-- <Carousel images={gallery_1} />
+			<Carousel images={gallery_2} />
+			<Carousel images={gallery_3} />
+			<Carousel images={gallery_4} />
+			<Carousel images={gallery_5} /> -->
 		</div>
 
-	<div class='  md:hidden flex justify-around items-center'>
-			<Carousel images={gallery_1}/> 
-			<Carousel images={gallery_2}/> 
-			<Carousel images={gallery_3}/>
-		
-		</div>
-		   
-  	 
-
-	
-	
-
-</div>
-
+		<!-- <div class="  xl:hidden flex justify-around items-center">
+			<Carousel images={gallery_1} />
+			<Carousel images={gallery_2} />
+			<Carousel images={gallery_3} />
+		</div> -->
+	</div>
 </article>
 
 <style lang="postcss">
