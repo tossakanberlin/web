@@ -5,7 +5,7 @@
 	import { fade, blur, fly, slide, scale } from 'svelte/transition'
 	import { quintOut } from 'svelte/easing'
 	import { inview } from 'svelte-inview'
-
+	// import Carousel from 'svelte-carousel';
 	let isInView: boolean
 	let options = {}
 
@@ -43,26 +43,10 @@
 		{
 			url: 'slider/display_4.jpg'
 		},
-		{
-			url: 'slider/display_5.jpg'
-		},
-		{
-			url: 'slider/display_6.jpg'
-		},
-		{
-			url: 'slider/display_7.jpg'
-		},
-		{
-			url: 'slider/display_1.jpg'
-		}
+		
 	]
 	const gallery_3 = [
-		{
-			url: 'slider/display_3.jpg'
-		},
-		{
-			url: 'slider/display_4.jpg'
-		},
+		
 		{
 			url: 'slider/display_5.jpg'
 		},
@@ -72,26 +56,10 @@
 		{
 			url: 'slider/display_7.jpg'
 		},
-		{
-			url: 'slider/display_1.jpg'
-		},
-		{
-			url: 'slider/display_2.jpg'
-		}
+		
 	]
 	const gallery_4 = [
-		{
-			url: 'slider/display_4.jpg'
-		},
-		{
-			url: 'slider/display_5.jpg'
-		},
-		{
-			url: 'slider/display_6.jpg'
-		},
-		{
-			url: 'slider/display_7.jpg'
-		},
+		
 		{
 			url: 'slider/display_1.jpg'
 		},
@@ -219,15 +187,18 @@
 						<Image src={imgC.url} class="p-2 sm:p-4" alt="slider" />
 					</div>
 				{/each}
+
+				<!-- <Carousel images={gallery_1} />
+				<Carousel images={gallery_2} />
+				<Carousel images={gallery_3} />
+				<Carousel images={gallery_4} />
+				<Carousel images={gallery_5} /> -->
+
 			{:else}
 				<div class="h-[500px]" />
 			{/if}
 
-			<!-- <Carousel images={gallery_1} />
-			<Carousel images={gallery_2} />
-			<Carousel images={gallery_3} />
-			<Carousel images={gallery_4} />
-			<Carousel images={gallery_5} /> -->
+
 		</div>
 
 		<div class="flex flex-col lg:hidden justify-around items-center">
@@ -240,16 +211,20 @@
 						<Image src={imgC.url} class="p-2 sm:p-4" alt="slider" />
 					</div>
 				{/each}
+
+
+
+		<!-- <div class="  xl:hidden flex justify-around items-center">
+			<Carousel images={gallery_2} />
+			<Carousel images={gallery_3} />
+			<Carousel images={gallery_4} />
+		</div> -->
 			{:else}
 				<div class="h-[500px]" />
 			{/if}
 		</div>
 
-		<!-- <div class="  xl:hidden flex justify-around items-center">
-			<Carousel images={gallery_1} />
-			<Carousel images={gallery_2} />
-			<Carousel images={gallery_3} />
-		</div> -->
+		
 	</div>
 </article>
 

@@ -33,7 +33,7 @@
 		</div>
 		<div class="flex-1 flex justify-end ml-auto items-center">
 			<h2 class="hidden md:inline-block">
-				<a href="/faq" class="m-33 bg-growing-underline">FAQ & Contact</a>
+				<a href="/faq" class="m-3 bg-growing-underline">FAQ & Contact</a>
 			</h2>
 			<h2 class="hidden md:inline-block">
 				<a

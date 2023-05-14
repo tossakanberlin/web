@@ -11,7 +11,7 @@
 	let timer
 
 	onMount(() => {
-		let timer = setInterval(next, 4000)
+		let timer = setInterval(next, 5000)
 	})
 
 	onDestroy(() => {
@@ -25,12 +25,12 @@
 	$: src = images[index].url
 </script>
 
-<section class=" flex justify-center">
+<section  class=" flex justify-center ">
 	{#key src}
-		<div in:fade={{ delay: 400, duration: 2000 }}>
+		<div in:fade>
 			<Image
 				{src}
-				class="p-2 sm:p-4"
+				class="p-2 sm:p-4 "
 				alt="slider"
 			/>
 		</div>
@@ -38,3 +38,6 @@
 </section>
 
 <!-- w-[200px] sm:w-[250px] md:w-[300px] lg:w-[350px]    h-[200px] sm:h-[250px] md:h-[300px]    lg:h-[350px] -->
+
+
+
