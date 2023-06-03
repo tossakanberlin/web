@@ -8,8 +8,48 @@
 	let options = {}
 </script>
 
+<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
+	<div
+		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full h-[calc(100vh-130px)]"
+		use:inview={options}
+		on:inview_enter={({ detail }) => {
+			isInView_maiyarap = detail.inView
+		}}
+	>
+		{#if isInView_maiyarap}
+			<div
+				class="flex md:max-w-[450px] max-h-[270px] md:ml-5 place-self-center"
+				in:fade={{ duration: 500 }}
+			>
+				<Image
+					width={600}
+					height={360}
+					src="maiyarap/maiyarap_logo.png"
+					class="max-h-[360px] w-full object-contain top-0 left-0"
+					alt="maiyarap"
+				/>
+			</div>
+		{:else}
+			<div class="h-fit" />
+		{/if}
+		<div
+			class="flex flex-col justify-between text-center md:text-start md:items-start md:ml-10 font-serif"
+		>
+			<div class="text-xl gap-5 w-full">
+				<div
+					class="flex flex-col col-span-1 md:col-span-2 lg:col-span-1 items-center md:items-start w-full"
+				>
+					<h2 class="text-5xl sm:text-8xl">MAIYARAP</h2>
+					<h2 class="text-7xl font-sans">COMING SOON...</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
 <Menu />
-<div>
+
+<!-- <div>
 	<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center w-full"
@@ -147,7 +187,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <style lang="postcss">
 	:global(html) {
