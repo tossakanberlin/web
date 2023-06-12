@@ -114,9 +114,11 @@
 		</div>
 		<div class="grid grid-cols-1 lg:grid-cols-2">
 			<div class="relative flex items-center justify-center group">
+				
 				<div
 					class="absolute flex-col z-10 rounded-full aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4 px-5 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 				>
+				
 					<a href="/tossakan">
 						<Image
 							src="tossakan/tossakan_logo.png"
@@ -144,19 +146,26 @@
 				<div
 					class="  absolute flex-col z-10 rounded-full aspect-square bg-pink flex justify-center items-center md:px-6 xl:px-4 px-5 group-hover:bg-opacity-0 transition-all duration-700 cursor-pointer"
 				>
+					<div  
+					 class="   opacity-0 group-hover:opacity-100 z-10 absolute lg:text-6xl lg:m-6 text-4xl sm:text-5xl text-center text-[red] uppercase transition-opacity ease-in duration-700   "
+					>
+						coming soon
+			</div>
 					<a href="/maiyarap">
 						<Image
 							width={500}
 							src="maiyarap/maiyarap_logo.png"
-							class=" xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4 "
+							class="  group-hover:opacity-0 xl:w-[300px] lg:w-[275px]  w-[200px] sm:w-[250px] mt-7 max-h-screen  object-contain group-hover:scale-[1.2] transition-all ease-in-out duration-500 p-4  "
 							important
 						/>
 					</a>
 					<h2
-						class="lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2"
+						class=" group-hover:opacity-0 lg:text-5xl lg:m-5 text-3xl sm:text-4xl text-center text-black uppercase group-hover:scale-[1.2] transition-all ease-in-out duration-500 m-2 "
 					>
 						Maiyarap
 					</h2>
+
+					
 				</div>
 				<Image
 					src="/vertical_right.jpg"
