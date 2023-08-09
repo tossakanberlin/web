@@ -8,7 +8,7 @@
 	let options = {}
 </script>
 
-<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
+<!-- <div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 	<div
 		class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center w-full h-[calc(100vh-130px)]"
 		use:inview={options}
@@ -45,11 +45,11 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
 <Menu />
 
-<!-- <div>
+<div>
 	<div class="flex flex-col justify-between items-center bg-blue text-white py-10">
 		<div
 			class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 items-center w-full"
@@ -187,7 +187,7 @@
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 
 <style lang="postcss">
 	:global(html) {
