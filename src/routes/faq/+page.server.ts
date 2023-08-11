@@ -100,7 +100,7 @@ export const actions = {
 
 		const options = {
 			from: email,
-			to: maiyarapSite ? `info@tossakan-berlin.de` : `info@maiyarap-berlin.de`,
+			to: maiyarapSite ? `info@maiyarap-berlin.de` : `info@tossakan-berlin.de`,
 			subject: subject,
 			html: emailHtml
 		}
