@@ -85,7 +85,7 @@
 					</div>
 					<div>
 						<ul class="text-center">
-							<li>TEL:030-81477638</li>
+							<li>TEL: +49 30 81477638</li>
 							<li>OPEN DAILY:12-22</li>
 						</ul>
 					</div>
@@ -102,13 +102,13 @@
 					<div>
 						<ul class="text-center">
 							<li>MAIYARAP</li>
-							<li>ORANIENSTR.200</li>
+							<li>ORANIENSTR. 200</li>
 							<li>10999 BERLIN</li>
 						</ul>
 					</div>
 					<div>
 						<ul class="text-center">
-							<li>TEL:030-12345678</li>
+							<li>TEL: COMING SOON</li>
 							<li>OPEN DAILY: 12-22</li>
 						</ul>
 					</div>

@@ -21,8 +21,8 @@
 			</p>
 			<p>
 				(2) Verantwortlicher gem. Art. 4 Abs. 7 EU-Datenschutz-Grundverordnung (DS-GVO) ist die
-				Restaurant Wild & Raue Betriebsgesellschaft mbH, vertreten durch die Geschäftsführerin
-				Marie-Anne Wild, Rudi-Dutschke-Strasse 26, 10969 Berlin, office@tim-raue.com (siehe
+				ChaCha Sweet Creations GmbH, vertreten durch die Geschäftsführer
+				Tanadon Santanaviboon, Schliemannstrasse 16, 10437 Berlin, info@tossakan-berlin.de (siehe
 				Impressum).
 			</p>
 			<p>

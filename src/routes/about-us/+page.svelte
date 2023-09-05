@@ -48,7 +48,7 @@
 					It all started with Chef Tanadon Santanaviboon, aka Don, 2nd generation Thai-German,
 					following his father´s footsteps to become a cook. Though starting in fine dining, Don
 					realized his true passion lied in his ultimate comfort food, Thai Cuisine. He decided it
-					was time to introduce the Berliners a New Generation of Thai Cuisine.
+					was time to introduce the Berliners to a New Generation of Thai Cuisine.
 				</p>
 				<p class="font-sans text-lg xl:text-xl">
 					Tossakan initially opened it´s doors in Charlottenburg, West Berlin. In 2022 reopened in
@@ -61,8 +61,7 @@
 					to deliver a unique Thai experience.
 				</p>
 				<p class="font-sans text-lg xl:text-xl">
-					At Tossakan, our main goal is to introduce a wider range of Thai Cuisine & our
-					appreciation to our culture.
+					At Tossakan, our goal is to offer a wider range of Thai Cuisine & to introduce the diversity and richness of our culture.
 				</p>
 			</div>
 			<div
@@ -168,7 +167,8 @@
 					<div
 						class="flex flex-col justify-center md:justify-start md:place-self-start text-center md:text-justify"
 					>
-						<p class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl -mb-2">NO SUSHI NO PHO</p>
+						<p class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl -mb-2">NO SUSHI NO</p>
+						<p class="text-4xl md:text-5xl lg:text-5xl xl:text-6xl -mb-2">PHO</p>
 						<div
 							class="flex flex-row text-4xl md:text-3xl lg:text-4xl justify-between gap-3 md:gap-0"
 						>
@@ -204,8 +204,10 @@
 					<p>Ticking all the key values: nutritional, cultural and medical.</p>
 					<p>Packed with herbs and spices, Gieuw Tieuw is the most hearty soup.</p>
 					<p>
-						At our newly opened MAIYARAP, our unique thai noodle bar, you´ll fall in love with Gieuw
-						Tieuw.
+						At our newly opened MAIYARAP, our unique thai noodle bar, you´ll
+					</p>
+					<p>
+						fall in love with Gieuw Tieuw.
 					</p>
 					<p>
 						Here we offer the best of the best, perfectly paired with our signature dumplings and
@@ -271,7 +273,7 @@
 					class="flex flex-col justify-between text-center md:text-start font-sans text-xl gap-4"
 				>
 					<p>Every once in a while, we all crave for that different something.</p>
-					<p>Something different, something new, but THAI?</p>
+					<p>Something different, something new, something THAI?</p>
 					<p>Follow us on Instagram @tuktukbytossakan for upcoming pop up events.</p>
 					<p>
 						Whether some nostalgic Thai streetfood, dessert or even some unique Thai fusion

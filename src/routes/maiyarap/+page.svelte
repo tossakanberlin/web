@@ -108,7 +108,7 @@
 					>
 						
 						<div class="flex flex-col col-span-full lg:col-span-1 gap-0">
-							<h2 class="text-3xl">TEL: +49 12 34567890</h2>
+							<h2 class="text-3xl">TEL: COMING SOON</h2>
 						</div>
 						<div
 							class="flex flex-col mt-10 md:mt-0 place-self-center md:place-self-start lg:place-self-center"
