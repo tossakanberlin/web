@@ -96,11 +96,20 @@
 						</div>
 						<div class="flex flex-col justify-center items-center" />
 					</div>
+					<h2 class="text-4xl font-sans">OPEN DAILY</h2>
 					<div class="grid grid-cols-1 md:grid-cols-2 font-sans text-3xl md:text-2xl lg:text-3xl">
-						<h2>OPEN DAILY</h2>
+						<h2>MONDAY - THURSDAY</h2>
+						<h2>12:00 - 15:00 | 17:00 - 22:00</h2>
+						<h2>FRIDAY - SATURDAY</h2>
 						<h2>12:00 - 22:00</h2>
-						<h2>KITCHEN CLOSE</h2>
-						<h2>21:00</h2>
+					</div>
+					<div class="grid grid-cols-1 md:grid-cols-2 font-sans text-3xl md:text-2xl lg:text-3xl">
+						<div class="flex flex-col">
+							<h2>KITCHEN CLOSE</h2>
+						</div>
+						<div class="flex flex-col">
+							<h2>21:00</h2>
+						</div>
 					</div>
 					<h2 class="text-xl col-span-full font-sans lg:col-span-1">*no reservations, just walk ins 😊</h2>
 					<div
