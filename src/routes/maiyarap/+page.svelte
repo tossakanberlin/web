@@ -99,7 +99,9 @@
 					<h2 class="text-4xl font-sans">OPEN DAILY</h2>
 					<div class="grid grid-cols-1 md:grid-cols-2 font-sans text-3xl md:text-2xl lg:text-3xl">
 						<h2>MONDAY - THURSDAY</h2>
-						<h2>12:00 - 15:00 | 17:00 - 22:00</h2>
+						<h2 class="sfm:hidden md:flex">12:00 - 15:00 | 17:00 - 22:00</h2>
+						<h2 class="md:hidden">12:00 - 15:00</h2>
+						<h2 class="md:hidden">17:00 - 22:00</h2>
 						<h2>FRIDAY - SATURDAY</h2>
 						<h2>12:00 - 22:00</h2>
 					</div>

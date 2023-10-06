@@ -5,6 +5,7 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		screens: {
+			'sfm': '100px',
 			sm: '440px',
 			md: '976px',
 			lg: '1048px',
