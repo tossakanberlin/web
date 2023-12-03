@@ -85,7 +85,6 @@
 					</div>
 					<div>
 						<ul class="text-center">
-							<li>TEL: +49 30 81477638</li>
 							<li>OPEN DAILY:12-22</li>
 						</ul>
 					</div>
@@ -108,7 +107,6 @@
 					</div>
 					<div>
 						<ul class="text-center">
-							<li>TEL: COMING SOON</li>
 							<li>OPEN DAILY: 12-22</li>
 						</ul>
 					</div>

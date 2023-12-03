@@ -29,13 +29,13 @@
 				<p>Vertretungsverechtiger Geschäftsführer: Tanadon Santanaviboon</p>
 			</div>
 			<div class="font-sans">
-				<p>Telefon: 030 81477638</p>
+				<p>Telefon: +49 30 81477638</p>
 				<p>E-Mail: info@tossakan-berlin.de</p>
 			</div>
 			<div class="font-sans">
 				<p>Registergericht: Amtsgericht Charlottenburg</p>
 				<p>Registernummer: HRB212253B</p>
-				<p>Umsatzstezer-Identifikationsnummer gem. § 27a UStG: DE 3725050947
+				<p>Umsatzsteuer-Identifikationsnummer gem. § 27a UStG: DE 3725050947
 				</p>
 			</div>
 			<div class="font-sans">
@@ -44,7 +44,7 @@
 		</div>
 	</div>
 
-	<div class="flex flex-col md:flex-row bg-green text-white pt-10">
+	<!-- <div class="flex flex-col md:flex-row bg-green text-white pt-10">
 		<div
 			class="flex justify-center items-center md:items-start sm:ml-10 text-6xl md:text-8xl md:gap-4"
 		>
@@ -170,7 +170,7 @@
 				</button>
 			</form>
 		</div>
-	</div>
+	</div> -->
 </div>
 {#if loading}
 	<div role="status" class="fixed top-1/2 right-1/2">

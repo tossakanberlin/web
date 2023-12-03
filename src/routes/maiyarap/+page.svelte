@@ -102,7 +102,7 @@
 						<h2 class="sfm:hidden md:flex">12:00 - 15:00 | 17:00 - 22:00</h2>
 						<h2 class="md:hidden">12:00 - 15:00</h2>
 						<h2 class="md:hidden">17:00 - 22:00</h2>
-						<h2>FRIDAY - SATURDAY</h2>
+						<h2>FRIDAY - SUNDAY</h2>
 						<h2>12:00 - 22:00</h2>
 					</div>
 					<div class="grid grid-cols-1 md:grid-cols-2 font-sans text-3xl md:text-2xl lg:text-3xl">
@@ -120,17 +120,6 @@
 						
 						<div class="flex flex-col col-span-full lg:col-span-1 gap-0">
 							<h2 class="text-3xl">TEL: COMING SOON</h2>
-						</div>
-						<div
-							class="flex flex-col mt-10 md:mt-0 place-self-center md:place-self-start lg:place-self-center"
-						>
-							<a href="/faq?maiyarap">
-								<button
-									type="submit"
-									class=" bg-blue_light hover:bg-[#878bef] text-white rounded-md shadow-none font-serif text-2xl lg:mx-5 sm:mt-0 place-self-center my-5 py-1 w-[15rem]"
-									>CONTACT US
-								</button>
-							</a>
 						</div>
 					</div>
 				</div>
