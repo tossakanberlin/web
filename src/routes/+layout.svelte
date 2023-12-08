@@ -85,11 +85,6 @@
 					</div>
 					<div>
 						<ul class="text-center">
-							<li>OPEN DAILY:12-22</li>
-						</ul>
-					</div>
-					<div>
-						<ul class="text-center">
 							<a href="https://www.instagram.com/tossakanberlin/" target="_blank" rel="noreferrer">
 								<li>@TOSSAKANBERLIN</li>
 							</a>
@@ -103,11 +98,6 @@
 							<li>MAIYARAP</li>
 							<li>ORANIENSTR. 200</li>
 							<li>10999 BERLIN</li>
-						</ul>
-					</div>
-					<div>
-						<ul class="text-center">
-							<li>OPEN DAILY: 12-22</li>
 						</ul>
 					</div>
 					<div>

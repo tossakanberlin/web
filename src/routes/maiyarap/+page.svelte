@@ -114,14 +114,7 @@
 						</div>
 					</div>
 					<h2 class="text-xl col-span-full font-sans lg:col-span-1">*no reservations, just walk ins 😊</h2>
-					<div
-						class="grid grid-cols-1 md:grid-cols-2 justify-between md:justify-start text-center md:text-start font-sans gap-0 md:gap-5 xl:gap-0"
-					>
-						
-						<div class="flex flex-col col-span-full lg:col-span-1 gap-0">
-							<h2 class="text-3xl">TEL: COMING SOON</h2>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</div>
