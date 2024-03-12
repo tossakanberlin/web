@@ -5,6 +5,7 @@
 	import '../app.css'
 </script>
 
+
 <svelte:head>
 	<title>Tossakan Berlin</title>
 	<meta name="description" content="Welcome to Tossakan Berlin. Berlin's most authentic Neo-Thai Cuisine. We keeps things real; the spice , the heat." />
@@ -137,5 +138,13 @@
 				<a href="/datenschutz" class="italic place-self-end text-end">Privacy Policy</a>
 			</div>
 		</div>
+	</div>
+
+	<link rel="stylesheet" href="/cbanner.css" />
+
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@beyonk/gdpr-cookie-consent-banner/dist/index.js"></script>
+	<div class="text-lg">
+	<cookie-consent-banner cookie-name="foo" heading="" visible="true" 
+	description="We use cookies to offer a better browsing experience, analyze site traffic, personalize content, and serve targeted advertisements. By clicking accept, you consent to our privacy policy & use of cookies." />
 	</div>
 </footer>
